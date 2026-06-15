@@ -1,0 +1,2693 @@
+    0:d=0  hl=4 l=23259 cons: SEQUENCE          
+    4:d=1  hl=2 l=   9 prim:  OBJECT            :pkcs7-signedData
+   15:d=1  hl=4 l=23244 cons:  cont [ 0 ]        
+   19:d=2  hl=4 l=23240 cons:   SEQUENCE          
+   23:d=3  hl=2 l=   1 prim:    INTEGER           :01
+   26:d=3  hl=2 l=  14 cons:    SET               
+   28:d=4  hl=2 l=  12 cons:     SEQUENCE          
+   30:d=5  hl=2 l=   8 prim:      OBJECT            :GOST R 34.11-2012 with 256 bit hash
+   40:d=5  hl=2 l=   0 prim:      NULL              
+   42:d=3  hl=2 l=  11 cons:    SEQUENCE          
+   44:d=4  hl=2 l=   9 prim:     OBJECT            :pkcs7-data
+   55:d=3  hl=4 l=2613 cons:    cont [ 0 ]        
+   59:d=4  hl=4 l=1294 cons:     SEQUENCE          
+   63:d=5  hl=4 l=1211 cons:      SEQUENCE          
+   67:d=6  hl=2 l=   3 cons:       cont [ 0 ]        
+   69:d=7  hl=2 l=   1 prim:        INTEGER           :02
+   72:d=6  hl=2 l=  19 prim:       INTEGER           :7C0033E8171401F70ED462DC1100140033E817
+   93:d=6  hl=2 l=  10 cons:       SEQUENCE          
+   95:d=7  hl=2 l=   8 prim:        OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+  105:d=6  hl=4 l= 266 cons:       SEQUENCE          
+  109:d=7  hl=2 l=  24 cons:        SET               
+  111:d=8  hl=2 l=  22 cons:         SEQUENCE          
+  113:d=9  hl=2 l=   5 prim:          OBJECT            :OGRN
+  120:d=9  hl=2 l=  13 prim:          NUMERICSTRING     :1234567890123
+  135:d=7  hl=2 l=  26 cons:        SET               
+  137:d=8  hl=2 l=  24 cons:         SEQUENCE          
+  139:d=9  hl=2 l=   8 prim:          OBJECT            :INN
+  149:d=9  hl=2 l=  12 prim:          NUMERICSTRING     :001234567890
+  163:d=7  hl=2 l=  47 cons:        SET               
+  165:d=8  hl=2 l=  45 cons:         SEQUENCE          
+  167:d=9  hl=2 l=   3 prim:          OBJECT            :streetAddress
+  172:d=9  hl=2 l=  38 prim:          UTF8STRING        :ул. Сущёвский вал д. 18
+  212:d=7  hl=2 l=  11 cons:        SET               
+  214:d=8  hl=2 l=   9 cons:         SEQUENCE          
+  216:d=9  hl=2 l=   3 prim:          OBJECT            :countryName
+  221:d=9  hl=2 l=   2 prim:          PRINTABLESTRING   :RU
+  225:d=7  hl=2 l=  25 cons:        SET               
+  227:d=8  hl=2 l=  23 cons:         SEQUENCE          
+  229:d=9  hl=2 l=   3 prim:          OBJECT            :stateOrProvinceName
+  234:d=9  hl=2 l=  16 prim:          UTF8STRING        :г. Москва
+  252:d=7  hl=2 l=  21 cons:        SET               
+  254:d=8  hl=2 l=  19 cons:         SEQUENCE          
+  256:d=9  hl=2 l=   3 prim:          OBJECT            :localityName
+  261:d=9  hl=2 l=  12 prim:          UTF8STRING        :Москва
+  275:d=7  hl=2 l=  37 cons:        SET               
+  277:d=8  hl=2 l=  35 cons:         SEQUENCE          
+  279:d=9  hl=2 l=   3 prim:          OBJECT            :organizationName
+  284:d=9  hl=2 l=  28 prim:          UTF8STRING        :ООО "КРИПТО-ПРО"
+  314:d=7  hl=2 l=  59 cons:        SET               
+  316:d=8  hl=2 l=  57 cons:         SEQUENCE          
+  318:d=9  hl=2 l=   3 prim:          OBJECT            :commonName
+  323:d=9  hl=2 l=  50 prim:          UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+  375:d=6  hl=2 l=  30 cons:       SEQUENCE          
+  377:d=7  hl=2 l=  13 prim:        UTCTIME           :260531164147Z
+  392:d=7  hl=2 l=  13 prim:        UTCTIME           :260731165147Z
+  407:d=6  hl=2 l= 113 cons:       SEQUENCE          
+  409:d=7  hl=2 l=  11 cons:        SET               
+  411:d=8  hl=2 l=   9 cons:         SEQUENCE          
+  413:d=9  hl=2 l=   3 prim:          OBJECT            :countryName
+  418:d=9  hl=2 l=   2 prim:          PRINTABLESTRING   :RU
+  422:d=7  hl=2 l=  15 cons:        SET               
+  424:d=8  hl=2 l=  13 cons:         SEQUENCE          
+  426:d=9  hl=2 l=   3 prim:          OBJECT            :localityName
+  431:d=9  hl=2 l=   6 prim:          UTF8STRING        :Moscow
+  439:d=7  hl=2 l=  13 cons:        SET               
+  441:d=8  hl=2 l=  11 cons:         SEQUENCE          
+  443:d=9  hl=2 l=   3 prim:          OBJECT            :organizationName
+  448:d=9  hl=2 l=   4 prim:          UTF8STRING        :Test
+  454:d=7  hl=2 l=  11 cons:        SET               
+  456:d=8  hl=2 l=   9 cons:         SEQUENCE          
+  458:d=9  hl=2 l=   3 prim:          OBJECT            :organizationalUnitName
+  463:d=9  hl=2 l=   2 prim:          UTF8STRING        :IT
+  467:d=7  hl=2 l=  20 cons:        SET               
+  469:d=8  hl=2 l=  18 cons:         SEQUENCE          
+  471:d=9  hl=2 l=   3 prim:          OBJECT            :commonName
+  476:d=9  hl=2 l=  11 prim:          UTF8STRING        :Ivanov Test
+  489:d=7  hl=2 l=  31 cons:        SET               
+  491:d=8  hl=2 l=  29 cons:         SEQUENCE          
+  493:d=9  hl=2 l=   9 prim:          OBJECT            :emailAddress
+  504:d=9  hl=2 l=  16 prim:          IA5STRING         :test@example.com
+  522:d=6  hl=2 l= 102 cons:       SEQUENCE          
+  524:d=7  hl=2 l=  31 cons:        SEQUENCE          
+  526:d=8  hl=2 l=   8 prim:         OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+  536:d=8  hl=2 l=  19 cons:         SEQUENCE          
+  538:d=9  hl=2 l=   7 prim:          OBJECT            :id-GostR3410-2001-CryptoPro-A-ParamSet
+  547:d=9  hl=2 l=   8 prim:          OBJECT            :GOST R 34.11-2012 with 256 bit hash
+  557:d=7  hl=2 l=  67 prim:        BIT STRING        
+      0000 - 00 04 40 f4 30 72 d7 81-d0 c8 f0 13 cc c2 e8 1b   ..@.0r..........
+      0010 - 5c 4c b4 cb 60 9b 9a 53-dc 88 e7 2f a4 32 10 a4   \L..`..S.../.2..
+      0020 - b7 7d 7b 23 07 61 c8 ee-56 52 fb a9 00 32 b0 41   .}{#.a..VR...2.A
+      0030 - 8c ad db e4 bc 8d 21 04-9c 9a b6 0e 00 41 f3 24   ......!......A.$
+      0040 - ee 8b a5                                          ...
+  626:d=6  hl=4 l= 648 cons:       cont [ 3 ]        
+  630:d=7  hl=4 l= 644 cons:        SEQUENCE          
+  634:d=8  hl=2 l=  29 cons:         SEQUENCE          
+  636:d=9  hl=2 l=   3 prim:          OBJECT            :X509v3 Subject Key Identifier
+  641:d=9  hl=2 l=  22 prim:          OCTET STRING      
+      0000 - 04 14 bd d2 bb fe 2e f3-0a 39 54 84 d1 b3 e6 b4   .........9T.....
+      0010 - f2 2e a1 ad a9 e0                                 ......
+  665:d=8  hl=2 l=  31 cons:         SEQUENCE          
+  667:d=9  hl=2 l=   3 prim:          OBJECT            :X509v3 Authority Key Identifier
+  672:d=9  hl=2 l=  24 prim:          OCTET STRING      
+      0000 - 30 16 80 14 60 aa b5 28-73 5b e3 6e 6a 0b e6 bf   0...`..(s[.nj...
+      0010 - 4d a2 33 eb d0 52 49 7b-                          M.3..RI{
+  698:d=8  hl=4 l= 274 cons:         SEQUENCE          
+  702:d=9  hl=2 l=   3 prim:          OBJECT            :X509v3 CRL Distribution Points
+  707:d=9  hl=4 l= 265 prim:          OCTET STRING      
+      0000 - 30 82 01 05 30 82 01 01-a0 81 fe a0 81 fb 86 81   0...0...........
+      0010 - b6 68 74 74 70 3a 2f 2f-74 65 73 74 67 6f 73 74   .http://testgost
+      0020 - 32 30 31 32 2e 63 72 79-70 74 6f 70 72 6f 2e 72   2012.cryptopro.r
+      0030 - 75 2f 43 65 72 74 45 6e-72 6f 6c 6c 2f 21 30 34   u/CertEnroll/!04
+      0040 - 32 32 21 30 34 33 35 21-30 34 34 31 21 30 34 34   22!0435!0441!044
+      0050 - 32 21 30 34 33 65 21 30-34 33 32 21 30 34 34 62   2!043e!0432!044b
+      0060 - 21 30 34 33 39 25 32 30-21 30 34 32 33 21 30 34   !0439%20!0423!04
+      0070 - 32 36 25 32 30 21 30 34-31 65 21 30 34 31 65 21   26%20!041e!041e!
+      0080 - 30 34 31 65 25 32 30 21-30 30 32 32 21 30 34 31   041e%20!0022!041
+      0090 - 61 21 30 34 32 30 21 30-34 31 38 21 30 34 31 66   a!0420!0418!041f
+      00a0 - 21 30 34 32 32 21 30 34-31 65 2d 21 30 34 31 66   !0422!041e-!041f
+      00b0 - 21 30 34 32 30 21 30 34-31 65 21 30 30 32 32 28   !0420!041e!0022(
+      00c0 - 32 30 29 2e 63 72 6c 86-40 68 74 74 70 3a 2f 2f   20).crl.@http://
+      00d0 - 74 65 73 74 67 6f 73 74-32 30 31 32 2e 63 72 79   testgost2012.cry
+      00e0 - 70 74 6f 70 72 6f 2e 72-75 2f 43 65 72 74 45 6e   ptopro.ru/CertEn
+      00f0 - 72 6f 6c 6c 2f 74 65 73-74 67 6f 73 74 32 30 31   roll/testgost201
+      0100 - 32 28 32 30 29 2e 63 72-6c                        2(20).crl
+  976:d=8  hl=4 l= 298 cons:         SEQUENCE          
+  980:d=9  hl=2 l=   8 prim:          OBJECT            :Authority Information Access
+  990:d=9  hl=4 l= 284 prim:          OCTET STRING      
+      0000 - 30 82 01 18 30 3f 06 08-2b 06 01 05 05 07 30 01   0...0?..+.....0.
+      0010 - 86 33 68 74 74 70 3a 2f-2f 74 65 73 74 67 6f 73   .3http://testgos
+      0020 - 74 32 30 31 32 2e 63 72-79 70 74 6f 70 72 6f 2e   t2012.cryptopro.
+      0030 - 72 75 2f 6f 63 73 70 32-30 31 32 67 2f 6f 63 73   ru/ocsp2012g/ocs
+      0040 - 70 2e 73 72 66 30 41 06-08 2b 06 01 05 05 07 30   p.srf0A..+.....0
+      0050 - 01 86 35 68 74 74 70 3a-2f 2f 74 65 73 74 67 6f   ..5http://testgo
+      0060 - 73 74 32 30 31 32 2e 63-72 79 70 74 6f 70 72 6f   st2012.cryptopro
+      0070 - 2e 72 75 2f 6f 63 73 70-32 30 31 32 67 73 74 2f   .ru/ocsp2012gst/
+      0080 - 6f 63 73 70 2e 73 72 66-30 4c 06 08 2b 06 01 05   ocsp.srf0L..+...
+      0090 - 05 07 30 02 86 40 68 74-74 70 3a 2f 2f 74 65 73   ..0..@http://tes
+      00a0 - 74 67 6f 73 74 32 30 31-32 2e 63 72 79 70 74 6f   tgost2012.crypto
+      00b0 - 70 72 6f 2e 72 75 2f 43-65 72 74 45 6e 72 6f 6c   pro.ru/CertEnrol
+      00c0 - 6c 2f 74 65 73 74 67 6f-73 74 32 30 31 32 28 32   l/testgost2012(2
+      00d0 - 30 29 2e 63 72 74 30 44-06 08 2b 06 01 05 05 07   0).crt0D..+.....
+      00e0 - 30 02 86 38 68 74 74 70-3a 2f 2f 74 65 73 74 67   0..8http://testg
+      00f0 - 6f 73 74 32 30 31 32 2e-63 72 79 70 74 6f 70 72   ost2012.cryptopr
+      0100 - 6f 2e 72 75 2f 43 65 72-74 45 6e 72 6f 6c 6c 2f   o.ru/CertEnroll/
+      0110 - 74 65 73 74 72 6f 6f 74-2e 70 37 62               testroot.p7b
+ 1278:d=5  hl=2 l=  10 cons:      SEQUENCE          
+ 1280:d=6  hl=2 l=   8 prim:       OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+ 1290:d=5  hl=2 l=  65 prim:      BIT STRING        
+      0000 - 00 04 d1 c7 d3 c3 11 b0-03 4e 87 bc 56 38 1a f0   .........N..V8..
+      0010 - 65 6a 51 b6 71 7c ab db-96 a7 45 23 64 2d 00 28   ejQ.q|....E#d-.(
+      0020 - 9a 7c 84 73 8c ae 1c 29-d8 01 ab ba 25 df 2d 3b   .|.s...)....%.-;
+      0030 - bf f3 ee 81 dc c8 3b 9a-33 4c 07 db e8 85 5c 2d   ......;.3L....\-
+      0040 - e4                                                .
+ 1357:d=4  hl=4 l=1311 cons:     SEQUENCE          
+ 1361:d=5  hl=4 l=1228 cons:      SEQUENCE          
+ 1365:d=6  hl=2 l=   3 cons:       cont [ 0 ]        
+ 1367:d=7  hl=2 l=   1 prim:        INTEGER           :02
+ 1370:d=6  hl=2 l=  16 prim:       INTEGER           :177F1EF8C798CC9B4F699ABE83E644CC
+ 1388:d=6  hl=2 l=  10 cons:       SEQUENCE          
+ 1390:d=7  hl=2 l=   8 prim:        OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+ 1400:d=6  hl=4 l= 266 cons:       SEQUENCE          
+ 1404:d=7  hl=2 l=  24 cons:        SET               
+ 1406:d=8  hl=2 l=  22 cons:         SEQUENCE          
+ 1408:d=9  hl=2 l=   5 prim:          OBJECT            :OGRN
+ 1415:d=9  hl=2 l=  13 prim:          NUMERICSTRING     :1234567890123
+ 1430:d=7  hl=2 l=  26 cons:        SET               
+ 1432:d=8  hl=2 l=  24 cons:         SEQUENCE          
+ 1434:d=9  hl=2 l=   8 prim:          OBJECT            :INN
+ 1444:d=9  hl=2 l=  12 prim:          NUMERICSTRING     :001234567890
+ 1458:d=7  hl=2 l=  47 cons:        SET               
+ 1460:d=8  hl=2 l=  45 cons:         SEQUENCE          
+ 1462:d=9  hl=2 l=   3 prim:          OBJECT            :streetAddress
+ 1467:d=9  hl=2 l=  38 prim:          UTF8STRING        :ул. Сущёвский вал д. 18
+ 1507:d=7  hl=2 l=  11 cons:        SET               
+ 1509:d=8  hl=2 l=   9 cons:         SEQUENCE          
+ 1511:d=9  hl=2 l=   3 prim:          OBJECT            :countryName
+ 1516:d=9  hl=2 l=   2 prim:          PRINTABLESTRING   :RU
+ 1520:d=7  hl=2 l=  25 cons:        SET               
+ 1522:d=8  hl=2 l=  23 cons:         SEQUENCE          
+ 1524:d=9  hl=2 l=   3 prim:          OBJECT            :stateOrProvinceName
+ 1529:d=9  hl=2 l=  16 prim:          UTF8STRING        :г. Москва
+ 1547:d=7  hl=2 l=  21 cons:        SET               
+ 1549:d=8  hl=2 l=  19 cons:         SEQUENCE          
+ 1551:d=9  hl=2 l=   3 prim:          OBJECT            :localityName
+ 1556:d=9  hl=2 l=  12 prim:          UTF8STRING        :Москва
+ 1570:d=7  hl=2 l=  37 cons:        SET               
+ 1572:d=8  hl=2 l=  35 cons:         SEQUENCE          
+ 1574:d=9  hl=2 l=   3 prim:          OBJECT            :organizationName
+ 1579:d=9  hl=2 l=  28 prim:          UTF8STRING        :ООО "КРИПТО-ПРО"
+ 1609:d=7  hl=2 l=  59 cons:        SET               
+ 1611:d=8  hl=2 l=  57 cons:         SEQUENCE          
+ 1613:d=9  hl=2 l=   3 prim:          OBJECT            :commonName
+ 1618:d=9  hl=2 l=  50 prim:          UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 1670:d=6  hl=2 l=  30 cons:       SEQUENCE          
+ 1672:d=7  hl=2 l=  13 prim:        UTCTIME           :260529114515Z
+ 1687:d=7  hl=2 l=  13 prim:        UTCTIME           :260829115515Z
+ 1702:d=6  hl=4 l= 266 cons:       SEQUENCE          
+ 1706:d=7  hl=2 l=  24 cons:        SET               
+ 1708:d=8  hl=2 l=  22 cons:         SEQUENCE          
+ 1710:d=9  hl=2 l=   5 prim:          OBJECT            :OGRN
+ 1717:d=9  hl=2 l=  13 prim:          NUMERICSTRING     :1234567890123
+ 1732:d=7  hl=2 l=  26 cons:        SET               
+ 1734:d=8  hl=2 l=  24 cons:         SEQUENCE          
+ 1736:d=9  hl=2 l=   8 prim:          OBJECT            :INN
+ 1746:d=9  hl=2 l=  12 prim:          NUMERICSTRING     :001234567890
+ 1760:d=7  hl=2 l=  47 cons:        SET               
+ 1762:d=8  hl=2 l=  45 cons:         SEQUENCE          
+ 1764:d=9  hl=2 l=   3 prim:          OBJECT            :streetAddress
+ 1769:d=9  hl=2 l=  38 prim:          UTF8STRING        :ул. Сущёвский вал д. 18
+ 1809:d=7  hl=2 l=  11 cons:        SET               
+ 1811:d=8  hl=2 l=   9 cons:         SEQUENCE          
+ 1813:d=9  hl=2 l=   3 prim:          OBJECT            :countryName
+ 1818:d=9  hl=2 l=   2 prim:          PRINTABLESTRING   :RU
+ 1822:d=7  hl=2 l=  25 cons:        SET               
+ 1824:d=8  hl=2 l=  23 cons:         SEQUENCE          
+ 1826:d=9  hl=2 l=   3 prim:          OBJECT            :stateOrProvinceName
+ 1831:d=9  hl=2 l=  16 prim:          UTF8STRING        :г. Москва
+ 1849:d=7  hl=2 l=  21 cons:        SET               
+ 1851:d=8  hl=2 l=  19 cons:         SEQUENCE          
+ 1853:d=9  hl=2 l=   3 prim:          OBJECT            :localityName
+ 1858:d=9  hl=2 l=  12 prim:          UTF8STRING        :Москва
+ 1872:d=7  hl=2 l=  37 cons:        SET               
+ 1874:d=8  hl=2 l=  35 cons:         SEQUENCE          
+ 1876:d=9  hl=2 l=   3 prim:          OBJECT            :organizationName
+ 1881:d=9  hl=2 l=  28 prim:          UTF8STRING        :ООО "КРИПТО-ПРО"
+ 1911:d=7  hl=2 l=  59 cons:        SET               
+ 1913:d=8  hl=2 l=  57 cons:         SEQUENCE          
+ 1915:d=9  hl=2 l=   3 prim:          OBJECT            :commonName
+ 1920:d=9  hl=2 l=  50 prim:          UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 1972:d=6  hl=2 l= 102 cons:       SEQUENCE          
+ 1974:d=7  hl=2 l=  31 cons:        SEQUENCE          
+ 1976:d=8  hl=2 l=   8 prim:         OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+ 1986:d=8  hl=2 l=  19 cons:         SEQUENCE          
+ 1988:d=9  hl=2 l=   7 prim:          OBJECT            :id-GostR3410-2001-CryptoPro-A-ParamSet
+ 1997:d=9  hl=2 l=   8 prim:          OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 2007:d=7  hl=2 l=  67 prim:        BIT STRING        
+      0000 - 00 04 40 35 3c f2 7e c6-24 7a c1 6e d7 13 a1 53   ..@5<.~.$z.n...S
+      0010 - f2 3e 01 71 26 69 b7 76-21 ed c6 18 35 d1 7b 08   .>.q&i.v!...5.{.
+      0020 - 93 68 e1 6d aa d7 56 4d-81 5b e0 72 c4 d2 d7 4b   .h.m..VM.[.r...K
+      0030 - 52 33 0c 63 89 18 57 9e-c8 6b 84 e8 98 6c be 8b   R3.c..W..k...l..
+      0040 - a8 db 70                                          ..p
+ 2076:d=6  hl=4 l= 513 cons:       cont [ 3 ]        
+ 2080:d=7  hl=4 l= 509 cons:        SEQUENCE          
+ 2084:d=8  hl=2 l=  54 cons:         SEQUENCE          
+ 2086:d=9  hl=2 l=   5 prim:          OBJECT            :Signing Tool of Subject
+ 2093:d=9  hl=2 l=  45 prim:          OCTET STRING      
+      0000 - 0c 2b 22 d0 9a d1 80 d0-b8 d0 bf d1 82 d0 be d0   .+".............
+      0010 - 9f d1 80 d0 be 20 43 53-50 22 20 28 d0 b2 d0 b5   ..... CSP" (....
+      0020 - d1 80 d1 81 d0 b8 d1 8f-20 34 2e 30 29            ........ 4.0)
+ 2140:d=8  hl=4 l= 289 cons:         SEQUENCE          
+ 2144:d=9  hl=2 l=   5 prim:          OBJECT            :Signing Tool of Issuer
+ 2151:d=9  hl=4 l= 278 prim:          OCTET STRING      
+      0000 - 30 82 01 12 0c 2b 22 d0-9a d1 80 d0 b8 d0 bf d1   0....+".........
+      0010 - 82 d0 be d0 9f d1 80 d0-be 20 43 53 50 22 20 28   ......... CSP" (
+      0020 - d0 b2 d0 b5 d1 80 d1 81-d0 b8 d1 8f 20 34 2e 30   ............ 4.0
+      0030 - 29 0c 41 d0 a3 d0 b4 d0-be d1 81 d1 82 d0 be d0   ).A.............
+      0040 - b2 d0 b5 d1 80 d1 8f d1-8e d1 89 d0 b8 d0 b9 20   ............... 
+      0050 - d1 86 d0 b5 d0 bd d1 82-d1 80 20 22 d0 9a d1 80   .......... "....
+      0060 - d0 b8 d0 bf d1 82 d0 be-d0 9f d1 80 d0 be 20 d0   .............. .
+      0070 - a3 d0 a6 22 0c 4f d0 a1-d0 b5 d1 80 d1 82 d0 b8   ...".O..........
+      0080 - d1 84 d0 b8 d0 ba d0 b0-d1 82 20 d1 81 d0 be d0   .......... .....
+      0090 - be d1 82 d0 b2 d0 b5 d1-82 d1 81 d1 82 d0 b2 d0   ................
+      00a0 - b8 d1 8f 20 e2 84 96 20-d0 a1 d0 a4 2f 30 30 30   ... ... ..../000
+      00b0 - 2d 30 30 30 30 20 d0 be-d1 82 20 30 30 2e 30 30   -0000 .... 00.00
+      00c0 - 2e 30 30 30 30 0c 4f d0-a1 d0 b5 d1 80 d1 82 d0   .0000.O.........
+      00d0 - b8 d1 84 d0 b8 d0 ba d0-b0 d1 82 20 d1 81 d0 be   ........... ....
+      00e0 - d0 be d1 82 d0 b2 d0 b5-d1 82 d1 81 d1 82 d0 b2   ................
+      00f0 - d0 b8 d1 8f 20 e2 84 96-20 d0 a1 d0 a4 2f 30 30   .... ... ..../00
+      0100 - 30 2d 30 30 30 30 20 d0-be d1 82 20 30 30 2e 30   0-0000 .... 00.0
+      0110 - 30 2e 30 30 30 30                                 0.0000
+ 2433:d=8  hl=2 l=  11 cons:         SEQUENCE          
+ 2435:d=9  hl=2 l=   3 prim:          OBJECT            :X509v3 Key Usage
+ 2440:d=9  hl=2 l=   4 prim:          OCTET STRING      
+      0000 - 03 02 01 86                                       ....
+ 2446:d=8  hl=2 l=  18 cons:         SEQUENCE          
+ 2448:d=9  hl=2 l=   3 prim:          OBJECT            :X509v3 Basic Constraints
+ 2453:d=9  hl=2 l=   1 prim:          BOOLEAN           :255
+ 2456:d=9  hl=2 l=   8 prim:          OCTET STRING      
+      0000 - 30 06 01 01 ff 02 01 00-                          0.......
+ 2466:d=8  hl=2 l=  29 cons:         SEQUENCE          
+ 2468:d=9  hl=2 l=   3 prim:          OBJECT            :X509v3 Subject Key Identifier
+ 2473:d=9  hl=2 l=  22 prim:          OCTET STRING      
+      0000 - 04 14 60 aa b5 28 73 5b-e3 6e 6a 0b e6 bf 4d a2   ..`..(s[.nj...M.
+      0010 - 33 eb d0 52 49 7b                                 3..RI{
+ 2497:d=8  hl=2 l=  18 cons:         SEQUENCE          
+ 2499:d=9  hl=2 l=   9 prim:          OBJECT            :1.3.6.1.4.1.311.21.1
+ 2510:d=9  hl=2 l=   5 prim:          OCTET STRING      
+      0000 - 02 03 14 00 14                                    .....
+ 2517:d=8  hl=2 l=  37 cons:         SEQUENCE          
+ 2519:d=9  hl=2 l=   3 prim:          OBJECT            :X509v3 Certificate Policies
+ 2524:d=9  hl=2 l=  30 prim:          OCTET STRING      
+      0000 - 30 1c 30 08 06 06 2a 85-03 64 71 01 30 08 06 06   0.0...*..dq.0...
+      0010 - 2a 85 03 64 71 02 30 06-06 04 55 1d 20 00         *..dq.0...U. .
+ 2556:d=8  hl=2 l=  35 cons:         SEQUENCE          
+ 2558:d=9  hl=2 l=   9 prim:          OBJECT            :1.3.6.1.4.1.311.21.2
+ 2569:d=9  hl=2 l=  22 prim:          OCTET STRING      
+      0000 - 04 14 d6 e3 53 fe d7 bd-7f e6 50 ed b2 30 18 51   ....S.....P..0.Q
+      0010 - 29 9b 4b 2a c5 00                                 ).K*..
+ 2593:d=5  hl=2 l=  10 cons:      SEQUENCE          
+ 2595:d=6  hl=2 l=   8 prim:       OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+ 2605:d=5  hl=2 l=  65 prim:      BIT STRING        
+      0000 - 00 68 26 59 88 8d 36 45-a7 20 29 a1 68 59 64 fc   .h&Y..6E. ).hYd.
+      0010 - 3d 23 bb c7 1b 8f 0f f4-9b 98 1c 91 fc 42 e0 06   =#...........B..
+      0020 - 75 cc 92 07 eb 5a 59 d7-63 99 93 67 95 60 2b 92   u....ZY.c..g.`+.
+      0030 - 07 b8 75 a4 2a d4 d5 1b-ab 04 c1 3d 7e 13 2b ea   ..u.*......=~.+.
+      0040 - 2b                                                +
+ 2672:d=3  hl=4 l=20587 cons:    SET               
+ 2676:d=4  hl=4 l=20583 cons:     SEQUENCE          
+ 2680:d=5  hl=2 l=   1 prim:      INTEGER           :01
+ 2683:d=5  hl=4 l= 291 cons:      SEQUENCE          
+ 2687:d=6  hl=4 l= 266 cons:       SEQUENCE          
+ 2691:d=7  hl=2 l=  24 cons:        SET               
+ 2693:d=8  hl=2 l=  22 cons:         SEQUENCE          
+ 2695:d=9  hl=2 l=   5 prim:          OBJECT            :OGRN
+ 2702:d=9  hl=2 l=  13 prim:          NUMERICSTRING     :1234567890123
+ 2717:d=7  hl=2 l=  26 cons:        SET               
+ 2719:d=8  hl=2 l=  24 cons:         SEQUENCE          
+ 2721:d=9  hl=2 l=   8 prim:          OBJECT            :INN
+ 2731:d=9  hl=2 l=  12 prim:          NUMERICSTRING     :001234567890
+ 2745:d=7  hl=2 l=  47 cons:        SET               
+ 2747:d=8  hl=2 l=  45 cons:         SEQUENCE          
+ 2749:d=9  hl=2 l=   3 prim:          OBJECT            :streetAddress
+ 2754:d=9  hl=2 l=  38 prim:          UTF8STRING        :ул. Сущёвский вал д. 18
+ 2794:d=7  hl=2 l=  11 cons:        SET               
+ 2796:d=8  hl=2 l=   9 cons:         SEQUENCE          
+ 2798:d=9  hl=2 l=   3 prim:          OBJECT            :countryName
+ 2803:d=9  hl=2 l=   2 prim:          PRINTABLESTRING   :RU
+ 2807:d=7  hl=2 l=  25 cons:        SET               
+ 2809:d=8  hl=2 l=  23 cons:         SEQUENCE          
+ 2811:d=9  hl=2 l=   3 prim:          OBJECT            :stateOrProvinceName
+ 2816:d=9  hl=2 l=  16 prim:          UTF8STRING        :г. Москва
+ 2834:d=7  hl=2 l=  21 cons:        SET               
+ 2836:d=8  hl=2 l=  19 cons:         SEQUENCE          
+ 2838:d=9  hl=2 l=   3 prim:          OBJECT            :localityName
+ 2843:d=9  hl=2 l=  12 prim:          UTF8STRING        :Москва
+ 2857:d=7  hl=2 l=  37 cons:        SET               
+ 2859:d=8  hl=2 l=  35 cons:         SEQUENCE          
+ 2861:d=9  hl=2 l=   3 prim:          OBJECT            :organizationName
+ 2866:d=9  hl=2 l=  28 prim:          UTF8STRING        :ООО "КРИПТО-ПРО"
+ 2896:d=7  hl=2 l=  59 cons:        SET               
+ 2898:d=8  hl=2 l=  57 cons:         SEQUENCE          
+ 2900:d=9  hl=2 l=   3 prim:          OBJECT            :commonName
+ 2905:d=9  hl=2 l=  50 prim:          UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 2957:d=6  hl=2 l=  19 prim:       INTEGER           :7C0033E8171401F70ED462DC1100140033E817
+ 2978:d=5  hl=2 l=  12 cons:      SEQUENCE          
+ 2980:d=6  hl=2 l=   8 prim:       OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 2990:d=6  hl=2 l=   0 prim:       NULL              
+ 2992:d=5  hl=4 l= 489 cons:      cont [ 0 ]        
+ 2996:d=6  hl=2 l=  24 cons:       SEQUENCE          
+ 2998:d=7  hl=2 l=   9 prim:        OBJECT            :contentType
+ 3009:d=7  hl=2 l=  11 cons:        SET               
+ 3011:d=8  hl=2 l=   9 prim:         OBJECT            :pkcs7-data
+ 3022:d=6  hl=2 l=  28 cons:       SEQUENCE          
+ 3024:d=7  hl=2 l=   9 prim:        OBJECT            :signingTime
+ 3035:d=7  hl=2 l=  15 cons:        SET               
+ 3037:d=8  hl=2 l=  13 prim:         UTCTIME           :260531172934Z
+ 3052:d=6  hl=2 l=  47 cons:       SEQUENCE          
+ 3054:d=7  hl=2 l=   9 prim:        OBJECT            :messageDigest
+ 3065:d=7  hl=2 l=  34 cons:        SET               
+ 3067:d=8  hl=2 l=  32 prim:         OCTET STRING      
+      0000 - 6e 4c c1 ae 11 fb 9a 38-c5 b1 6f 77 f5 ee d1 d5   nL.....8..ow....
+      0010 - 90 22 81 f3 90 65 29 14-dd 22 c9 0c 7d b7 e0 da   ."...e).."..}...
+ 3101:d=6  hl=4 l= 380 cons:       SEQUENCE          
+ 3105:d=7  hl=2 l=  11 prim:        OBJECT            :id-smime-aa-signingCertificateV2
+ 3118:d=7  hl=4 l= 363 cons:        SET               
+ 3122:d=8  hl=4 l= 359 cons:         SEQUENCE          
+ 3126:d=9  hl=4 l= 355 cons:          SEQUENCE          
+ 3130:d=10 hl=4 l= 351 cons:           SEQUENCE          
+ 3134:d=11 hl=2 l=  12 cons:            SEQUENCE          
+ 3136:d=12 hl=2 l=   8 prim:             OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 3146:d=12 hl=2 l=   0 prim:             NULL              
+ 3148:d=11 hl=2 l=  32 prim:            OCTET STRING      
+      0000 - e0 d9 c8 64 09 88 68 c5-0d 0a 64 10 ea 5f 73 de   ...d..h...d.._s.
+      0010 - 4c 5c d6 9e 08 e6 2e a1-ea 9b 63 26 7c a6 ac de   L\........c&|...
+ 3182:d=11 hl=4 l= 299 cons:            SEQUENCE          
+ 3186:d=12 hl=4 l= 274 cons:             SEQUENCE          
+ 3190:d=13 hl=4 l= 270 cons:              cont [ 4 ]        
+ 3194:d=14 hl=4 l= 266 cons:               SEQUENCE          
+ 3198:d=15 hl=2 l=  24 cons:                SET               
+ 3200:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+ 3202:d=17 hl=2 l=   5 prim:                  OBJECT            :OGRN
+ 3209:d=17 hl=2 l=  13 prim:                  NUMERICSTRING     :1234567890123
+ 3224:d=15 hl=2 l=  26 cons:                SET               
+ 3226:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+ 3228:d=17 hl=2 l=   8 prim:                  OBJECT            :INN
+ 3238:d=17 hl=2 l=  12 prim:                  NUMERICSTRING     :001234567890
+ 3252:d=15 hl=2 l=  47 cons:                SET               
+ 3254:d=16 hl=2 l=  45 cons:                 SEQUENCE          
+ 3256:d=17 hl=2 l=   3 prim:                  OBJECT            :streetAddress
+ 3261:d=17 hl=2 l=  38 prim:                  UTF8STRING        :ул. Сущёвский вал д. 18
+ 3301:d=15 hl=2 l=  11 cons:                SET               
+ 3303:d=16 hl=2 l=   9 cons:                 SEQUENCE          
+ 3305:d=17 hl=2 l=   3 prim:                  OBJECT            :countryName
+ 3310:d=17 hl=2 l=   2 prim:                  PRINTABLESTRING   :RU
+ 3314:d=15 hl=2 l=  25 cons:                SET               
+ 3316:d=16 hl=2 l=  23 cons:                 SEQUENCE          
+ 3318:d=17 hl=2 l=   3 prim:                  OBJECT            :stateOrProvinceName
+ 3323:d=17 hl=2 l=  16 prim:                  UTF8STRING        :г. Москва
+ 3341:d=15 hl=2 l=  21 cons:                SET               
+ 3343:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+ 3345:d=17 hl=2 l=   3 prim:                  OBJECT            :localityName
+ 3350:d=17 hl=2 l=  12 prim:                  UTF8STRING        :Москва
+ 3364:d=15 hl=2 l=  37 cons:                SET               
+ 3366:d=16 hl=2 l=  35 cons:                 SEQUENCE          
+ 3368:d=17 hl=2 l=   3 prim:                  OBJECT            :organizationName
+ 3373:d=17 hl=2 l=  28 prim:                  UTF8STRING        :ООО "КРИПТО-ПРО"
+ 3403:d=15 hl=2 l=  59 cons:                SET               
+ 3405:d=16 hl=2 l=  57 cons:                 SEQUENCE          
+ 3407:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+ 3412:d=17 hl=2 l=  50 prim:                  UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 3464:d=12 hl=2 l=  19 prim:             INTEGER           :7C0033E8171401F70ED462DC1100140033E817
+ 3485:d=5  hl=2 l=  12 cons:      SEQUENCE          
+ 3487:d=6  hl=2 l=   8 prim:       OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+ 3497:d=6  hl=2 l=   0 prim:       NULL              
+ 3499:d=5  hl=2 l=  64 prim:      OCTET STRING      
+      0000 - d2 a5 a0 ee 09 f6 d8 a4-47 8b 83 94 d7 bc ce 13   ........G.......
+      0010 - 06 ea 23 8c 30 be 9b c5-25 dd ea 33 c6 a5 f4 63   ..#.0...%..3...c
+      0020 - eb 74 9c d3 a1 b1 01 06-a9 67 b6 86 9a 5b ee a7   .t.......g...[..
+      0030 - a2 36 ba f5 6b f4 16 03-75 94 68 61 7f 15 5a 17   .6..k...u.ha..Z.
+ 3565:d=5  hl=4 l=19694 cons:      cont [ 1 ]        
+ 3569:d=6  hl=2 l= 118 cons:       SEQUENCE          
+ 3571:d=7  hl=2 l=  11 prim:        OBJECT            :id-smime-aa-ets-RevocationRefs
+ 3584:d=7  hl=2 l= 103 cons:        SET               
+ 3586:d=8  hl=2 l= 101 cons:         SEQUENCE          
+ 3588:d=9  hl=2 l=  99 cons:          SEQUENCE          
+ 3590:d=10 hl=2 l=  97 cons:           cont [ 1 ]        
+ 3592:d=11 hl=2 l=  95 cons:            SEQUENCE          
+ 3594:d=12 hl=2 l=  93 cons:             SEQUENCE          
+ 3596:d=13 hl=2 l=  91 cons:              SEQUENCE          
+ 3598:d=14 hl=2 l=  41 cons:               SEQUENCE          
+ 3600:d=15 hl=2 l=  22 cons:                cont [ 2 ]        
+ 3602:d=16 hl=2 l=  20 prim:                 OCTET STRING      
+      0000 - 50 83 cb e8 d2 6d 82 82-c5 ee 76 66 41 5d a5 29   P....m....vfA].)
+      0010 - f9 05 ea c1                                       ....
+ 3624:d=15 hl=2 l=  15 prim:                GENERALIZEDTIME   :20260531172927Z
+ 3641:d=14 hl=2 l=  46 cons:               SEQUENCE          
+ 3643:d=15 hl=2 l=  10 cons:                SEQUENCE          
+ 3645:d=16 hl=2 l=   8 prim:                 OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 3655:d=15 hl=2 l=  32 prim:                OCTET STRING      
+      0000 - c6 78 93 de 3e f3 0e 18-30 b6 e4 7f d3 dd c5 43   .x..>...0......C
+      0010 - 4a 49 9c 31 86 74 01 56-b0 d0 2a 0d b6 1c 11 42   JI.1.t.V..*....B
+ 3689:d=6  hl=4 l= 369 cons:       SEQUENCE          
+ 3693:d=7  hl=2 l=  11 prim:        OBJECT            :id-smime-aa-ets-revocationValues
+ 3706:d=7  hl=4 l= 352 cons:        SET               
+ 3710:d=8  hl=4 l= 348 cons:         SEQUENCE          
+ 3714:d=9  hl=4 l= 344 cons:          cont [ 1 ]        
+ 3718:d=10 hl=4 l= 340 cons:           SEQUENCE          
+ 3722:d=11 hl=4 l= 336 cons:            SEQUENCE          
+ 3726:d=12 hl=3 l= 254 cons:             SEQUENCE          
+ 3729:d=13 hl=2 l=  22 cons:              cont [ 2 ]        
+ 3731:d=14 hl=2 l=  20 prim:               OCTET STRING      
+      0000 - 50 83 cb e8 d2 6d 82 82-c5 ee 76 66 41 5d a5 29   P....m....vfA].)
+      0010 - f9 05 ea c1                                       ....
+ 3753:d=13 hl=2 l=  15 prim:              GENERALIZEDTIME   :20260531172927Z
+ 3770:d=13 hl=3 l= 173 cons:              SEQUENCE          
+ 3773:d=14 hl=3 l= 170 cons:               SEQUENCE          
+ 3776:d=15 hl=2 l= 103 cons:                SEQUENCE          
+ 3778:d=16 hl=2 l=  12 cons:                 SEQUENCE          
+ 3780:d=17 hl=2 l=   8 prim:                  OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 3790:d=17 hl=2 l=   0 prim:                  NULL              
+ 3792:d=16 hl=2 l=  32 prim:                 OCTET STRING      
+      0000 - 15 5f 1b 96 a6 e8 2c 81-87 67 51 cd c0 cb 99 ca   ._....,..gQ.....
+      0010 - d1 00 13 11 17 6d 30 7a-6e c8 f5 4f c5 52 f4 6f   .....m0zn..O.R.o
+ 3826:d=16 hl=2 l=  32 prim:                 OCTET STRING      
+      0000 - 8e 81 2f fc b2 f2 73 9a-a3 11 9f 1c f7 1d c1 a1   ../...s.........
+      0010 - a9 dc cf bc c4 8c 6f 05-30 bf 5e 76 6a 55 34 69   ......o.0.^vjU4i
+ 3860:d=16 hl=2 l=  19 prim:                 INTEGER           :7C0033E8171401F70ED462DC1100140033E817
+ 3881:d=15 hl=2 l=   0 prim:                cont [ 0 ]        
+ 3883:d=15 hl=2 l=  15 prim:                GENERALIZEDTIME   :20260531172927Z
+ 3900:d=15 hl=2 l=  44 cons:                cont [ 1 ]        
+ 3902:d=16 hl=2 l=  42 cons:                 SEQUENCE          
+ 3904:d=17 hl=2 l=  40 cons:                  SEQUENCE          
+ 3906:d=18 hl=2 l=   9 prim:                   OBJECT            :OCSP CRL ID
+ 3917:d=18 hl=2 l=  27 prim:                   OCTET STRING      
+      0000 - 30 19 a1 04 02 02 0c 61-a2 11 18 0f 32 30 32 36   0......a....2026
+      0010 - 30 35 33 31 31 31 34 35-31 37 5a                  0531114517Z
+ 3946:d=13 hl=2 l=  35 cons:              cont [ 1 ]        
+ 3948:d=14 hl=2 l=  33 cons:               SEQUENCE          
+ 3950:d=15 hl=2 l=  31 cons:                SEQUENCE          
+ 3952:d=16 hl=2 l=   9 prim:                 OBJECT            :OCSP Nonce
+ 3963:d=16 hl=2 l=  18 prim:                 OCTET STRING      
+      0000 - 04 10 8e 9d b6 76 9b 93-fd 85 f5 02 4c fd b1 ef   .....v......L...
+      0010 - 70 b8                                             p.
+ 3983:d=12 hl=2 l=  10 cons:             SEQUENCE          
+ 3985:d=13 hl=2 l=   8 prim:              OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+ 3995:d=12 hl=2 l=  65 prim:             BIT STRING        
+      0000 - 00 eb 49 7a e0 23 e0 15-59 ae 46 d9 a5 58 89 2a   ..Iz.#..Y.F..X.*
+      0010 - ab 7d 23 17 bf a4 51 ff-0d 08 a8 ea 72 77 74 f0   .}#...Q.....rwt.
+      0020 - ad 86 aa d2 0f 18 a9 ce-f1 80 28 b9 0c d7 8b 33   ..........(....3
+      0030 - 6f 21 eb 99 54 12 77 0b-ad 0b b9 62 5d 93 a9 1f   o!..T.w....b]...
+      0040 - e5                                                .
+ 4062:d=6  hl=4 l= 728 cons:       SEQUENCE          
+ 4066:d=7  hl=2 l=  11 prim:        OBJECT            :id-smime-aa-ets-CertificateRefs
+ 4079:d=7  hl=4 l= 711 cons:        SET               
+ 4083:d=8  hl=4 l= 707 cons:         SEQUENCE          
+ 4087:d=9  hl=4 l= 348 cons:          SEQUENCE          
+ 4091:d=10 hl=2 l=  46 cons:           SEQUENCE          
+ 4093:d=11 hl=2 l=  10 cons:            SEQUENCE          
+ 4095:d=12 hl=2 l=   8 prim:             OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 4105:d=11 hl=2 l=  32 prim:            OCTET STRING      
+      0000 - 12 4a 33 42 ca 16 63 00-a0 a4 06 b5 a1 3e 35 5c   .J3B..c......>5\
+      0010 - 41 b6 b6 c5 5e c8 c1 98-65 81 bb c8 a3 18 5c b8   A...^...e.....\.
+ 4139:d=10 hl=4 l= 296 cons:           SEQUENCE          
+ 4143:d=11 hl=4 l= 274 cons:            SEQUENCE          
+ 4147:d=12 hl=4 l= 270 cons:             cont [ 4 ]        
+ 4151:d=13 hl=4 l= 266 cons:              SEQUENCE          
+ 4155:d=14 hl=2 l=  24 cons:               SET               
+ 4157:d=15 hl=2 l=  22 cons:                SEQUENCE          
+ 4159:d=16 hl=2 l=   5 prim:                 OBJECT            :OGRN
+ 4166:d=16 hl=2 l=  13 prim:                 NUMERICSTRING     :1234567890123
+ 4181:d=14 hl=2 l=  26 cons:               SET               
+ 4183:d=15 hl=2 l=  24 cons:                SEQUENCE          
+ 4185:d=16 hl=2 l=   8 prim:                 OBJECT            :INN
+ 4195:d=16 hl=2 l=  12 prim:                 NUMERICSTRING     :001234567890
+ 4209:d=14 hl=2 l=  47 cons:               SET               
+ 4211:d=15 hl=2 l=  45 cons:                SEQUENCE          
+ 4213:d=16 hl=2 l=   3 prim:                 OBJECT            :streetAddress
+ 4218:d=16 hl=2 l=  38 prim:                 UTF8STRING        :ул. Сущёвский вал д. 18
+ 4258:d=14 hl=2 l=  11 cons:               SET               
+ 4260:d=15 hl=2 l=   9 cons:                SEQUENCE          
+ 4262:d=16 hl=2 l=   3 prim:                 OBJECT            :countryName
+ 4267:d=16 hl=2 l=   2 prim:                 PRINTABLESTRING   :RU
+ 4271:d=14 hl=2 l=  25 cons:               SET               
+ 4273:d=15 hl=2 l=  23 cons:                SEQUENCE          
+ 4275:d=16 hl=2 l=   3 prim:                 OBJECT            :stateOrProvinceName
+ 4280:d=16 hl=2 l=  16 prim:                 UTF8STRING        :г. Москва
+ 4298:d=14 hl=2 l=  21 cons:               SET               
+ 4300:d=15 hl=2 l=  19 cons:                SEQUENCE          
+ 4302:d=16 hl=2 l=   3 prim:                 OBJECT            :localityName
+ 4307:d=16 hl=2 l=  12 prim:                 UTF8STRING        :Москва
+ 4321:d=14 hl=2 l=  37 cons:               SET               
+ 4323:d=15 hl=2 l=  35 cons:                SEQUENCE          
+ 4325:d=16 hl=2 l=   3 prim:                 OBJECT            :organizationName
+ 4330:d=16 hl=2 l=  28 prim:                 UTF8STRING        :ООО "КРИПТО-ПРО"
+ 4360:d=14 hl=2 l=  59 cons:               SET               
+ 4362:d=15 hl=2 l=  57 cons:                SEQUENCE          
+ 4364:d=16 hl=2 l=   3 prim:                 OBJECT            :commonName
+ 4369:d=16 hl=2 l=  50 prim:                 UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 4421:d=11 hl=2 l=  16 prim:            INTEGER           :177F1EF8C798CC9B4F699ABE83E644CC
+ 4439:d=9  hl=4 l= 351 cons:          SEQUENCE          
+ 4443:d=10 hl=2 l=  46 cons:           SEQUENCE          
+ 4445:d=11 hl=2 l=  10 cons:            SEQUENCE          
+ 4447:d=12 hl=2 l=   8 prim:             OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 4457:d=11 hl=2 l=  32 prim:            OCTET STRING      
+      0000 - a2 8d 17 28 47 8a b6 20-0a a6 1d a1 77 6e fc f2   ...(G.. ....wn..
+      0010 - 0a c9 66 f4 5f d9 a5 50-02 35 2e 42 7e b7 fa 48   ..f._..P.5.B~..H
+ 4491:d=10 hl=4 l= 299 cons:           SEQUENCE          
+ 4495:d=11 hl=4 l= 274 cons:            SEQUENCE          
+ 4499:d=12 hl=4 l= 270 cons:             cont [ 4 ]        
+ 4503:d=13 hl=4 l= 266 cons:              SEQUENCE          
+ 4507:d=14 hl=2 l=  24 cons:               SET               
+ 4509:d=15 hl=2 l=  22 cons:                SEQUENCE          
+ 4511:d=16 hl=2 l=   5 prim:                 OBJECT            :OGRN
+ 4518:d=16 hl=2 l=  13 prim:                 NUMERICSTRING     :1234567890123
+ 4533:d=14 hl=2 l=  26 cons:               SET               
+ 4535:d=15 hl=2 l=  24 cons:                SEQUENCE          
+ 4537:d=16 hl=2 l=   8 prim:                 OBJECT            :INN
+ 4547:d=16 hl=2 l=  12 prim:                 NUMERICSTRING     :001234567890
+ 4561:d=14 hl=2 l=  47 cons:               SET               
+ 4563:d=15 hl=2 l=  45 cons:                SEQUENCE          
+ 4565:d=16 hl=2 l=   3 prim:                 OBJECT            :streetAddress
+ 4570:d=16 hl=2 l=  38 prim:                 UTF8STRING        :ул. Сущёвский вал д. 18
+ 4610:d=14 hl=2 l=  11 cons:               SET               
+ 4612:d=15 hl=2 l=   9 cons:                SEQUENCE          
+ 4614:d=16 hl=2 l=   3 prim:                 OBJECT            :countryName
+ 4619:d=16 hl=2 l=   2 prim:                 PRINTABLESTRING   :RU
+ 4623:d=14 hl=2 l=  25 cons:               SET               
+ 4625:d=15 hl=2 l=  23 cons:                SEQUENCE          
+ 4627:d=16 hl=2 l=   3 prim:                 OBJECT            :stateOrProvinceName
+ 4632:d=16 hl=2 l=  16 prim:                 UTF8STRING        :г. Москва
+ 4650:d=14 hl=2 l=  21 cons:               SET               
+ 4652:d=15 hl=2 l=  19 cons:                SEQUENCE          
+ 4654:d=16 hl=2 l=   3 prim:                 OBJECT            :localityName
+ 4659:d=16 hl=2 l=  12 prim:                 UTF8STRING        :Москва
+ 4673:d=14 hl=2 l=  37 cons:               SET               
+ 4675:d=15 hl=2 l=  35 cons:                SEQUENCE          
+ 4677:d=16 hl=2 l=   3 prim:                 OBJECT            :organizationName
+ 4682:d=16 hl=2 l=  28 prim:                 UTF8STRING        :ООО "КРИПТО-ПРО"
+ 4712:d=14 hl=2 l=  59 cons:               SET               
+ 4714:d=15 hl=2 l=  57 cons:                SEQUENCE          
+ 4716:d=16 hl=2 l=   3 prim:                 OBJECT            :commonName
+ 4721:d=16 hl=2 l=  50 prim:                 UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 4773:d=11 hl=2 l=  19 prim:            INTEGER           :7C0033C5769A7B72276C50681A00140033C576
+ 4794:d=6  hl=4 l=2696 cons:       SEQUENCE          
+ 4798:d=7  hl=2 l=  11 prim:        OBJECT            :id-smime-aa-timeStampToken
+ 4811:d=7  hl=4 l=2679 cons:        SET               
+ 4815:d=8  hl=4 l=2675 cons:         SEQUENCE          
+ 4819:d=9  hl=2 l=   9 prim:          OBJECT            :pkcs7-signedData
+ 4830:d=9  hl=4 l=2660 cons:          cont [ 0 ]        
+ 4834:d=10 hl=4 l=2656 cons:           SEQUENCE          
+ 4838:d=11 hl=2 l=   1 prim:            INTEGER           :03
+ 4841:d=11 hl=2 l=  12 cons:            SET               
+ 4843:d=12 hl=2 l=  10 cons:             SEQUENCE          
+ 4845:d=13 hl=2 l=   8 prim:              OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 4855:d=11 hl=3 l= 130 cons:            SEQUENCE          
+ 4858:d=12 hl=2 l=  11 prim:             OBJECT            :id-smime-ct-TSTInfo
+ 4871:d=12 hl=2 l= 115 cons:             cont [ 0 ]        
+ 4873:d=13 hl=2 l= 113 prim:              OCTET STRING      
+      0000 - 30 6f 02 01 01 06 04 2a-03 04 04 30 2e 30 0a 06   0o.....*...0.0..
+      0010 - 08 2a 85 03 07 01 01 02-02 04 20 63 67 8a 1f d4   .*........ cg...
+      0020 - 8a 8b 1c 0b 7c bd ab 1b-7a 29 a6 98 05 5a bf ad   ....|...z)...Z..
+      0030 - fa be da e1 5d 19 7a c7-0f 91 08 02 14 e7 6a 93   ....].z.......j.
+      0040 - c0 32 21 d3 0f 34 c8 fd-1c f0 99 a2 79 db cd 42   .2!..4......y..B
+      0050 - 45 18 0f 32 30 32 36 30-35 33 31 31 37 32 39 32   E..2026053117292
+      0060 - 37 5a 30 03 02 01 01 02-08 32 03 5b 10 b2 d1 63   7Z0......2.[...c
+      0070 - 26                                                &
+ 4988:d=11 hl=4 l=1285 cons:            cont [ 0 ]        
+ 4992:d=12 hl=4 l=1281 cons:             SEQUENCE          
+ 4996:d=13 hl=4 l=1198 cons:              SEQUENCE          
+ 5000:d=14 hl=2 l=   3 cons:               cont [ 0 ]        
+ 5002:d=15 hl=2 l=   1 prim:                INTEGER           :02
+ 5005:d=14 hl=2 l=  19 prim:               INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+ 5026:d=14 hl=2 l=  10 cons:               SEQUENCE          
+ 5028:d=15 hl=2 l=   8 prim:                OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+ 5038:d=14 hl=4 l= 266 cons:               SEQUENCE          
+ 5042:d=15 hl=2 l=  24 cons:                SET               
+ 5044:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+ 5046:d=17 hl=2 l=   5 prim:                  OBJECT            :OGRN
+ 5053:d=17 hl=2 l=  13 prim:                  NUMERICSTRING     :1234567890123
+ 5068:d=15 hl=2 l=  26 cons:                SET               
+ 5070:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+ 5072:d=17 hl=2 l=   8 prim:                  OBJECT            :INN
+ 5082:d=17 hl=2 l=  12 prim:                  NUMERICSTRING     :001234567890
+ 5096:d=15 hl=2 l=  47 cons:                SET               
+ 5098:d=16 hl=2 l=  45 cons:                 SEQUENCE          
+ 5100:d=17 hl=2 l=   3 prim:                  OBJECT            :streetAddress
+ 5105:d=17 hl=2 l=  38 prim:                  UTF8STRING        :ул. Сущёвский вал д. 18
+ 5145:d=15 hl=2 l=  11 cons:                SET               
+ 5147:d=16 hl=2 l=   9 cons:                 SEQUENCE          
+ 5149:d=17 hl=2 l=   3 prim:                  OBJECT            :countryName
+ 5154:d=17 hl=2 l=   2 prim:                  PRINTABLESTRING   :RU
+ 5158:d=15 hl=2 l=  25 cons:                SET               
+ 5160:d=16 hl=2 l=  23 cons:                 SEQUENCE          
+ 5162:d=17 hl=2 l=   3 prim:                  OBJECT            :stateOrProvinceName
+ 5167:d=17 hl=2 l=  16 prim:                  UTF8STRING        :г. Москва
+ 5185:d=15 hl=2 l=  21 cons:                SET               
+ 5187:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+ 5189:d=17 hl=2 l=   3 prim:                  OBJECT            :localityName
+ 5194:d=17 hl=2 l=  12 prim:                  UTF8STRING        :Москва
+ 5208:d=15 hl=2 l=  37 cons:                SET               
+ 5210:d=16 hl=2 l=  35 cons:                 SEQUENCE          
+ 5212:d=17 hl=2 l=   3 prim:                  OBJECT            :organizationName
+ 5217:d=17 hl=2 l=  28 prim:                  UTF8STRING        :ООО "КРИПТО-ПРО"
+ 5247:d=15 hl=2 l=  59 cons:                SET               
+ 5249:d=16 hl=2 l=  57 cons:                 SEQUENCE          
+ 5251:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+ 5256:d=17 hl=2 l=  50 prim:                  UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 5308:d=14 hl=2 l=  30 cons:               SEQUENCE          
+ 5310:d=15 hl=2 l=  13 prim:                UTCTIME           :260529122338Z
+ 5325:d=15 hl=2 l=  13 prim:                UTCTIME           :260729123338Z
+ 5340:d=14 hl=2 l=  28 cons:               SEQUENCE          
+ 5342:d=15 hl=2 l=  26 cons:                SET               
+ 5344:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+ 5346:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+ 5351:d=17 hl=2 l=  17 prim:                  UTF8STRING        :Operator tsp2012g
+ 5370:d=14 hl=2 l= 102 cons:               SEQUENCE          
+ 5372:d=15 hl=2 l=  31 cons:                SEQUENCE          
+ 5374:d=16 hl=2 l=   8 prim:                 OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+ 5384:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+ 5386:d=17 hl=2 l=   7 prim:                  OBJECT            :id-GostR3410-2001-CryptoPro-A-ParamSet
+ 5395:d=17 hl=2 l=   8 prim:                  OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 5405:d=15 hl=2 l=  67 prim:                BIT STRING        
+      0000 - 00 04 40 e0 31 7e 01 09-13 3e 74 de 67 53 46 55   ..@.1~...>t.gSFU
+      0010 - 88 83 7f 46 a8 3b 65 38-ef 73 da 5d 9b 7a f8 aa   ...F.;e8.s.].z..
+      0020 - 23 23 fc e1 e5 3a f3 20-72 83 53 4b 0f 30 6e e2   ##...:. r.SK.0n.
+      0030 - 46 3f 81 9e 25 49 18 6c-81 cd 4a e8 fb e2 ca 20   F?..%I.l..J.... 
+      0040 - f5 c2 1b                                          ...
+ 5474:d=14 hl=4 l= 720 cons:               cont [ 3 ]        
+ 5478:d=15 hl=4 l= 716 cons:                SEQUENCE          
+ 5482:d=16 hl=2 l=  14 cons:                 SEQUENCE          
+ 5484:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Key Usage
+ 5489:d=17 hl=2 l=   1 prim:                  BOOLEAN           :255
+ 5492:d=17 hl=2 l=   4 prim:                  OCTET STRING      
+      0000 - 03 02 06 c0                                       ....
+ 5498:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+ 5500:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Extended Key Usage
+ 5505:d=17 hl=2 l=   1 prim:                  BOOLEAN           :255
+ 5508:d=17 hl=2 l=  12 prim:                  OCTET STRING      
+      0000 - 30 0a 06 08 2b 06 01 05-05 07 03 08               0...+.......
+ 5522:d=16 hl=2 l=  30 cons:                 SEQUENCE          
+ 5524:d=17 hl=2 l=   9 prim:                  OBJECT            :Microsoft Application Policies Extension
+ 5535:d=17 hl=2 l=   1 prim:                  BOOLEAN           :255
+ 5538:d=17 hl=2 l=  14 prim:                  OCTET STRING      
+      0000 - 30 0c 30 0a 06 08 2b 06-01 05 05 07 03 08         0.0...+.......
+ 5554:d=16 hl=2 l=  29 cons:                 SEQUENCE          
+ 5556:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Subject Key Identifier
+ 5561:d=17 hl=2 l=  22 prim:                  OCTET STRING      
+      0000 - 04 14 76 2a e5 3f ba 92-be cb bf 62 5e c9 35 3d   ..v*.?.....b^.5=
+      0010 - 60 06 b8 6c 52 98                                 `..lR.
+ 5585:d=16 hl=2 l=  31 cons:                 SEQUENCE          
+ 5587:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Authority Key Identifier
+ 5592:d=17 hl=2 l=  24 prim:                  OCTET STRING      
+      0000 - 30 16 80 14 60 aa b5 28-73 5b e3 6e 6a 0b e6 bf   0...`..(s[.nj...
+      0010 - 4d a2 33 eb d0 52 49 7b-                          M.3..RI{
+ 5618:d=16 hl=4 l= 274 cons:                 SEQUENCE          
+ 5622:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 CRL Distribution Points
+ 5627:d=17 hl=4 l= 265 prim:                  OCTET STRING      
+      0000 - 30 82 01 05 30 82 01 01-a0 81 fe a0 81 fb 86 81   0...0...........
+      0010 - b6 68 74 74 70 3a 2f 2f-74 65 73 74 67 6f 73 74   .http://testgost
+      0020 - 32 30 31 32 2e 63 72 79-70 74 6f 70 72 6f 2e 72   2012.cryptopro.r
+      0030 - 75 2f 43 65 72 74 45 6e-72 6f 6c 6c 2f 21 30 34   u/CertEnroll/!04
+      0040 - 32 32 21 30 34 33 35 21-30 34 34 31 21 30 34 34   22!0435!0441!044
+      0050 - 32 21 30 34 33 65 21 30-34 33 32 21 30 34 34 62   2!043e!0432!044b
+      0060 - 21 30 34 33 39 25 32 30-21 30 34 32 33 21 30 34   !0439%20!0423!04
+      0070 - 32 36 25 32 30 21 30 34-31 65 21 30 34 31 65 21   26%20!041e!041e!
+      0080 - 30 34 31 65 25 32 30 21-30 30 32 32 21 30 34 31   041e%20!0022!041
+      0090 - 61 21 30 34 32 30 21 30-34 31 38 21 30 34 31 66   a!0420!0418!041f
+      00a0 - 21 30 34 32 32 21 30 34-31 65 2d 21 30 34 31 66   !0422!041e-!041f
+      00b0 - 21 30 34 32 30 21 30 34-31 65 21 30 30 32 32 28   !0420!041e!0022(
+      00c0 - 32 30 29 2e 63 72 6c 86-40 68 74 74 70 3a 2f 2f   20).crl.@http://
+      00d0 - 74 65 73 74 67 6f 73 74-32 30 31 32 2e 63 72 79   testgost2012.cry
+      00e0 - 70 74 6f 70 72 6f 2e 72-75 2f 43 65 72 74 45 6e   ptopro.ru/CertEn
+      00f0 - 72 6f 6c 6c 2f 74 65 73-74 67 6f 73 74 32 30 31   roll/testgost201
+      0100 - 32 28 32 30 29 2e 63 72-6c                        2(20).crl
+ 5896:d=16 hl=4 l= 298 cons:                 SEQUENCE          
+ 5900:d=17 hl=2 l=   8 prim:                  OBJECT            :Authority Information Access
+ 5910:d=17 hl=4 l= 284 prim:                  OCTET STRING      
+      0000 - 30 82 01 18 30 3f 06 08-2b 06 01 05 05 07 30 01   0...0?..+.....0.
+      0010 - 86 33 68 74 74 70 3a 2f-2f 74 65 73 74 67 6f 73   .3http://testgos
+      0020 - 74 32 30 31 32 2e 63 72-79 70 74 6f 70 72 6f 2e   t2012.cryptopro.
+      0030 - 72 75 2f 6f 63 73 70 32-30 31 32 67 2f 6f 63 73   ru/ocsp2012g/ocs
+      0040 - 70 2e 73 72 66 30 41 06-08 2b 06 01 05 05 07 30   p.srf0A..+.....0
+      0050 - 01 86 35 68 74 74 70 3a-2f 2f 74 65 73 74 67 6f   ..5http://testgo
+      0060 - 73 74 32 30 31 32 2e 63-72 79 70 74 6f 70 72 6f   st2012.cryptopro
+      0070 - 2e 72 75 2f 6f 63 73 70-32 30 31 32 67 73 74 2f   .ru/ocsp2012gst/
+      0080 - 6f 63 73 70 2e 73 72 66-30 4c 06 08 2b 06 01 05   ocsp.srf0L..+...
+      0090 - 05 07 30 02 86 40 68 74-74 70 3a 2f 2f 74 65 73   ..0..@http://tes
+      00a0 - 74 67 6f 73 74 32 30 31-32 2e 63 72 79 70 74 6f   tgost2012.crypto
+      00b0 - 70 72 6f 2e 72 75 2f 43-65 72 74 45 6e 72 6f 6c   pro.ru/CertEnrol
+      00c0 - 6c 2f 74 65 73 74 67 6f-73 74 32 30 31 32 28 32   l/testgost2012(2
+      00d0 - 30 29 2e 63 72 74 30 44-06 08 2b 06 01 05 05 07   0).crt0D..+.....
+      00e0 - 30 02 86 38 68 74 74 70-3a 2f 2f 74 65 73 74 67   0..8http://testg
+      00f0 - 6f 73 74 32 30 31 32 2e-63 72 79 70 74 6f 70 72   ost2012.cryptopr
+      0100 - 6f 2e 72 75 2f 43 65 72-74 45 6e 72 6f 6c 6c 2f   o.ru/CertEnroll/
+      0110 - 74 65 73 74 72 6f 6f 74-2e 70 37 62               testroot.p7b
+ 6198:d=13 hl=2 l=  10 cons:              SEQUENCE          
+ 6200:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+ 6210:d=13 hl=2 l=  65 prim:              BIT STRING        
+      0000 - 00 df a0 6a 59 85 61 c7-6c 5f 01 62 c1 f7 2f 34   ...jY.a.l_.b../4
+      0010 - ac d4 b4 4c 89 58 66 96-e3 bd 43 a6 81 49 a3 c3   ...L.Xf...C..I..
+      0020 - 37 a3 9d 6f 17 e1 71 5e-5d e5 5e 2b 70 65 ec 29   7..o..q^].^+pe.)
+      0030 - ed 86 1e 05 96 a5 b8 4d-fd f1 b9 3a de cc ae a9   .......M...:....
+      0040 - c3                                                .
+ 6277:d=11 hl=4 l=1213 cons:            SET               
+ 6281:d=12 hl=4 l=1209 cons:             SEQUENCE          
+ 6285:d=13 hl=2 l=   1 prim:              INTEGER           :01
+ 6288:d=13 hl=4 l= 291 cons:              SEQUENCE          
+ 6292:d=14 hl=4 l= 266 cons:               SEQUENCE          
+ 6296:d=15 hl=2 l=  24 cons:                SET               
+ 6298:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+ 6300:d=17 hl=2 l=   5 prim:                  OBJECT            :OGRN
+ 6307:d=17 hl=2 l=  13 prim:                  NUMERICSTRING     :1234567890123
+ 6322:d=15 hl=2 l=  26 cons:                SET               
+ 6324:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+ 6326:d=17 hl=2 l=   8 prim:                  OBJECT            :INN
+ 6336:d=17 hl=2 l=  12 prim:                  NUMERICSTRING     :001234567890
+ 6350:d=15 hl=2 l=  47 cons:                SET               
+ 6352:d=16 hl=2 l=  45 cons:                 SEQUENCE          
+ 6354:d=17 hl=2 l=   3 prim:                  OBJECT            :streetAddress
+ 6359:d=17 hl=2 l=  38 prim:                  UTF8STRING        :ул. Сущёвский вал д. 18
+ 6399:d=15 hl=2 l=  11 cons:                SET               
+ 6401:d=16 hl=2 l=   9 cons:                 SEQUENCE          
+ 6403:d=17 hl=2 l=   3 prim:                  OBJECT            :countryName
+ 6408:d=17 hl=2 l=   2 prim:                  PRINTABLESTRING   :RU
+ 6412:d=15 hl=2 l=  25 cons:                SET               
+ 6414:d=16 hl=2 l=  23 cons:                 SEQUENCE          
+ 6416:d=17 hl=2 l=   3 prim:                  OBJECT            :stateOrProvinceName
+ 6421:d=17 hl=2 l=  16 prim:                  UTF8STRING        :г. Москва
+ 6439:d=15 hl=2 l=  21 cons:                SET               
+ 6441:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+ 6443:d=17 hl=2 l=   3 prim:                  OBJECT            :localityName
+ 6448:d=17 hl=2 l=  12 prim:                  UTF8STRING        :Москва
+ 6462:d=15 hl=2 l=  37 cons:                SET               
+ 6464:d=16 hl=2 l=  35 cons:                 SEQUENCE          
+ 6466:d=17 hl=2 l=   3 prim:                  OBJECT            :organizationName
+ 6471:d=17 hl=2 l=  28 prim:                  UTF8STRING        :ООО "КРИПТО-ПРО"
+ 6501:d=15 hl=2 l=  59 cons:                SET               
+ 6503:d=16 hl=2 l=  57 cons:                 SEQUENCE          
+ 6505:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+ 6510:d=17 hl=2 l=  50 prim:                  UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 6562:d=14 hl=2 l=  19 prim:               INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+ 6583:d=13 hl=2 l=  10 cons:              SEQUENCE          
+ 6585:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 6595:d=13 hl=4 l= 817 cons:              cont [ 0 ]        
+ 6599:d=14 hl=2 l=  26 cons:               SEQUENCE          
+ 6601:d=15 hl=2 l=   9 prim:                OBJECT            :contentType
+ 6612:d=15 hl=2 l=  13 cons:                SET               
+ 6614:d=16 hl=2 l=  11 prim:                 OBJECT            :id-smime-ct-TSTInfo
+ 6627:d=14 hl=2 l=  47 cons:               SEQUENCE          
+ 6629:d=15 hl=2 l=   9 prim:                OBJECT            :messageDigest
+ 6640:d=15 hl=2 l=  34 cons:                SET               
+ 6642:d=16 hl=2 l=  32 prim:                 OCTET STRING      
+      0000 - 38 61 8d 7c 93 5f 23 58-f8 39 86 14 2e 9b 02 54   8a.|._#X.9.....T
+      0010 - f4 7e e3 d4 88 99 15 b6-ba db d1 5e 32 90 dd e3   .~.........^2...
+ 6676:d=14 hl=4 l= 354 cons:               SEQUENCE          
+ 6680:d=15 hl=2 l=  11 prim:                OBJECT            :id-smime-aa-signingCertificate
+ 6693:d=15 hl=4 l= 337 cons:                SET               
+ 6697:d=16 hl=4 l= 333 cons:                 SEQUENCE          
+ 6701:d=17 hl=4 l= 329 cons:                  SEQUENCE          
+ 6705:d=18 hl=4 l= 325 cons:                   SEQUENCE          
+ 6709:d=19 hl=2 l=  20 prim:                    OCTET STRING      
+      0000 - a6 80 20 ac ab 46 bf d5-82 af d7 b6 38 f0 a4 bb   .. ..F......8...
+      0010 - df e7 19 45                                       ...E
+ 6731:d=19 hl=4 l= 299 cons:                    SEQUENCE          
+ 6735:d=20 hl=4 l= 274 cons:                     SEQUENCE          
+ 6739:d=21 hl=4 l= 270 cons:                      cont [ 4 ]        
+ 6743:d=22 hl=4 l= 266 cons:                       SEQUENCE          
+ 6747:d=23 hl=2 l=  24 cons:                        SET               
+ 6749:d=24 hl=2 l=  22 cons:                         SEQUENCE          
+ 6751:d=25 hl=2 l=   5 prim:                          OBJECT            :OGRN
+ 6758:d=25 hl=2 l=  13 prim:                          NUMERICSTRING     :1234567890123
+ 6773:d=23 hl=2 l=  26 cons:                        SET               
+ 6775:d=24 hl=2 l=  24 cons:                         SEQUENCE          
+ 6777:d=25 hl=2 l=   8 prim:                          OBJECT            :INN
+ 6787:d=25 hl=2 l=  12 prim:                          NUMERICSTRING     :001234567890
+ 6801:d=23 hl=2 l=  47 cons:                        SET               
+ 6803:d=24 hl=2 l=  45 cons:                         SEQUENCE          
+ 6805:d=25 hl=2 l=   3 prim:                          OBJECT            :streetAddress
+ 6810:d=25 hl=2 l=  38 prim:                          UTF8STRING        :ул. Сущёвский вал д. 18
+ 6850:d=23 hl=2 l=  11 cons:                        SET               
+ 6852:d=24 hl=2 l=   9 cons:                         SEQUENCE          
+ 6854:d=25 hl=2 l=   3 prim:                          OBJECT            :countryName
+ 6859:d=25 hl=2 l=   2 prim:                          PRINTABLESTRING   :RU
+ 6863:d=23 hl=2 l=  25 cons:                        SET               
+ 6865:d=24 hl=2 l=  23 cons:                         SEQUENCE          
+ 6867:d=25 hl=2 l=   3 prim:                          OBJECT            :stateOrProvinceName
+ 6872:d=25 hl=2 l=  16 prim:                          UTF8STRING        :г. Москва
+ 6890:d=23 hl=2 l=  21 cons:                        SET               
+ 6892:d=24 hl=2 l=  19 cons:                         SEQUENCE          
+ 6894:d=25 hl=2 l=   3 prim:                          OBJECT            :localityName
+ 6899:d=25 hl=2 l=  12 prim:                          UTF8STRING        :Москва
+ 6913:d=23 hl=2 l=  37 cons:                        SET               
+ 6915:d=24 hl=2 l=  35 cons:                         SEQUENCE          
+ 6917:d=25 hl=2 l=   3 prim:                          OBJECT            :organizationName
+ 6922:d=25 hl=2 l=  28 prim:                          UTF8STRING        :ООО "КРИПТО-ПРО"
+ 6952:d=23 hl=2 l=  59 cons:                        SET               
+ 6954:d=24 hl=2 l=  57 cons:                         SEQUENCE          
+ 6956:d=25 hl=2 l=   3 prim:                          OBJECT            :commonName
+ 6961:d=25 hl=2 l=  50 prim:                          UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 7013:d=20 hl=2 l=  19 prim:                     INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+ 7034:d=14 hl=4 l= 378 cons:               SEQUENCE          
+ 7038:d=15 hl=2 l=  11 prim:                OBJECT            :id-smime-aa-signingCertificateV2
+ 7051:d=15 hl=4 l= 361 cons:                SET               
+ 7055:d=16 hl=4 l= 357 cons:                 SEQUENCE          
+ 7059:d=17 hl=4 l= 353 cons:                  SEQUENCE          
+ 7063:d=18 hl=4 l= 349 cons:                   SEQUENCE          
+ 7067:d=19 hl=2 l=  10 cons:                    SEQUENCE          
+ 7069:d=20 hl=2 l=   8 prim:                     OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 7079:d=19 hl=2 l=  32 prim:                    OCTET STRING      
+      0000 - a3 b7 c0 b8 f9 7f 0d ce-70 57 be 52 c5 b0 65 3b   ........pW.R..e;
+      0010 - 43 96 c9 e8 be e3 9a 63-30 3f 25 36 d7 1d 27 04   C......c0?%6..'.
+ 7113:d=19 hl=4 l= 299 cons:                    SEQUENCE          
+ 7117:d=20 hl=4 l= 274 cons:                     SEQUENCE          
+ 7121:d=21 hl=4 l= 270 cons:                      cont [ 4 ]        
+ 7125:d=22 hl=4 l= 266 cons:                       SEQUENCE          
+ 7129:d=23 hl=2 l=  24 cons:                        SET               
+ 7131:d=24 hl=2 l=  22 cons:                         SEQUENCE          
+ 7133:d=25 hl=2 l=   5 prim:                          OBJECT            :OGRN
+ 7140:d=25 hl=2 l=  13 prim:                          NUMERICSTRING     :1234567890123
+ 7155:d=23 hl=2 l=  26 cons:                        SET               
+ 7157:d=24 hl=2 l=  24 cons:                         SEQUENCE          
+ 7159:d=25 hl=2 l=   8 prim:                          OBJECT            :INN
+ 7169:d=25 hl=2 l=  12 prim:                          NUMERICSTRING     :001234567890
+ 7183:d=23 hl=2 l=  47 cons:                        SET               
+ 7185:d=24 hl=2 l=  45 cons:                         SEQUENCE          
+ 7187:d=25 hl=2 l=   3 prim:                          OBJECT            :streetAddress
+ 7192:d=25 hl=2 l=  38 prim:                          UTF8STRING        :ул. Сущёвский вал д. 18
+ 7232:d=23 hl=2 l=  11 cons:                        SET               
+ 7234:d=24 hl=2 l=   9 cons:                         SEQUENCE          
+ 7236:d=25 hl=2 l=   3 prim:                          OBJECT            :countryName
+ 7241:d=25 hl=2 l=   2 prim:                          PRINTABLESTRING   :RU
+ 7245:d=23 hl=2 l=  25 cons:                        SET               
+ 7247:d=24 hl=2 l=  23 cons:                         SEQUENCE          
+ 7249:d=25 hl=2 l=   3 prim:                          OBJECT            :stateOrProvinceName
+ 7254:d=25 hl=2 l=  16 prim:                          UTF8STRING        :г. Москва
+ 7272:d=23 hl=2 l=  21 cons:                        SET               
+ 7274:d=24 hl=2 l=  19 cons:                         SEQUENCE          
+ 7276:d=25 hl=2 l=   3 prim:                          OBJECT            :localityName
+ 7281:d=25 hl=2 l=  12 prim:                          UTF8STRING        :Москва
+ 7295:d=23 hl=2 l=  37 cons:                        SET               
+ 7297:d=24 hl=2 l=  35 cons:                         SEQUENCE          
+ 7299:d=25 hl=2 l=   3 prim:                          OBJECT            :organizationName
+ 7304:d=25 hl=2 l=  28 prim:                          UTF8STRING        :ООО "КРИПТО-ПРО"
+ 7334:d=23 hl=2 l=  59 cons:                        SET               
+ 7336:d=24 hl=2 l=  57 cons:                         SEQUENCE          
+ 7338:d=25 hl=2 l=   3 prim:                          OBJECT            :commonName
+ 7343:d=25 hl=2 l=  50 prim:                          UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 7395:d=20 hl=2 l=  19 prim:                     INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+ 7416:d=13 hl=2 l=  10 cons:              SEQUENCE          
+ 7418:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+ 7428:d=13 hl=2 l=  64 prim:              OCTET STRING      
+      0000 - 0b 19 94 c1 37 52 6c bd-47 a5 27 72 22 19 a6 e1   ....7Rl.G.'r"...
+      0010 - 85 7f b1 6d de ea 3d 0a-d2 0f 7c 82 1f 0d e7 62   ...m..=...|....b
+      0020 - 6d 38 67 7c 98 c3 05 20-2c 8e 98 83 88 53 08 d2   m8g|... ,....S..
+      0030 - aa 5a 16 66 eb 83 45 46-61 5f cd 56 b5 bf a7 4d   .Z.f..EFa_.V...M
+ 7494:d=6  hl=4 l=2696 cons:       SEQUENCE          
+ 7498:d=7  hl=2 l=  11 prim:        OBJECT            :id-smime-aa-ets-escTimeStamp
+ 7511:d=7  hl=4 l=2679 cons:        SET               
+ 7515:d=8  hl=4 l=2675 cons:         SEQUENCE          
+ 7519:d=9  hl=2 l=   9 prim:          OBJECT            :pkcs7-signedData
+ 7530:d=9  hl=4 l=2660 cons:          cont [ 0 ]        
+ 7534:d=10 hl=4 l=2656 cons:           SEQUENCE          
+ 7538:d=11 hl=2 l=   1 prim:            INTEGER           :03
+ 7541:d=11 hl=2 l=  12 cons:            SET               
+ 7543:d=12 hl=2 l=  10 cons:             SEQUENCE          
+ 7545:d=13 hl=2 l=   8 prim:              OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 7555:d=11 hl=3 l= 130 cons:            SEQUENCE          
+ 7558:d=12 hl=2 l=  11 prim:             OBJECT            :id-smime-ct-TSTInfo
+ 7571:d=12 hl=2 l= 115 cons:             cont [ 0 ]        
+ 7573:d=13 hl=2 l= 113 prim:              OCTET STRING      
+      0000 - 30 6f 02 01 01 06 04 2a-03 04 04 30 2e 30 0a 06   0o.....*...0.0..
+      0010 - 08 2a 85 03 07 01 01 02-02 04 20 35 88 7f ec 9c   .*........ 5....
+      0020 - 34 08 cb 46 79 77 a2 29-f9 13 5b 3f 76 58 9f 51   4..Fyw.)..[?vX.Q
+      0030 - b6 d9 6e b5 d8 47 0e 00-38 0e 2d 02 14 7c 41 37   ..n..G..8.-..|A7
+      0040 - 0f 7c c0 bd ad 4d 04 a5-cb f0 e6 e0 39 fb af b6   .|...M......9...
+      0050 - 40 18 0f 32 30 32 36 30-35 33 31 31 37 32 39 32   @..2026053117292
+      0060 - 38 5a 30 03 02 01 01 02-08 6b 2b 7a 7d 99 bc fa   8Z0......k+z}...
+      0070 - d7                                                .
+ 7688:d=11 hl=4 l=1285 cons:            cont [ 0 ]        
+ 7692:d=12 hl=4 l=1281 cons:             SEQUENCE          
+ 7696:d=13 hl=4 l=1198 cons:              SEQUENCE          
+ 7700:d=14 hl=2 l=   3 cons:               cont [ 0 ]        
+ 7702:d=15 hl=2 l=   1 prim:                INTEGER           :02
+ 7705:d=14 hl=2 l=  19 prim:               INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+ 7726:d=14 hl=2 l=  10 cons:               SEQUENCE          
+ 7728:d=15 hl=2 l=   8 prim:                OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+ 7738:d=14 hl=4 l= 266 cons:               SEQUENCE          
+ 7742:d=15 hl=2 l=  24 cons:                SET               
+ 7744:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+ 7746:d=17 hl=2 l=   5 prim:                  OBJECT            :OGRN
+ 7753:d=17 hl=2 l=  13 prim:                  NUMERICSTRING     :1234567890123
+ 7768:d=15 hl=2 l=  26 cons:                SET               
+ 7770:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+ 7772:d=17 hl=2 l=   8 prim:                  OBJECT            :INN
+ 7782:d=17 hl=2 l=  12 prim:                  NUMERICSTRING     :001234567890
+ 7796:d=15 hl=2 l=  47 cons:                SET               
+ 7798:d=16 hl=2 l=  45 cons:                 SEQUENCE          
+ 7800:d=17 hl=2 l=   3 prim:                  OBJECT            :streetAddress
+ 7805:d=17 hl=2 l=  38 prim:                  UTF8STRING        :ул. Сущёвский вал д. 18
+ 7845:d=15 hl=2 l=  11 cons:                SET               
+ 7847:d=16 hl=2 l=   9 cons:                 SEQUENCE          
+ 7849:d=17 hl=2 l=   3 prim:                  OBJECT            :countryName
+ 7854:d=17 hl=2 l=   2 prim:                  PRINTABLESTRING   :RU
+ 7858:d=15 hl=2 l=  25 cons:                SET               
+ 7860:d=16 hl=2 l=  23 cons:                 SEQUENCE          
+ 7862:d=17 hl=2 l=   3 prim:                  OBJECT            :stateOrProvinceName
+ 7867:d=17 hl=2 l=  16 prim:                  UTF8STRING        :г. Москва
+ 7885:d=15 hl=2 l=  21 cons:                SET               
+ 7887:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+ 7889:d=17 hl=2 l=   3 prim:                  OBJECT            :localityName
+ 7894:d=17 hl=2 l=  12 prim:                  UTF8STRING        :Москва
+ 7908:d=15 hl=2 l=  37 cons:                SET               
+ 7910:d=16 hl=2 l=  35 cons:                 SEQUENCE          
+ 7912:d=17 hl=2 l=   3 prim:                  OBJECT            :organizationName
+ 7917:d=17 hl=2 l=  28 prim:                  UTF8STRING        :ООО "КРИПТО-ПРО"
+ 7947:d=15 hl=2 l=  59 cons:                SET               
+ 7949:d=16 hl=2 l=  57 cons:                 SEQUENCE          
+ 7951:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+ 7956:d=17 hl=2 l=  50 prim:                  UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 8008:d=14 hl=2 l=  30 cons:               SEQUENCE          
+ 8010:d=15 hl=2 l=  13 prim:                UTCTIME           :260529122338Z
+ 8025:d=15 hl=2 l=  13 prim:                UTCTIME           :260729123338Z
+ 8040:d=14 hl=2 l=  28 cons:               SEQUENCE          
+ 8042:d=15 hl=2 l=  26 cons:                SET               
+ 8044:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+ 8046:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+ 8051:d=17 hl=2 l=  17 prim:                  UTF8STRING        :Operator tsp2012g
+ 8070:d=14 hl=2 l= 102 cons:               SEQUENCE          
+ 8072:d=15 hl=2 l=  31 cons:                SEQUENCE          
+ 8074:d=16 hl=2 l=   8 prim:                 OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+ 8084:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+ 8086:d=17 hl=2 l=   7 prim:                  OBJECT            :id-GostR3410-2001-CryptoPro-A-ParamSet
+ 8095:d=17 hl=2 l=   8 prim:                  OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 8105:d=15 hl=2 l=  67 prim:                BIT STRING        
+      0000 - 00 04 40 e0 31 7e 01 09-13 3e 74 de 67 53 46 55   ..@.1~...>t.gSFU
+      0010 - 88 83 7f 46 a8 3b 65 38-ef 73 da 5d 9b 7a f8 aa   ...F.;e8.s.].z..
+      0020 - 23 23 fc e1 e5 3a f3 20-72 83 53 4b 0f 30 6e e2   ##...:. r.SK.0n.
+      0030 - 46 3f 81 9e 25 49 18 6c-81 cd 4a e8 fb e2 ca 20   F?..%I.l..J.... 
+      0040 - f5 c2 1b                                          ...
+ 8174:d=14 hl=4 l= 720 cons:               cont [ 3 ]        
+ 8178:d=15 hl=4 l= 716 cons:                SEQUENCE          
+ 8182:d=16 hl=2 l=  14 cons:                 SEQUENCE          
+ 8184:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Key Usage
+ 8189:d=17 hl=2 l=   1 prim:                  BOOLEAN           :255
+ 8192:d=17 hl=2 l=   4 prim:                  OCTET STRING      
+      0000 - 03 02 06 c0                                       ....
+ 8198:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+ 8200:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Extended Key Usage
+ 8205:d=17 hl=2 l=   1 prim:                  BOOLEAN           :255
+ 8208:d=17 hl=2 l=  12 prim:                  OCTET STRING      
+      0000 - 30 0a 06 08 2b 06 01 05-05 07 03 08               0...+.......
+ 8222:d=16 hl=2 l=  30 cons:                 SEQUENCE          
+ 8224:d=17 hl=2 l=   9 prim:                  OBJECT            :Microsoft Application Policies Extension
+ 8235:d=17 hl=2 l=   1 prim:                  BOOLEAN           :255
+ 8238:d=17 hl=2 l=  14 prim:                  OCTET STRING      
+      0000 - 30 0c 30 0a 06 08 2b 06-01 05 05 07 03 08         0.0...+.......
+ 8254:d=16 hl=2 l=  29 cons:                 SEQUENCE          
+ 8256:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Subject Key Identifier
+ 8261:d=17 hl=2 l=  22 prim:                  OCTET STRING      
+      0000 - 04 14 76 2a e5 3f ba 92-be cb bf 62 5e c9 35 3d   ..v*.?.....b^.5=
+      0010 - 60 06 b8 6c 52 98                                 `..lR.
+ 8285:d=16 hl=2 l=  31 cons:                 SEQUENCE          
+ 8287:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Authority Key Identifier
+ 8292:d=17 hl=2 l=  24 prim:                  OCTET STRING      
+      0000 - 30 16 80 14 60 aa b5 28-73 5b e3 6e 6a 0b e6 bf   0...`..(s[.nj...
+      0010 - 4d a2 33 eb d0 52 49 7b-                          M.3..RI{
+ 8318:d=16 hl=4 l= 274 cons:                 SEQUENCE          
+ 8322:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 CRL Distribution Points
+ 8327:d=17 hl=4 l= 265 prim:                  OCTET STRING      
+      0000 - 30 82 01 05 30 82 01 01-a0 81 fe a0 81 fb 86 81   0...0...........
+      0010 - b6 68 74 74 70 3a 2f 2f-74 65 73 74 67 6f 73 74   .http://testgost
+      0020 - 32 30 31 32 2e 63 72 79-70 74 6f 70 72 6f 2e 72   2012.cryptopro.r
+      0030 - 75 2f 43 65 72 74 45 6e-72 6f 6c 6c 2f 21 30 34   u/CertEnroll/!04
+      0040 - 32 32 21 30 34 33 35 21-30 34 34 31 21 30 34 34   22!0435!0441!044
+      0050 - 32 21 30 34 33 65 21 30-34 33 32 21 30 34 34 62   2!043e!0432!044b
+      0060 - 21 30 34 33 39 25 32 30-21 30 34 32 33 21 30 34   !0439%20!0423!04
+      0070 - 32 36 25 32 30 21 30 34-31 65 21 30 34 31 65 21   26%20!041e!041e!
+      0080 - 30 34 31 65 25 32 30 21-30 30 32 32 21 30 34 31   041e%20!0022!041
+      0090 - 61 21 30 34 32 30 21 30-34 31 38 21 30 34 31 66   a!0420!0418!041f
+      00a0 - 21 30 34 32 32 21 30 34-31 65 2d 21 30 34 31 66   !0422!041e-!041f
+      00b0 - 21 30 34 32 30 21 30 34-31 65 21 30 30 32 32 28   !0420!041e!0022(
+      00c0 - 32 30 29 2e 63 72 6c 86-40 68 74 74 70 3a 2f 2f   20).crl.@http://
+      00d0 - 74 65 73 74 67 6f 73 74-32 30 31 32 2e 63 72 79   testgost2012.cry
+      00e0 - 70 74 6f 70 72 6f 2e 72-75 2f 43 65 72 74 45 6e   ptopro.ru/CertEn
+      00f0 - 72 6f 6c 6c 2f 74 65 73-74 67 6f 73 74 32 30 31   roll/testgost201
+      0100 - 32 28 32 30 29 2e 63 72-6c                        2(20).crl
+ 8596:d=16 hl=4 l= 298 cons:                 SEQUENCE          
+ 8600:d=17 hl=2 l=   8 prim:                  OBJECT            :Authority Information Access
+ 8610:d=17 hl=4 l= 284 prim:                  OCTET STRING      
+      0000 - 30 82 01 18 30 3f 06 08-2b 06 01 05 05 07 30 01   0...0?..+.....0.
+      0010 - 86 33 68 74 74 70 3a 2f-2f 74 65 73 74 67 6f 73   .3http://testgos
+      0020 - 74 32 30 31 32 2e 63 72-79 70 74 6f 70 72 6f 2e   t2012.cryptopro.
+      0030 - 72 75 2f 6f 63 73 70 32-30 31 32 67 2f 6f 63 73   ru/ocsp2012g/ocs
+      0040 - 70 2e 73 72 66 30 41 06-08 2b 06 01 05 05 07 30   p.srf0A..+.....0
+      0050 - 01 86 35 68 74 74 70 3a-2f 2f 74 65 73 74 67 6f   ..5http://testgo
+      0060 - 73 74 32 30 31 32 2e 63-72 79 70 74 6f 70 72 6f   st2012.cryptopro
+      0070 - 2e 72 75 2f 6f 63 73 70-32 30 31 32 67 73 74 2f   .ru/ocsp2012gst/
+      0080 - 6f 63 73 70 2e 73 72 66-30 4c 06 08 2b 06 01 05   ocsp.srf0L..+...
+      0090 - 05 07 30 02 86 40 68 74-74 70 3a 2f 2f 74 65 73   ..0..@http://tes
+      00a0 - 74 67 6f 73 74 32 30 31-32 2e 63 72 79 70 74 6f   tgost2012.crypto
+      00b0 - 70 72 6f 2e 72 75 2f 43-65 72 74 45 6e 72 6f 6c   pro.ru/CertEnrol
+      00c0 - 6c 2f 74 65 73 74 67 6f-73 74 32 30 31 32 28 32   l/testgost2012(2
+      00d0 - 30 29 2e 63 72 74 30 44-06 08 2b 06 01 05 05 07   0).crt0D..+.....
+      00e0 - 30 02 86 38 68 74 74 70-3a 2f 2f 74 65 73 74 67   0..8http://testg
+      00f0 - 6f 73 74 32 30 31 32 2e-63 72 79 70 74 6f 70 72   ost2012.cryptopr
+      0100 - 6f 2e 72 75 2f 43 65 72-74 45 6e 72 6f 6c 6c 2f   o.ru/CertEnroll/
+      0110 - 74 65 73 74 72 6f 6f 74-2e 70 37 62               testroot.p7b
+ 8898:d=13 hl=2 l=  10 cons:              SEQUENCE          
+ 8900:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+ 8910:d=13 hl=2 l=  65 prim:              BIT STRING        
+      0000 - 00 df a0 6a 59 85 61 c7-6c 5f 01 62 c1 f7 2f 34   ...jY.a.l_.b../4
+      0010 - ac d4 b4 4c 89 58 66 96-e3 bd 43 a6 81 49 a3 c3   ...L.Xf...C..I..
+      0020 - 37 a3 9d 6f 17 e1 71 5e-5d e5 5e 2b 70 65 ec 29   7..o..q^].^+pe.)
+      0030 - ed 86 1e 05 96 a5 b8 4d-fd f1 b9 3a de cc ae a9   .......M...:....
+      0040 - c3                                                .
+ 8977:d=11 hl=4 l=1213 cons:            SET               
+ 8981:d=12 hl=4 l=1209 cons:             SEQUENCE          
+ 8985:d=13 hl=2 l=   1 prim:              INTEGER           :01
+ 8988:d=13 hl=4 l= 291 cons:              SEQUENCE          
+ 8992:d=14 hl=4 l= 266 cons:               SEQUENCE          
+ 8996:d=15 hl=2 l=  24 cons:                SET               
+ 8998:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+ 9000:d=17 hl=2 l=   5 prim:                  OBJECT            :OGRN
+ 9007:d=17 hl=2 l=  13 prim:                  NUMERICSTRING     :1234567890123
+ 9022:d=15 hl=2 l=  26 cons:                SET               
+ 9024:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+ 9026:d=17 hl=2 l=   8 prim:                  OBJECT            :INN
+ 9036:d=17 hl=2 l=  12 prim:                  NUMERICSTRING     :001234567890
+ 9050:d=15 hl=2 l=  47 cons:                SET               
+ 9052:d=16 hl=2 l=  45 cons:                 SEQUENCE          
+ 9054:d=17 hl=2 l=   3 prim:                  OBJECT            :streetAddress
+ 9059:d=17 hl=2 l=  38 prim:                  UTF8STRING        :ул. Сущёвский вал д. 18
+ 9099:d=15 hl=2 l=  11 cons:                SET               
+ 9101:d=16 hl=2 l=   9 cons:                 SEQUENCE          
+ 9103:d=17 hl=2 l=   3 prim:                  OBJECT            :countryName
+ 9108:d=17 hl=2 l=   2 prim:                  PRINTABLESTRING   :RU
+ 9112:d=15 hl=2 l=  25 cons:                SET               
+ 9114:d=16 hl=2 l=  23 cons:                 SEQUENCE          
+ 9116:d=17 hl=2 l=   3 prim:                  OBJECT            :stateOrProvinceName
+ 9121:d=17 hl=2 l=  16 prim:                  UTF8STRING        :г. Москва
+ 9139:d=15 hl=2 l=  21 cons:                SET               
+ 9141:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+ 9143:d=17 hl=2 l=   3 prim:                  OBJECT            :localityName
+ 9148:d=17 hl=2 l=  12 prim:                  UTF8STRING        :Москва
+ 9162:d=15 hl=2 l=  37 cons:                SET               
+ 9164:d=16 hl=2 l=  35 cons:                 SEQUENCE          
+ 9166:d=17 hl=2 l=   3 prim:                  OBJECT            :organizationName
+ 9171:d=17 hl=2 l=  28 prim:                  UTF8STRING        :ООО "КРИПТО-ПРО"
+ 9201:d=15 hl=2 l=  59 cons:                SET               
+ 9203:d=16 hl=2 l=  57 cons:                 SEQUENCE          
+ 9205:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+ 9210:d=17 hl=2 l=  50 prim:                  UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 9262:d=14 hl=2 l=  19 prim:               INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+ 9283:d=13 hl=2 l=  10 cons:              SEQUENCE          
+ 9285:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 9295:d=13 hl=4 l= 817 cons:              cont [ 0 ]        
+ 9299:d=14 hl=2 l=  26 cons:               SEQUENCE          
+ 9301:d=15 hl=2 l=   9 prim:                OBJECT            :contentType
+ 9312:d=15 hl=2 l=  13 cons:                SET               
+ 9314:d=16 hl=2 l=  11 prim:                 OBJECT            :id-smime-ct-TSTInfo
+ 9327:d=14 hl=2 l=  47 cons:               SEQUENCE          
+ 9329:d=15 hl=2 l=   9 prim:                OBJECT            :messageDigest
+ 9340:d=15 hl=2 l=  34 cons:                SET               
+ 9342:d=16 hl=2 l=  32 prim:                 OCTET STRING      
+      0000 - 15 70 b2 25 ed 55 eb b4-ca 7f b7 6c 23 cf 28 5d   .p.%.U.....l#.(]
+      0010 - 80 db 4d 2c b1 fd bd 14-ec a4 36 a3 50 03 a3 1c   ..M,......6.P...
+ 9376:d=14 hl=4 l= 354 cons:               SEQUENCE          
+ 9380:d=15 hl=2 l=  11 prim:                OBJECT            :id-smime-aa-signingCertificate
+ 9393:d=15 hl=4 l= 337 cons:                SET               
+ 9397:d=16 hl=4 l= 333 cons:                 SEQUENCE          
+ 9401:d=17 hl=4 l= 329 cons:                  SEQUENCE          
+ 9405:d=18 hl=4 l= 325 cons:                   SEQUENCE          
+ 9409:d=19 hl=2 l=  20 prim:                    OCTET STRING      
+      0000 - a6 80 20 ac ab 46 bf d5-82 af d7 b6 38 f0 a4 bb   .. ..F......8...
+      0010 - df e7 19 45                                       ...E
+ 9431:d=19 hl=4 l= 299 cons:                    SEQUENCE          
+ 9435:d=20 hl=4 l= 274 cons:                     SEQUENCE          
+ 9439:d=21 hl=4 l= 270 cons:                      cont [ 4 ]        
+ 9443:d=22 hl=4 l= 266 cons:                       SEQUENCE          
+ 9447:d=23 hl=2 l=  24 cons:                        SET               
+ 9449:d=24 hl=2 l=  22 cons:                         SEQUENCE          
+ 9451:d=25 hl=2 l=   5 prim:                          OBJECT            :OGRN
+ 9458:d=25 hl=2 l=  13 prim:                          NUMERICSTRING     :1234567890123
+ 9473:d=23 hl=2 l=  26 cons:                        SET               
+ 9475:d=24 hl=2 l=  24 cons:                         SEQUENCE          
+ 9477:d=25 hl=2 l=   8 prim:                          OBJECT            :INN
+ 9487:d=25 hl=2 l=  12 prim:                          NUMERICSTRING     :001234567890
+ 9501:d=23 hl=2 l=  47 cons:                        SET               
+ 9503:d=24 hl=2 l=  45 cons:                         SEQUENCE          
+ 9505:d=25 hl=2 l=   3 prim:                          OBJECT            :streetAddress
+ 9510:d=25 hl=2 l=  38 prim:                          UTF8STRING        :ул. Сущёвский вал д. 18
+ 9550:d=23 hl=2 l=  11 cons:                        SET               
+ 9552:d=24 hl=2 l=   9 cons:                         SEQUENCE          
+ 9554:d=25 hl=2 l=   3 prim:                          OBJECT            :countryName
+ 9559:d=25 hl=2 l=   2 prim:                          PRINTABLESTRING   :RU
+ 9563:d=23 hl=2 l=  25 cons:                        SET               
+ 9565:d=24 hl=2 l=  23 cons:                         SEQUENCE          
+ 9567:d=25 hl=2 l=   3 prim:                          OBJECT            :stateOrProvinceName
+ 9572:d=25 hl=2 l=  16 prim:                          UTF8STRING        :г. Москва
+ 9590:d=23 hl=2 l=  21 cons:                        SET               
+ 9592:d=24 hl=2 l=  19 cons:                         SEQUENCE          
+ 9594:d=25 hl=2 l=   3 prim:                          OBJECT            :localityName
+ 9599:d=25 hl=2 l=  12 prim:                          UTF8STRING        :Москва
+ 9613:d=23 hl=2 l=  37 cons:                        SET               
+ 9615:d=24 hl=2 l=  35 cons:                         SEQUENCE          
+ 9617:d=25 hl=2 l=   3 prim:                          OBJECT            :organizationName
+ 9622:d=25 hl=2 l=  28 prim:                          UTF8STRING        :ООО "КРИПТО-ПРО"
+ 9652:d=23 hl=2 l=  59 cons:                        SET               
+ 9654:d=24 hl=2 l=  57 cons:                         SEQUENCE          
+ 9656:d=25 hl=2 l=   3 prim:                          OBJECT            :commonName
+ 9661:d=25 hl=2 l=  50 prim:                          UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+ 9713:d=20 hl=2 l=  19 prim:                     INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+ 9734:d=14 hl=4 l= 378 cons:               SEQUENCE          
+ 9738:d=15 hl=2 l=  11 prim:                OBJECT            :id-smime-aa-signingCertificateV2
+ 9751:d=15 hl=4 l= 361 cons:                SET               
+ 9755:d=16 hl=4 l= 357 cons:                 SEQUENCE          
+ 9759:d=17 hl=4 l= 353 cons:                  SEQUENCE          
+ 9763:d=18 hl=4 l= 349 cons:                   SEQUENCE          
+ 9767:d=19 hl=2 l=  10 cons:                    SEQUENCE          
+ 9769:d=20 hl=2 l=   8 prim:                     OBJECT            :GOST R 34.11-2012 with 256 bit hash
+ 9779:d=19 hl=2 l=  32 prim:                    OCTET STRING      
+      0000 - a3 b7 c0 b8 f9 7f 0d ce-70 57 be 52 c5 b0 65 3b   ........pW.R..e;
+      0010 - 43 96 c9 e8 be e3 9a 63-30 3f 25 36 d7 1d 27 04   C......c0?%6..'.
+ 9813:d=19 hl=4 l= 299 cons:                    SEQUENCE          
+ 9817:d=20 hl=4 l= 274 cons:                     SEQUENCE          
+ 9821:d=21 hl=4 l= 270 cons:                      cont [ 4 ]        
+ 9825:d=22 hl=4 l= 266 cons:                       SEQUENCE          
+ 9829:d=23 hl=2 l=  24 cons:                        SET               
+ 9831:d=24 hl=2 l=  22 cons:                         SEQUENCE          
+ 9833:d=25 hl=2 l=   5 prim:                          OBJECT            :OGRN
+ 9840:d=25 hl=2 l=  13 prim:                          NUMERICSTRING     :1234567890123
+ 9855:d=23 hl=2 l=  26 cons:                        SET               
+ 9857:d=24 hl=2 l=  24 cons:                         SEQUENCE          
+ 9859:d=25 hl=2 l=   8 prim:                          OBJECT            :INN
+ 9869:d=25 hl=2 l=  12 prim:                          NUMERICSTRING     :001234567890
+ 9883:d=23 hl=2 l=  47 cons:                        SET               
+ 9885:d=24 hl=2 l=  45 cons:                         SEQUENCE          
+ 9887:d=25 hl=2 l=   3 prim:                          OBJECT            :streetAddress
+ 9892:d=25 hl=2 l=  38 prim:                          UTF8STRING        :ул. Сущёвский вал д. 18
+ 9932:d=23 hl=2 l=  11 cons:                        SET               
+ 9934:d=24 hl=2 l=   9 cons:                         SEQUENCE          
+ 9936:d=25 hl=2 l=   3 prim:                          OBJECT            :countryName
+ 9941:d=25 hl=2 l=   2 prim:                          PRINTABLESTRING   :RU
+ 9945:d=23 hl=2 l=  25 cons:                        SET               
+ 9947:d=24 hl=2 l=  23 cons:                         SEQUENCE          
+ 9949:d=25 hl=2 l=   3 prim:                          OBJECT            :stateOrProvinceName
+ 9954:d=25 hl=2 l=  16 prim:                          UTF8STRING        :г. Москва
+ 9972:d=23 hl=2 l=  21 cons:                        SET               
+ 9974:d=24 hl=2 l=  19 cons:                         SEQUENCE          
+ 9976:d=25 hl=2 l=   3 prim:                          OBJECT            :localityName
+ 9981:d=25 hl=2 l=  12 prim:                          UTF8STRING        :Москва
+ 9995:d=23 hl=2 l=  37 cons:                        SET               
+ 9997:d=24 hl=2 l=  35 cons:                         SEQUENCE          
+ 9999:d=25 hl=2 l=   3 prim:                          OBJECT            :organizationName
+10004:d=25 hl=2 l=  28 prim:                          UTF8STRING        :ООО "КРИПТО-ПРО"
+10034:d=23 hl=2 l=  59 cons:                        SET               
+10036:d=24 hl=2 l=  57 cons:                         SEQUENCE          
+10038:d=25 hl=2 l=   3 prim:                          OBJECT            :commonName
+10043:d=25 hl=2 l=  50 prim:                          UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+10095:d=20 hl=2 l=  19 prim:                     INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+10116:d=13 hl=2 l=  10 cons:              SEQUENCE          
+10118:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+10128:d=13 hl=2 l=  64 prim:              OCTET STRING      
+      0000 - 75 8d 99 7c 80 c6 5c 7c-b6 3a 92 a6 b3 3f dc e3   u..|..\|.:...?..
+      0010 - b5 0c 14 40 4a 12 96 ab-c5 f6 81 45 98 ee 34 7f   ...@J......E..4.
+      0020 - 2f 2d ed 4b 13 2e c5 54-48 44 9f c1 82 00 e6 56   /-.K...THD.....V
+      0030 - 64 44 1f 67 c3 a4 a6 35-8e d3 a2 3d 78 5d 23 9a   dD.g...5...=x]#.
+10194:d=6  hl=4 l=3041 cons:       SEQUENCE          
+10198:d=7  hl=2 l=   6 prim:        OBJECT            :id-aa-ets-archiveTimestampV3
+10206:d=7  hl=4 l=3029 cons:        SET               
+10210:d=8  hl=4 l=3025 cons:         SEQUENCE          
+10214:d=9  hl=2 l=   9 prim:          OBJECT            :pkcs7-signedData
+10225:d=9  hl=4 l=3010 cons:          cont [ 0 ]        
+10229:d=10 hl=4 l=3006 cons:           SEQUENCE          
+10233:d=11 hl=2 l=   1 prim:            INTEGER           :03
+10236:d=11 hl=2 l=  12 cons:            SET               
+10238:d=12 hl=2 l=  10 cons:             SEQUENCE          
+10240:d=13 hl=2 l=   8 prim:              OBJECT            :GOST R 34.11-2012 with 256 bit hash
+10250:d=11 hl=3 l= 130 cons:            SEQUENCE          
+10253:d=12 hl=2 l=  11 prim:             OBJECT            :id-smime-ct-TSTInfo
+10266:d=12 hl=2 l= 115 cons:             cont [ 0 ]        
+10268:d=13 hl=2 l= 113 prim:              OCTET STRING      
+      0000 - 30 6f 02 01 01 06 04 2a-03 04 04 30 2e 30 0a 06   0o.....*...0.0..
+      0010 - 08 2a 85 03 07 01 01 02-02 04 20 41 cd 02 7c 84   .*........ A..|.
+      0020 - 06 78 35 02 d2 b2 f8 f8-45 9e 82 aa 69 d5 f2 ee   .x5.....E...i...
+      0030 - a0 9b b2 d0 b2 50 b0 61-57 8b 37 02 14 fb c6 0a   .....P.aW.7.....
+      0040 - 79 65 83 0e a2 0f b2 28-56 38 c9 fd 24 59 53 6b   ye.....(V8..$YSk
+      0050 - e3 18 0f 32 30 32 36 30-36 30 31 31 38 33 34 32   ...2026060118342
+      0060 - 38 5a 30 03 02 01 01 02-08 25 18 68 fb 26 71 96   8Z0......%.h.&q.
+      0070 - 88                                                .
+10383:d=11 hl=4 l=1285 cons:            cont [ 0 ]        
+10387:d=12 hl=4 l=1281 cons:             SEQUENCE          
+10391:d=13 hl=4 l=1198 cons:              SEQUENCE          
+10395:d=14 hl=2 l=   3 cons:               cont [ 0 ]        
+10397:d=15 hl=2 l=   1 prim:                INTEGER           :02
+10400:d=14 hl=2 l=  19 prim:               INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+10421:d=14 hl=2 l=  10 cons:               SEQUENCE          
+10423:d=15 hl=2 l=   8 prim:                OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+10433:d=14 hl=4 l= 266 cons:               SEQUENCE          
+10437:d=15 hl=2 l=  24 cons:                SET               
+10439:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+10441:d=17 hl=2 l=   5 prim:                  OBJECT            :OGRN
+10448:d=17 hl=2 l=  13 prim:                  NUMERICSTRING     :1234567890123
+10463:d=15 hl=2 l=  26 cons:                SET               
+10465:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+10467:d=17 hl=2 l=   8 prim:                  OBJECT            :INN
+10477:d=17 hl=2 l=  12 prim:                  NUMERICSTRING     :001234567890
+10491:d=15 hl=2 l=  47 cons:                SET               
+10493:d=16 hl=2 l=  45 cons:                 SEQUENCE          
+10495:d=17 hl=2 l=   3 prim:                  OBJECT            :streetAddress
+10500:d=17 hl=2 l=  38 prim:                  UTF8STRING        :ул. Сущёвский вал д. 18
+10540:d=15 hl=2 l=  11 cons:                SET               
+10542:d=16 hl=2 l=   9 cons:                 SEQUENCE          
+10544:d=17 hl=2 l=   3 prim:                  OBJECT            :countryName
+10549:d=17 hl=2 l=   2 prim:                  PRINTABLESTRING   :RU
+10553:d=15 hl=2 l=  25 cons:                SET               
+10555:d=16 hl=2 l=  23 cons:                 SEQUENCE          
+10557:d=17 hl=2 l=   3 prim:                  OBJECT            :stateOrProvinceName
+10562:d=17 hl=2 l=  16 prim:                  UTF8STRING        :г. Москва
+10580:d=15 hl=2 l=  21 cons:                SET               
+10582:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+10584:d=17 hl=2 l=   3 prim:                  OBJECT            :localityName
+10589:d=17 hl=2 l=  12 prim:                  UTF8STRING        :Москва
+10603:d=15 hl=2 l=  37 cons:                SET               
+10605:d=16 hl=2 l=  35 cons:                 SEQUENCE          
+10607:d=17 hl=2 l=   3 prim:                  OBJECT            :organizationName
+10612:d=17 hl=2 l=  28 prim:                  UTF8STRING        :ООО "КРИПТО-ПРО"
+10642:d=15 hl=2 l=  59 cons:                SET               
+10644:d=16 hl=2 l=  57 cons:                 SEQUENCE          
+10646:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+10651:d=17 hl=2 l=  50 prim:                  UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+10703:d=14 hl=2 l=  30 cons:               SEQUENCE          
+10705:d=15 hl=2 l=  13 prim:                UTCTIME           :260529122338Z
+10720:d=15 hl=2 l=  13 prim:                UTCTIME           :260729123338Z
+10735:d=14 hl=2 l=  28 cons:               SEQUENCE          
+10737:d=15 hl=2 l=  26 cons:                SET               
+10739:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+10741:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+10746:d=17 hl=2 l=  17 prim:                  UTF8STRING        :Operator tsp2012g
+10765:d=14 hl=2 l= 102 cons:               SEQUENCE          
+10767:d=15 hl=2 l=  31 cons:                SEQUENCE          
+10769:d=16 hl=2 l=   8 prim:                 OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+10779:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+10781:d=17 hl=2 l=   7 prim:                  OBJECT            :id-GostR3410-2001-CryptoPro-A-ParamSet
+10790:d=17 hl=2 l=   8 prim:                  OBJECT            :GOST R 34.11-2012 with 256 bit hash
+10800:d=15 hl=2 l=  67 prim:                BIT STRING        
+      0000 - 00 04 40 e0 31 7e 01 09-13 3e 74 de 67 53 46 55   ..@.1~...>t.gSFU
+      0010 - 88 83 7f 46 a8 3b 65 38-ef 73 da 5d 9b 7a f8 aa   ...F.;e8.s.].z..
+      0020 - 23 23 fc e1 e5 3a f3 20-72 83 53 4b 0f 30 6e e2   ##...:. r.SK.0n.
+      0030 - 46 3f 81 9e 25 49 18 6c-81 cd 4a e8 fb e2 ca 20   F?..%I.l..J.... 
+      0040 - f5 c2 1b                                          ...
+10869:d=14 hl=4 l= 720 cons:               cont [ 3 ]        
+10873:d=15 hl=4 l= 716 cons:                SEQUENCE          
+10877:d=16 hl=2 l=  14 cons:                 SEQUENCE          
+10879:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Key Usage
+10884:d=17 hl=2 l=   1 prim:                  BOOLEAN           :255
+10887:d=17 hl=2 l=   4 prim:                  OCTET STRING      
+      0000 - 03 02 06 c0                                       ....
+10893:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+10895:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Extended Key Usage
+10900:d=17 hl=2 l=   1 prim:                  BOOLEAN           :255
+10903:d=17 hl=2 l=  12 prim:                  OCTET STRING      
+      0000 - 30 0a 06 08 2b 06 01 05-05 07 03 08               0...+.......
+10917:d=16 hl=2 l=  30 cons:                 SEQUENCE          
+10919:d=17 hl=2 l=   9 prim:                  OBJECT            :Microsoft Application Policies Extension
+10930:d=17 hl=2 l=   1 prim:                  BOOLEAN           :255
+10933:d=17 hl=2 l=  14 prim:                  OCTET STRING      
+      0000 - 30 0c 30 0a 06 08 2b 06-01 05 05 07 03 08         0.0...+.......
+10949:d=16 hl=2 l=  29 cons:                 SEQUENCE          
+10951:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Subject Key Identifier
+10956:d=17 hl=2 l=  22 prim:                  OCTET STRING      
+      0000 - 04 14 76 2a e5 3f ba 92-be cb bf 62 5e c9 35 3d   ..v*.?.....b^.5=
+      0010 - 60 06 b8 6c 52 98                                 `..lR.
+10980:d=16 hl=2 l=  31 cons:                 SEQUENCE          
+10982:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Authority Key Identifier
+10987:d=17 hl=2 l=  24 prim:                  OCTET STRING      
+      0000 - 30 16 80 14 60 aa b5 28-73 5b e3 6e 6a 0b e6 bf   0...`..(s[.nj...
+      0010 - 4d a2 33 eb d0 52 49 7b-                          M.3..RI{
+11013:d=16 hl=4 l= 274 cons:                 SEQUENCE          
+11017:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 CRL Distribution Points
+11022:d=17 hl=4 l= 265 prim:                  OCTET STRING      
+      0000 - 30 82 01 05 30 82 01 01-a0 81 fe a0 81 fb 86 81   0...0...........
+      0010 - b6 68 74 74 70 3a 2f 2f-74 65 73 74 67 6f 73 74   .http://testgost
+      0020 - 32 30 31 32 2e 63 72 79-70 74 6f 70 72 6f 2e 72   2012.cryptopro.r
+      0030 - 75 2f 43 65 72 74 45 6e-72 6f 6c 6c 2f 21 30 34   u/CertEnroll/!04
+      0040 - 32 32 21 30 34 33 35 21-30 34 34 31 21 30 34 34   22!0435!0441!044
+      0050 - 32 21 30 34 33 65 21 30-34 33 32 21 30 34 34 62   2!043e!0432!044b
+      0060 - 21 30 34 33 39 25 32 30-21 30 34 32 33 21 30 34   !0439%20!0423!04
+      0070 - 32 36 25 32 30 21 30 34-31 65 21 30 34 31 65 21   26%20!041e!041e!
+      0080 - 30 34 31 65 25 32 30 21-30 30 32 32 21 30 34 31   041e%20!0022!041
+      0090 - 61 21 30 34 32 30 21 30-34 31 38 21 30 34 31 66   a!0420!0418!041f
+      00a0 - 21 30 34 32 32 21 30 34-31 65 2d 21 30 34 31 66   !0422!041e-!041f
+      00b0 - 21 30 34 32 30 21 30 34-31 65 21 30 30 32 32 28   !0420!041e!0022(
+      00c0 - 32 30 29 2e 63 72 6c 86-40 68 74 74 70 3a 2f 2f   20).crl.@http://
+      00d0 - 74 65 73 74 67 6f 73 74-32 30 31 32 2e 63 72 79   testgost2012.cry
+      00e0 - 70 74 6f 70 72 6f 2e 72-75 2f 43 65 72 74 45 6e   ptopro.ru/CertEn
+      00f0 - 72 6f 6c 6c 2f 74 65 73-74 67 6f 73 74 32 30 31   roll/testgost201
+      0100 - 32 28 32 30 29 2e 63 72-6c                        2(20).crl
+11291:d=16 hl=4 l= 298 cons:                 SEQUENCE          
+11295:d=17 hl=2 l=   8 prim:                  OBJECT            :Authority Information Access
+11305:d=17 hl=4 l= 284 prim:                  OCTET STRING      
+      0000 - 30 82 01 18 30 3f 06 08-2b 06 01 05 05 07 30 01   0...0?..+.....0.
+      0010 - 86 33 68 74 74 70 3a 2f-2f 74 65 73 74 67 6f 73   .3http://testgos
+      0020 - 74 32 30 31 32 2e 63 72-79 70 74 6f 70 72 6f 2e   t2012.cryptopro.
+      0030 - 72 75 2f 6f 63 73 70 32-30 31 32 67 2f 6f 63 73   ru/ocsp2012g/ocs
+      0040 - 70 2e 73 72 66 30 41 06-08 2b 06 01 05 05 07 30   p.srf0A..+.....0
+      0050 - 01 86 35 68 74 74 70 3a-2f 2f 74 65 73 74 67 6f   ..5http://testgo
+      0060 - 73 74 32 30 31 32 2e 63-72 79 70 74 6f 70 72 6f   st2012.cryptopro
+      0070 - 2e 72 75 2f 6f 63 73 70-32 30 31 32 67 73 74 2f   .ru/ocsp2012gst/
+      0080 - 6f 63 73 70 2e 73 72 66-30 4c 06 08 2b 06 01 05   ocsp.srf0L..+...
+      0090 - 05 07 30 02 86 40 68 74-74 70 3a 2f 2f 74 65 73   ..0..@http://tes
+      00a0 - 74 67 6f 73 74 32 30 31-32 2e 63 72 79 70 74 6f   tgost2012.crypto
+      00b0 - 70 72 6f 2e 72 75 2f 43-65 72 74 45 6e 72 6f 6c   pro.ru/CertEnrol
+      00c0 - 6c 2f 74 65 73 74 67 6f-73 74 32 30 31 32 28 32   l/testgost2012(2
+      00d0 - 30 29 2e 63 72 74 30 44-06 08 2b 06 01 05 05 07   0).crt0D..+.....
+      00e0 - 30 02 86 38 68 74 74 70-3a 2f 2f 74 65 73 74 67   0..8http://testg
+      00f0 - 6f 73 74 32 30 31 32 2e-63 72 79 70 74 6f 70 72   ost2012.cryptopr
+      0100 - 6f 2e 72 75 2f 43 65 72-74 45 6e 72 6f 6c 6c 2f   o.ru/CertEnroll/
+      0110 - 74 65 73 74 72 6f 6f 74-2e 70 37 62               testroot.p7b
+11593:d=13 hl=2 l=  10 cons:              SEQUENCE          
+11595:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+11605:d=13 hl=2 l=  65 prim:              BIT STRING        
+      0000 - 00 df a0 6a 59 85 61 c7-6c 5f 01 62 c1 f7 2f 34   ...jY.a.l_.b../4
+      0010 - ac d4 b4 4c 89 58 66 96-e3 bd 43 a6 81 49 a3 c3   ...L.Xf...C..I..
+      0020 - 37 a3 9d 6f 17 e1 71 5e-5d e5 5e 2b 70 65 ec 29   7..o..q^].^+pe.)
+      0030 - ed 86 1e 05 96 a5 b8 4d-fd f1 b9 3a de cc ae a9   .......M...:....
+      0040 - c3                                                .
+11672:d=11 hl=4 l=1563 cons:            SET               
+11676:d=12 hl=4 l=1559 cons:             SEQUENCE          
+11680:d=13 hl=2 l=   1 prim:              INTEGER           :01
+11683:d=13 hl=4 l= 291 cons:              SEQUENCE          
+11687:d=14 hl=4 l= 266 cons:               SEQUENCE          
+11691:d=15 hl=2 l=  24 cons:                SET               
+11693:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+11695:d=17 hl=2 l=   5 prim:                  OBJECT            :OGRN
+11702:d=17 hl=2 l=  13 prim:                  NUMERICSTRING     :1234567890123
+11717:d=15 hl=2 l=  26 cons:                SET               
+11719:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+11721:d=17 hl=2 l=   8 prim:                  OBJECT            :INN
+11731:d=17 hl=2 l=  12 prim:                  NUMERICSTRING     :001234567890
+11745:d=15 hl=2 l=  47 cons:                SET               
+11747:d=16 hl=2 l=  45 cons:                 SEQUENCE          
+11749:d=17 hl=2 l=   3 prim:                  OBJECT            :streetAddress
+11754:d=17 hl=2 l=  38 prim:                  UTF8STRING        :ул. Сущёвский вал д. 18
+11794:d=15 hl=2 l=  11 cons:                SET               
+11796:d=16 hl=2 l=   9 cons:                 SEQUENCE          
+11798:d=17 hl=2 l=   3 prim:                  OBJECT            :countryName
+11803:d=17 hl=2 l=   2 prim:                  PRINTABLESTRING   :RU
+11807:d=15 hl=2 l=  25 cons:                SET               
+11809:d=16 hl=2 l=  23 cons:                 SEQUENCE          
+11811:d=17 hl=2 l=   3 prim:                  OBJECT            :stateOrProvinceName
+11816:d=17 hl=2 l=  16 prim:                  UTF8STRING        :г. Москва
+11834:d=15 hl=2 l=  21 cons:                SET               
+11836:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+11838:d=17 hl=2 l=   3 prim:                  OBJECT            :localityName
+11843:d=17 hl=2 l=  12 prim:                  UTF8STRING        :Москва
+11857:d=15 hl=2 l=  37 cons:                SET               
+11859:d=16 hl=2 l=  35 cons:                 SEQUENCE          
+11861:d=17 hl=2 l=   3 prim:                  OBJECT            :organizationName
+11866:d=17 hl=2 l=  28 prim:                  UTF8STRING        :ООО "КРИПТО-ПРО"
+11896:d=15 hl=2 l=  59 cons:                SET               
+11898:d=16 hl=2 l=  57 cons:                 SEQUENCE          
+11900:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+11905:d=17 hl=2 l=  50 prim:                  UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+11957:d=14 hl=2 l=  19 prim:               INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+11978:d=13 hl=2 l=  10 cons:              SEQUENCE          
+11980:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.11-2012 with 256 bit hash
+11990:d=13 hl=4 l= 817 cons:              cont [ 0 ]        
+11994:d=14 hl=2 l=  26 cons:               SEQUENCE          
+11996:d=15 hl=2 l=   9 prim:                OBJECT            :contentType
+12007:d=15 hl=2 l=  13 cons:                SET               
+12009:d=16 hl=2 l=  11 prim:                 OBJECT            :id-smime-ct-TSTInfo
+12022:d=14 hl=2 l=  47 cons:               SEQUENCE          
+12024:d=15 hl=2 l=   9 prim:                OBJECT            :messageDigest
+12035:d=15 hl=2 l=  34 cons:                SET               
+12037:d=16 hl=2 l=  32 prim:                 OCTET STRING      
+      0000 - 99 a9 e2 e5 5d 6a 49 95-31 25 ad 35 ee b3 9b 73   ....]jI.1%.5...s
+      0010 - 8d 3c bb fc 75 1c bc d1-ff e7 89 7d 50 f0 88 f3   .<..u......}P...
+12071:d=14 hl=4 l= 354 cons:               SEQUENCE          
+12075:d=15 hl=2 l=  11 prim:                OBJECT            :id-smime-aa-signingCertificate
+12088:d=15 hl=4 l= 337 cons:                SET               
+12092:d=16 hl=4 l= 333 cons:                 SEQUENCE          
+12096:d=17 hl=4 l= 329 cons:                  SEQUENCE          
+12100:d=18 hl=4 l= 325 cons:                   SEQUENCE          
+12104:d=19 hl=2 l=  20 prim:                    OCTET STRING      
+      0000 - a6 80 20 ac ab 46 bf d5-82 af d7 b6 38 f0 a4 bb   .. ..F......8...
+      0010 - df e7 19 45                                       ...E
+12126:d=19 hl=4 l= 299 cons:                    SEQUENCE          
+12130:d=20 hl=4 l= 274 cons:                     SEQUENCE          
+12134:d=21 hl=4 l= 270 cons:                      cont [ 4 ]        
+12138:d=22 hl=4 l= 266 cons:                       SEQUENCE          
+12142:d=23 hl=2 l=  24 cons:                        SET               
+12144:d=24 hl=2 l=  22 cons:                         SEQUENCE          
+12146:d=25 hl=2 l=   5 prim:                          OBJECT            :OGRN
+12153:d=25 hl=2 l=  13 prim:                          NUMERICSTRING     :1234567890123
+12168:d=23 hl=2 l=  26 cons:                        SET               
+12170:d=24 hl=2 l=  24 cons:                         SEQUENCE          
+12172:d=25 hl=2 l=   8 prim:                          OBJECT            :INN
+12182:d=25 hl=2 l=  12 prim:                          NUMERICSTRING     :001234567890
+12196:d=23 hl=2 l=  47 cons:                        SET               
+12198:d=24 hl=2 l=  45 cons:                         SEQUENCE          
+12200:d=25 hl=2 l=   3 prim:                          OBJECT            :streetAddress
+12205:d=25 hl=2 l=  38 prim:                          UTF8STRING        :ул. Сущёвский вал д. 18
+12245:d=23 hl=2 l=  11 cons:                        SET               
+12247:d=24 hl=2 l=   9 cons:                         SEQUENCE          
+12249:d=25 hl=2 l=   3 prim:                          OBJECT            :countryName
+12254:d=25 hl=2 l=   2 prim:                          PRINTABLESTRING   :RU
+12258:d=23 hl=2 l=  25 cons:                        SET               
+12260:d=24 hl=2 l=  23 cons:                         SEQUENCE          
+12262:d=25 hl=2 l=   3 prim:                          OBJECT            :stateOrProvinceName
+12267:d=25 hl=2 l=  16 prim:                          UTF8STRING        :г. Москва
+12285:d=23 hl=2 l=  21 cons:                        SET               
+12287:d=24 hl=2 l=  19 cons:                         SEQUENCE          
+12289:d=25 hl=2 l=   3 prim:                          OBJECT            :localityName
+12294:d=25 hl=2 l=  12 prim:                          UTF8STRING        :Москва
+12308:d=23 hl=2 l=  37 cons:                        SET               
+12310:d=24 hl=2 l=  35 cons:                         SEQUENCE          
+12312:d=25 hl=2 l=   3 prim:                          OBJECT            :organizationName
+12317:d=25 hl=2 l=  28 prim:                          UTF8STRING        :ООО "КРИПТО-ПРО"
+12347:d=23 hl=2 l=  59 cons:                        SET               
+12349:d=24 hl=2 l=  57 cons:                         SEQUENCE          
+12351:d=25 hl=2 l=   3 prim:                          OBJECT            :commonName
+12356:d=25 hl=2 l=  50 prim:                          UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+12408:d=20 hl=2 l=  19 prim:                     INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+12429:d=14 hl=4 l= 378 cons:               SEQUENCE          
+12433:d=15 hl=2 l=  11 prim:                OBJECT            :id-smime-aa-signingCertificateV2
+12446:d=15 hl=4 l= 361 cons:                SET               
+12450:d=16 hl=4 l= 357 cons:                 SEQUENCE          
+12454:d=17 hl=4 l= 353 cons:                  SEQUENCE          
+12458:d=18 hl=4 l= 349 cons:                   SEQUENCE          
+12462:d=19 hl=2 l=  10 cons:                    SEQUENCE          
+12464:d=20 hl=2 l=   8 prim:                     OBJECT            :GOST R 34.11-2012 with 256 bit hash
+12474:d=19 hl=2 l=  32 prim:                    OCTET STRING      
+      0000 - a3 b7 c0 b8 f9 7f 0d ce-70 57 be 52 c5 b0 65 3b   ........pW.R..e;
+      0010 - 43 96 c9 e8 be e3 9a 63-30 3f 25 36 d7 1d 27 04   C......c0?%6..'.
+12508:d=19 hl=4 l= 299 cons:                    SEQUENCE          
+12512:d=20 hl=4 l= 274 cons:                     SEQUENCE          
+12516:d=21 hl=4 l= 270 cons:                      cont [ 4 ]        
+12520:d=22 hl=4 l= 266 cons:                       SEQUENCE          
+12524:d=23 hl=2 l=  24 cons:                        SET               
+12526:d=24 hl=2 l=  22 cons:                         SEQUENCE          
+12528:d=25 hl=2 l=   5 prim:                          OBJECT            :OGRN
+12535:d=25 hl=2 l=  13 prim:                          NUMERICSTRING     :1234567890123
+12550:d=23 hl=2 l=  26 cons:                        SET               
+12552:d=24 hl=2 l=  24 cons:                         SEQUENCE          
+12554:d=25 hl=2 l=   8 prim:                          OBJECT            :INN
+12564:d=25 hl=2 l=  12 prim:                          NUMERICSTRING     :001234567890
+12578:d=23 hl=2 l=  47 cons:                        SET               
+12580:d=24 hl=2 l=  45 cons:                         SEQUENCE          
+12582:d=25 hl=2 l=   3 prim:                          OBJECT            :streetAddress
+12587:d=25 hl=2 l=  38 prim:                          UTF8STRING        :ул. Сущёвский вал д. 18
+12627:d=23 hl=2 l=  11 cons:                        SET               
+12629:d=24 hl=2 l=   9 cons:                         SEQUENCE          
+12631:d=25 hl=2 l=   3 prim:                          OBJECT            :countryName
+12636:d=25 hl=2 l=   2 prim:                          PRINTABLESTRING   :RU
+12640:d=23 hl=2 l=  25 cons:                        SET               
+12642:d=24 hl=2 l=  23 cons:                         SEQUENCE          
+12644:d=25 hl=2 l=   3 prim:                          OBJECT            :stateOrProvinceName
+12649:d=25 hl=2 l=  16 prim:                          UTF8STRING        :г. Москва
+12667:d=23 hl=2 l=  21 cons:                        SET               
+12669:d=24 hl=2 l=  19 cons:                         SEQUENCE          
+12671:d=25 hl=2 l=   3 prim:                          OBJECT            :localityName
+12676:d=25 hl=2 l=  12 prim:                          UTF8STRING        :Москва
+12690:d=23 hl=2 l=  37 cons:                        SET               
+12692:d=24 hl=2 l=  35 cons:                         SEQUENCE          
+12694:d=25 hl=2 l=   3 prim:                          OBJECT            :organizationName
+12699:d=25 hl=2 l=  28 prim:                          UTF8STRING        :ООО "КРИПТО-ПРО"
+12729:d=23 hl=2 l=  59 cons:                        SET               
+12731:d=24 hl=2 l=  57 cons:                         SEQUENCE          
+12733:d=25 hl=2 l=   3 prim:                          OBJECT            :commonName
+12738:d=25 hl=2 l=  50 prim:                          UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+12790:d=20 hl=2 l=  19 prim:                     INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+12811:d=13 hl=2 l=  10 cons:              SEQUENCE          
+12813:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+12823:d=13 hl=2 l=  64 prim:              OCTET STRING      
+      0000 - 16 41 1d ee 99 e2 13 b6-c3 05 aa 5a 94 d4 e6 c0   .A.........Z....
+      0010 - ab 33 68 5b 81 45 fc 80-32 a3 7b c3 70 86 b6 a0   .3h[.E..2.{.p...
+      0020 - 16 25 05 af 0e 54 9e 57-a4 56 0e d3 26 33 0f 08   .%...T.W.V..&3..
+      0030 - 46 19 db e6 7f 89 b7 fd-d8 fe ed 3a fc e2 31 21   F..........:..1!
+12889:d=13 hl=4 l= 346 cons:              cont [ 1 ]        
+12893:d=14 hl=4 l= 342 cons:               SEQUENCE          
+12897:d=15 hl=2 l=   7 prim:                OBJECT            :id-aa-ATSHashIndex-v3
+12906:d=15 hl=4 l= 329 cons:                SET               
+12910:d=16 hl=4 l= 325 cons:                 SEQUENCE          
+12914:d=17 hl=2 l=  10 cons:                  SEQUENCE          
+12916:d=18 hl=2 l=   8 prim:                   OBJECT            :GOST R 34.11-2012 with 256 bit hash
+12926:d=17 hl=2 l=  68 cons:                  SEQUENCE          
+12928:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - e0 d9 c8 64 09 88 68 c5-0d 0a 64 10 ea 5f 73 de   ...d..h...d.._s.
+      0010 - 4c 5c d6 9e 08 e6 2e a1-ea 9b 63 26 7c a6 ac de   L\........c&|...
+12962:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - 12 4a 33 42 ca 16 63 00-a0 a4 06 b5 a1 3e 35 5c   .J3B..c......>5\
+      0010 - 41 b6 b6 c5 5e c8 c1 98-65 81 bb c8 a3 18 5c b8   A...^...e.....\.
+12996:d=17 hl=2 l=   0 cons:                  SEQUENCE          
+12998:d=17 hl=3 l= 238 cons:                  SEQUENCE          
+13001:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - ba c1 a4 13 ff 06 ff 52-a4 c4 0d 1b 02 b1 7d dd   .......R......}.
+      0010 - ad 7c 02 ff 4a 16 4a de-fb a1 6f e1 39 3a 27 a4   .|..J.J...o.9:'.
+13035:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - 9c 15 78 c0 33 9b 1c c9-6d 55 e9 0f fa 3b b5 9c   ..x.3...mU...;..
+      0010 - ca 63 09 0d e5 e7 a9 81-37 a6 e8 55 77 57 69 e2   .c......7..UwWi.
+13069:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - 4b 44 d5 55 a9 22 85 df-c6 78 38 d2 2c 6d 64 a9   KD.U."...x8.,md.
+      0010 - 81 b5 17 e3 86 87 ec 28-4a f8 f5 fb 0a 01 8a 05   .......(J.......
+13103:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - 00 15 ef 1f ae b1 d9 33-35 b1 39 c3 85 0e 1a 12   .......35.9.....
+      0010 - cd c6 3d 0b 31 24 af 58-96 03 d6 ce a3 ad dd 9a   ..=.1$.X........
+13137:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - 3a e9 df ee 94 d4 4f 91-03 03 20 8a b6 0e de 2b   :.....O... ....+
+      0010 - 8d a1 7b d4 6e d8 eb bb-df 8f 7d a5 b3 75 e7 48   ..{.n.....}..u.H
+13171:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - 8a 39 bf 61 2b c6 3a 49-14 d1 d8 30 c1 09 bc 59   .9.a+.:I...0...Y
+      0010 - 95 42 0a a1 73 d5 1b 96-e4 9e 5e 97 17 2f 56 c8   .B..s.....^../V.
+13205:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - f8 68 ca f5 d5 3e 09 96-1d 9d f9 4d 4f f2 98 4f   .h...>.....MO..O
+      0010 - 2c 56 e7 64 1a d0 46 b7-99 24 1c 31 ee 2f 3d 1d   ,V.d..F..$.1./=.
+13239:d=6  hl=4 l=4011 cons:       SEQUENCE          
+13243:d=7  hl=2 l=  11 prim:        OBJECT            :id-smime-aa-ets-certValues
+13256:d=7  hl=4 l=3994 cons:        SET               
+13260:d=8  hl=4 l=3990 cons:         SEQUENCE          
+13264:d=9  hl=4 l=1294 cons:          SEQUENCE          
+13268:d=10 hl=4 l=1211 cons:           SEQUENCE          
+13272:d=11 hl=2 l=   3 cons:            cont [ 0 ]        
+13274:d=12 hl=2 l=   1 prim:             INTEGER           :02
+13277:d=11 hl=2 l=  19 prim:            INTEGER           :7C0033E8171401F70ED462DC1100140033E817
+13298:d=11 hl=2 l=  10 cons:            SEQUENCE          
+13300:d=12 hl=2 l=   8 prim:             OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+13310:d=11 hl=4 l= 266 cons:            SEQUENCE          
+13314:d=12 hl=2 l=  24 cons:             SET               
+13316:d=13 hl=2 l=  22 cons:              SEQUENCE          
+13318:d=14 hl=2 l=   5 prim:               OBJECT            :OGRN
+13325:d=14 hl=2 l=  13 prim:               NUMERICSTRING     :1234567890123
+13340:d=12 hl=2 l=  26 cons:             SET               
+13342:d=13 hl=2 l=  24 cons:              SEQUENCE          
+13344:d=14 hl=2 l=   8 prim:               OBJECT            :INN
+13354:d=14 hl=2 l=  12 prim:               NUMERICSTRING     :001234567890
+13368:d=12 hl=2 l=  47 cons:             SET               
+13370:d=13 hl=2 l=  45 cons:              SEQUENCE          
+13372:d=14 hl=2 l=   3 prim:               OBJECT            :streetAddress
+13377:d=14 hl=2 l=  38 prim:               UTF8STRING        :ул. Сущёвский вал д. 18
+13417:d=12 hl=2 l=  11 cons:             SET               
+13419:d=13 hl=2 l=   9 cons:              SEQUENCE          
+13421:d=14 hl=2 l=   3 prim:               OBJECT            :countryName
+13426:d=14 hl=2 l=   2 prim:               PRINTABLESTRING   :RU
+13430:d=12 hl=2 l=  25 cons:             SET               
+13432:d=13 hl=2 l=  23 cons:              SEQUENCE          
+13434:d=14 hl=2 l=   3 prim:               OBJECT            :stateOrProvinceName
+13439:d=14 hl=2 l=  16 prim:               UTF8STRING        :г. Москва
+13457:d=12 hl=2 l=  21 cons:             SET               
+13459:d=13 hl=2 l=  19 cons:              SEQUENCE          
+13461:d=14 hl=2 l=   3 prim:               OBJECT            :localityName
+13466:d=14 hl=2 l=  12 prim:               UTF8STRING        :Москва
+13480:d=12 hl=2 l=  37 cons:             SET               
+13482:d=13 hl=2 l=  35 cons:              SEQUENCE          
+13484:d=14 hl=2 l=   3 prim:               OBJECT            :organizationName
+13489:d=14 hl=2 l=  28 prim:               UTF8STRING        :ООО "КРИПТО-ПРО"
+13519:d=12 hl=2 l=  59 cons:             SET               
+13521:d=13 hl=2 l=  57 cons:              SEQUENCE          
+13523:d=14 hl=2 l=   3 prim:               OBJECT            :commonName
+13528:d=14 hl=2 l=  50 prim:               UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+13580:d=11 hl=2 l=  30 cons:            SEQUENCE          
+13582:d=12 hl=2 l=  13 prim:             UTCTIME           :260531164147Z
+13597:d=12 hl=2 l=  13 prim:             UTCTIME           :260731165147Z
+13612:d=11 hl=2 l= 113 cons:            SEQUENCE          
+13614:d=12 hl=2 l=  11 cons:             SET               
+13616:d=13 hl=2 l=   9 cons:              SEQUENCE          
+13618:d=14 hl=2 l=   3 prim:               OBJECT            :countryName
+13623:d=14 hl=2 l=   2 prim:               PRINTABLESTRING   :RU
+13627:d=12 hl=2 l=  15 cons:             SET               
+13629:d=13 hl=2 l=  13 cons:              SEQUENCE          
+13631:d=14 hl=2 l=   3 prim:               OBJECT            :localityName
+13636:d=14 hl=2 l=   6 prim:               UTF8STRING        :Moscow
+13644:d=12 hl=2 l=  13 cons:             SET               
+13646:d=13 hl=2 l=  11 cons:              SEQUENCE          
+13648:d=14 hl=2 l=   3 prim:               OBJECT            :organizationName
+13653:d=14 hl=2 l=   4 prim:               UTF8STRING        :Test
+13659:d=12 hl=2 l=  11 cons:             SET               
+13661:d=13 hl=2 l=   9 cons:              SEQUENCE          
+13663:d=14 hl=2 l=   3 prim:               OBJECT            :organizationalUnitName
+13668:d=14 hl=2 l=   2 prim:               UTF8STRING        :IT
+13672:d=12 hl=2 l=  20 cons:             SET               
+13674:d=13 hl=2 l=  18 cons:              SEQUENCE          
+13676:d=14 hl=2 l=   3 prim:               OBJECT            :commonName
+13681:d=14 hl=2 l=  11 prim:               UTF8STRING        :Ivanov Test
+13694:d=12 hl=2 l=  31 cons:             SET               
+13696:d=13 hl=2 l=  29 cons:              SEQUENCE          
+13698:d=14 hl=2 l=   9 prim:               OBJECT            :emailAddress
+13709:d=14 hl=2 l=  16 prim:               IA5STRING         :test@example.com
+13727:d=11 hl=2 l= 102 cons:            SEQUENCE          
+13729:d=12 hl=2 l=  31 cons:             SEQUENCE          
+13731:d=13 hl=2 l=   8 prim:              OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+13741:d=13 hl=2 l=  19 cons:              SEQUENCE          
+13743:d=14 hl=2 l=   7 prim:               OBJECT            :id-GostR3410-2001-CryptoPro-A-ParamSet
+13752:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.11-2012 with 256 bit hash
+13762:d=12 hl=2 l=  67 prim:             BIT STRING        
+      0000 - 00 04 40 f4 30 72 d7 81-d0 c8 f0 13 cc c2 e8 1b   ..@.0r..........
+      0010 - 5c 4c b4 cb 60 9b 9a 53-dc 88 e7 2f a4 32 10 a4   \L..`..S.../.2..
+      0020 - b7 7d 7b 23 07 61 c8 ee-56 52 fb a9 00 32 b0 41   .}{#.a..VR...2.A
+      0030 - 8c ad db e4 bc 8d 21 04-9c 9a b6 0e 00 41 f3 24   ......!......A.$
+      0040 - ee 8b a5                                          ...
+13831:d=11 hl=4 l= 648 cons:            cont [ 3 ]        
+13835:d=12 hl=4 l= 644 cons:             SEQUENCE          
+13839:d=13 hl=2 l=  29 cons:              SEQUENCE          
+13841:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 Subject Key Identifier
+13846:d=14 hl=2 l=  22 prim:               OCTET STRING      
+      0000 - 04 14 bd d2 bb fe 2e f3-0a 39 54 84 d1 b3 e6 b4   .........9T.....
+      0010 - f2 2e a1 ad a9 e0                                 ......
+13870:d=13 hl=2 l=  31 cons:              SEQUENCE          
+13872:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 Authority Key Identifier
+13877:d=14 hl=2 l=  24 prim:               OCTET STRING      
+      0000 - 30 16 80 14 60 aa b5 28-73 5b e3 6e 6a 0b e6 bf   0...`..(s[.nj...
+      0010 - 4d a2 33 eb d0 52 49 7b-                          M.3..RI{
+13903:d=13 hl=4 l= 274 cons:              SEQUENCE          
+13907:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 CRL Distribution Points
+13912:d=14 hl=4 l= 265 prim:               OCTET STRING      
+      0000 - 30 82 01 05 30 82 01 01-a0 81 fe a0 81 fb 86 81   0...0...........
+      0010 - b6 68 74 74 70 3a 2f 2f-74 65 73 74 67 6f 73 74   .http://testgost
+      0020 - 32 30 31 32 2e 63 72 79-70 74 6f 70 72 6f 2e 72   2012.cryptopro.r
+      0030 - 75 2f 43 65 72 74 45 6e-72 6f 6c 6c 2f 21 30 34   u/CertEnroll/!04
+      0040 - 32 32 21 30 34 33 35 21-30 34 34 31 21 30 34 34   22!0435!0441!044
+      0050 - 32 21 30 34 33 65 21 30-34 33 32 21 30 34 34 62   2!043e!0432!044b
+      0060 - 21 30 34 33 39 25 32 30-21 30 34 32 33 21 30 34   !0439%20!0423!04
+      0070 - 32 36 25 32 30 21 30 34-31 65 21 30 34 31 65 21   26%20!041e!041e!
+      0080 - 30 34 31 65 25 32 30 21-30 30 32 32 21 30 34 31   041e%20!0022!041
+      0090 - 61 21 30 34 32 30 21 30-34 31 38 21 30 34 31 66   a!0420!0418!041f
+      00a0 - 21 30 34 32 32 21 30 34-31 65 2d 21 30 34 31 66   !0422!041e-!041f
+      00b0 - 21 30 34 32 30 21 30 34-31 65 21 30 30 32 32 28   !0420!041e!0022(
+      00c0 - 32 30 29 2e 63 72 6c 86-40 68 74 74 70 3a 2f 2f   20).crl.@http://
+      00d0 - 74 65 73 74 67 6f 73 74-32 30 31 32 2e 63 72 79   testgost2012.cry
+      00e0 - 70 74 6f 70 72 6f 2e 72-75 2f 43 65 72 74 45 6e   ptopro.ru/CertEn
+      00f0 - 72 6f 6c 6c 2f 74 65 73-74 67 6f 73 74 32 30 31   roll/testgost201
+      0100 - 32 28 32 30 29 2e 63 72-6c                        2(20).crl
+14181:d=13 hl=4 l= 298 cons:              SEQUENCE          
+14185:d=14 hl=2 l=   8 prim:               OBJECT            :Authority Information Access
+14195:d=14 hl=4 l= 284 prim:               OCTET STRING      
+      0000 - 30 82 01 18 30 3f 06 08-2b 06 01 05 05 07 30 01   0...0?..+.....0.
+      0010 - 86 33 68 74 74 70 3a 2f-2f 74 65 73 74 67 6f 73   .3http://testgos
+      0020 - 74 32 30 31 32 2e 63 72-79 70 74 6f 70 72 6f 2e   t2012.cryptopro.
+      0030 - 72 75 2f 6f 63 73 70 32-30 31 32 67 2f 6f 63 73   ru/ocsp2012g/ocs
+      0040 - 70 2e 73 72 66 30 41 06-08 2b 06 01 05 05 07 30   p.srf0A..+.....0
+      0050 - 01 86 35 68 74 74 70 3a-2f 2f 74 65 73 74 67 6f   ..5http://testgo
+      0060 - 73 74 32 30 31 32 2e 63-72 79 70 74 6f 70 72 6f   st2012.cryptopro
+      0070 - 2e 72 75 2f 6f 63 73 70-32 30 31 32 67 73 74 2f   .ru/ocsp2012gst/
+      0080 - 6f 63 73 70 2e 73 72 66-30 4c 06 08 2b 06 01 05   ocsp.srf0L..+...
+      0090 - 05 07 30 02 86 40 68 74-74 70 3a 2f 2f 74 65 73   ..0..@http://tes
+      00a0 - 74 67 6f 73 74 32 30 31-32 2e 63 72 79 70 74 6f   tgost2012.crypto
+      00b0 - 70 72 6f 2e 72 75 2f 43-65 72 74 45 6e 72 6f 6c   pro.ru/CertEnrol
+      00c0 - 6c 2f 74 65 73 74 67 6f-73 74 32 30 31 32 28 32   l/testgost2012(2
+      00d0 - 30 29 2e 63 72 74 30 44-06 08 2b 06 01 05 05 07   0).crt0D..+.....
+      00e0 - 30 02 86 38 68 74 74 70-3a 2f 2f 74 65 73 74 67   0..8http://testg
+      00f0 - 6f 73 74 32 30 31 32 2e-63 72 79 70 74 6f 70 72   ost2012.cryptopr
+      0100 - 6f 2e 72 75 2f 43 65 72-74 45 6e 72 6f 6c 6c 2f   o.ru/CertEnroll/
+      0110 - 74 65 73 74 72 6f 6f 74-2e 70 37 62               testroot.p7b
+14483:d=10 hl=2 l=  10 cons:           SEQUENCE          
+14485:d=11 hl=2 l=   8 prim:            OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+14495:d=10 hl=2 l=  65 prim:           BIT STRING        
+      0000 - 00 04 d1 c7 d3 c3 11 b0-03 4e 87 bc 56 38 1a f0   .........N..V8..
+      0010 - 65 6a 51 b6 71 7c ab db-96 a7 45 23 64 2d 00 28   ejQ.q|....E#d-.(
+      0020 - 9a 7c 84 73 8c ae 1c 29-d8 01 ab ba 25 df 2d 3b   .|.s...)....%.-;
+      0030 - bf f3 ee 81 dc c8 3b 9a-33 4c 07 db e8 85 5c 2d   ......;.3L....\-
+      0040 - e4                                                .
+14562:d=9  hl=4 l=1311 cons:          SEQUENCE          
+14566:d=10 hl=4 l=1228 cons:           SEQUENCE          
+14570:d=11 hl=2 l=   3 cons:            cont [ 0 ]        
+14572:d=12 hl=2 l=   1 prim:             INTEGER           :02
+14575:d=11 hl=2 l=  16 prim:            INTEGER           :177F1EF8C798CC9B4F699ABE83E644CC
+14593:d=11 hl=2 l=  10 cons:            SEQUENCE          
+14595:d=12 hl=2 l=   8 prim:             OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+14605:d=11 hl=4 l= 266 cons:            SEQUENCE          
+14609:d=12 hl=2 l=  24 cons:             SET               
+14611:d=13 hl=2 l=  22 cons:              SEQUENCE          
+14613:d=14 hl=2 l=   5 prim:               OBJECT            :OGRN
+14620:d=14 hl=2 l=  13 prim:               NUMERICSTRING     :1234567890123
+14635:d=12 hl=2 l=  26 cons:             SET               
+14637:d=13 hl=2 l=  24 cons:              SEQUENCE          
+14639:d=14 hl=2 l=   8 prim:               OBJECT            :INN
+14649:d=14 hl=2 l=  12 prim:               NUMERICSTRING     :001234567890
+14663:d=12 hl=2 l=  47 cons:             SET               
+14665:d=13 hl=2 l=  45 cons:              SEQUENCE          
+14667:d=14 hl=2 l=   3 prim:               OBJECT            :streetAddress
+14672:d=14 hl=2 l=  38 prim:               UTF8STRING        :ул. Сущёвский вал д. 18
+14712:d=12 hl=2 l=  11 cons:             SET               
+14714:d=13 hl=2 l=   9 cons:              SEQUENCE          
+14716:d=14 hl=2 l=   3 prim:               OBJECT            :countryName
+14721:d=14 hl=2 l=   2 prim:               PRINTABLESTRING   :RU
+14725:d=12 hl=2 l=  25 cons:             SET               
+14727:d=13 hl=2 l=  23 cons:              SEQUENCE          
+14729:d=14 hl=2 l=   3 prim:               OBJECT            :stateOrProvinceName
+14734:d=14 hl=2 l=  16 prim:               UTF8STRING        :г. Москва
+14752:d=12 hl=2 l=  21 cons:             SET               
+14754:d=13 hl=2 l=  19 cons:              SEQUENCE          
+14756:d=14 hl=2 l=   3 prim:               OBJECT            :localityName
+14761:d=14 hl=2 l=  12 prim:               UTF8STRING        :Москва
+14775:d=12 hl=2 l=  37 cons:             SET               
+14777:d=13 hl=2 l=  35 cons:              SEQUENCE          
+14779:d=14 hl=2 l=   3 prim:               OBJECT            :organizationName
+14784:d=14 hl=2 l=  28 prim:               UTF8STRING        :ООО "КРИПТО-ПРО"
+14814:d=12 hl=2 l=  59 cons:             SET               
+14816:d=13 hl=2 l=  57 cons:              SEQUENCE          
+14818:d=14 hl=2 l=   3 prim:               OBJECT            :commonName
+14823:d=14 hl=2 l=  50 prim:               UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+14875:d=11 hl=2 l=  30 cons:            SEQUENCE          
+14877:d=12 hl=2 l=  13 prim:             UTCTIME           :260529114515Z
+14892:d=12 hl=2 l=  13 prim:             UTCTIME           :260829115515Z
+14907:d=11 hl=4 l= 266 cons:            SEQUENCE          
+14911:d=12 hl=2 l=  24 cons:             SET               
+14913:d=13 hl=2 l=  22 cons:              SEQUENCE          
+14915:d=14 hl=2 l=   5 prim:               OBJECT            :OGRN
+14922:d=14 hl=2 l=  13 prim:               NUMERICSTRING     :1234567890123
+14937:d=12 hl=2 l=  26 cons:             SET               
+14939:d=13 hl=2 l=  24 cons:              SEQUENCE          
+14941:d=14 hl=2 l=   8 prim:               OBJECT            :INN
+14951:d=14 hl=2 l=  12 prim:               NUMERICSTRING     :001234567890
+14965:d=12 hl=2 l=  47 cons:             SET               
+14967:d=13 hl=2 l=  45 cons:              SEQUENCE          
+14969:d=14 hl=2 l=   3 prim:               OBJECT            :streetAddress
+14974:d=14 hl=2 l=  38 prim:               UTF8STRING        :ул. Сущёвский вал д. 18
+15014:d=12 hl=2 l=  11 cons:             SET               
+15016:d=13 hl=2 l=   9 cons:              SEQUENCE          
+15018:d=14 hl=2 l=   3 prim:               OBJECT            :countryName
+15023:d=14 hl=2 l=   2 prim:               PRINTABLESTRING   :RU
+15027:d=12 hl=2 l=  25 cons:             SET               
+15029:d=13 hl=2 l=  23 cons:              SEQUENCE          
+15031:d=14 hl=2 l=   3 prim:               OBJECT            :stateOrProvinceName
+15036:d=14 hl=2 l=  16 prim:               UTF8STRING        :г. Москва
+15054:d=12 hl=2 l=  21 cons:             SET               
+15056:d=13 hl=2 l=  19 cons:              SEQUENCE          
+15058:d=14 hl=2 l=   3 prim:               OBJECT            :localityName
+15063:d=14 hl=2 l=  12 prim:               UTF8STRING        :Москва
+15077:d=12 hl=2 l=  37 cons:             SET               
+15079:d=13 hl=2 l=  35 cons:              SEQUENCE          
+15081:d=14 hl=2 l=   3 prim:               OBJECT            :organizationName
+15086:d=14 hl=2 l=  28 prim:               UTF8STRING        :ООО "КРИПТО-ПРО"
+15116:d=12 hl=2 l=  59 cons:             SET               
+15118:d=13 hl=2 l=  57 cons:              SEQUENCE          
+15120:d=14 hl=2 l=   3 prim:               OBJECT            :commonName
+15125:d=14 hl=2 l=  50 prim:               UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+15177:d=11 hl=2 l= 102 cons:            SEQUENCE          
+15179:d=12 hl=2 l=  31 cons:             SEQUENCE          
+15181:d=13 hl=2 l=   8 prim:              OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+15191:d=13 hl=2 l=  19 cons:              SEQUENCE          
+15193:d=14 hl=2 l=   7 prim:               OBJECT            :id-GostR3410-2001-CryptoPro-A-ParamSet
+15202:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.11-2012 with 256 bit hash
+15212:d=12 hl=2 l=  67 prim:             BIT STRING        
+      0000 - 00 04 40 35 3c f2 7e c6-24 7a c1 6e d7 13 a1 53   ..@5<.~.$z.n...S
+      0010 - f2 3e 01 71 26 69 b7 76-21 ed c6 18 35 d1 7b 08   .>.q&i.v!...5.{.
+      0020 - 93 68 e1 6d aa d7 56 4d-81 5b e0 72 c4 d2 d7 4b   .h.m..VM.[.r...K
+      0030 - 52 33 0c 63 89 18 57 9e-c8 6b 84 e8 98 6c be 8b   R3.c..W..k...l..
+      0040 - a8 db 70                                          ..p
+15281:d=11 hl=4 l= 513 cons:            cont [ 3 ]        
+15285:d=12 hl=4 l= 509 cons:             SEQUENCE          
+15289:d=13 hl=2 l=  54 cons:              SEQUENCE          
+15291:d=14 hl=2 l=   5 prim:               OBJECT            :Signing Tool of Subject
+15298:d=14 hl=2 l=  45 prim:               OCTET STRING      
+      0000 - 0c 2b 22 d0 9a d1 80 d0-b8 d0 bf d1 82 d0 be d0   .+".............
+      0010 - 9f d1 80 d0 be 20 43 53-50 22 20 28 d0 b2 d0 b5   ..... CSP" (....
+      0020 - d1 80 d1 81 d0 b8 d1 8f-20 34 2e 30 29            ........ 4.0)
+15345:d=13 hl=4 l= 289 cons:              SEQUENCE          
+15349:d=14 hl=2 l=   5 prim:               OBJECT            :Signing Tool of Issuer
+15356:d=14 hl=4 l= 278 prim:               OCTET STRING      
+      0000 - 30 82 01 12 0c 2b 22 d0-9a d1 80 d0 b8 d0 bf d1   0....+".........
+      0010 - 82 d0 be d0 9f d1 80 d0-be 20 43 53 50 22 20 28   ......... CSP" (
+      0020 - d0 b2 d0 b5 d1 80 d1 81-d0 b8 d1 8f 20 34 2e 30   ............ 4.0
+      0030 - 29 0c 41 d0 a3 d0 b4 d0-be d1 81 d1 82 d0 be d0   ).A.............
+      0040 - b2 d0 b5 d1 80 d1 8f d1-8e d1 89 d0 b8 d0 b9 20   ............... 
+      0050 - d1 86 d0 b5 d0 bd d1 82-d1 80 20 22 d0 9a d1 80   .......... "....
+      0060 - d0 b8 d0 bf d1 82 d0 be-d0 9f d1 80 d0 be 20 d0   .............. .
+      0070 - a3 d0 a6 22 0c 4f d0 a1-d0 b5 d1 80 d1 82 d0 b8   ...".O..........
+      0080 - d1 84 d0 b8 d0 ba d0 b0-d1 82 20 d1 81 d0 be d0   .......... .....
+      0090 - be d1 82 d0 b2 d0 b5 d1-82 d1 81 d1 82 d0 b2 d0   ................
+      00a0 - b8 d1 8f 20 e2 84 96 20-d0 a1 d0 a4 2f 30 30 30   ... ... ..../000
+      00b0 - 2d 30 30 30 30 20 d0 be-d1 82 20 30 30 2e 30 30   -0000 .... 00.00
+      00c0 - 2e 30 30 30 30 0c 4f d0-a1 d0 b5 d1 80 d1 82 d0   .0000.O.........
+      00d0 - b8 d1 84 d0 b8 d0 ba d0-b0 d1 82 20 d1 81 d0 be   ........... ....
+      00e0 - d0 be d1 82 d0 b2 d0 b5-d1 82 d1 81 d1 82 d0 b2   ................
+      00f0 - d0 b8 d1 8f 20 e2 84 96-20 d0 a1 d0 a4 2f 30 30   .... ... ..../00
+      0100 - 30 2d 30 30 30 30 20 d0-be d1 82 20 30 30 2e 30   0-0000 .... 00.0
+      0110 - 30 2e 30 30 30 30                                 0.0000
+15638:d=13 hl=2 l=  11 cons:              SEQUENCE          
+15640:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 Key Usage
+15645:d=14 hl=2 l=   4 prim:               OCTET STRING      
+      0000 - 03 02 01 86                                       ....
+15651:d=13 hl=2 l=  18 cons:              SEQUENCE          
+15653:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 Basic Constraints
+15658:d=14 hl=2 l=   1 prim:               BOOLEAN           :255
+15661:d=14 hl=2 l=   8 prim:               OCTET STRING      
+      0000 - 30 06 01 01 ff 02 01 00-                          0.......
+15671:d=13 hl=2 l=  29 cons:              SEQUENCE          
+15673:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 Subject Key Identifier
+15678:d=14 hl=2 l=  22 prim:               OCTET STRING      
+      0000 - 04 14 60 aa b5 28 73 5b-e3 6e 6a 0b e6 bf 4d a2   ..`..(s[.nj...M.
+      0010 - 33 eb d0 52 49 7b                                 3..RI{
+15702:d=13 hl=2 l=  18 cons:              SEQUENCE          
+15704:d=14 hl=2 l=   9 prim:               OBJECT            :1.3.6.1.4.1.311.21.1
+15715:d=14 hl=2 l=   5 prim:               OCTET STRING      
+      0000 - 02 03 14 00 14                                    .....
+15722:d=13 hl=2 l=  37 cons:              SEQUENCE          
+15724:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 Certificate Policies
+15729:d=14 hl=2 l=  30 prim:               OCTET STRING      
+      0000 - 30 1c 30 08 06 06 2a 85-03 64 71 01 30 08 06 06   0.0...*..dq.0...
+      0010 - 2a 85 03 64 71 02 30 06-06 04 55 1d 20 00         *..dq.0...U. .
+15761:d=13 hl=2 l=  35 cons:              SEQUENCE          
+15763:d=14 hl=2 l=   9 prim:               OBJECT            :1.3.6.1.4.1.311.21.2
+15774:d=14 hl=2 l=  22 prim:               OCTET STRING      
+      0000 - 04 14 d6 e3 53 fe d7 bd-7f e6 50 ed b2 30 18 51   ....S.....P..0.Q
+      0010 - 29 9b 4b 2a c5 00                                 ).K*..
+15798:d=10 hl=2 l=  10 cons:           SEQUENCE          
+15800:d=11 hl=2 l=   8 prim:            OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+15810:d=10 hl=2 l=  65 prim:           BIT STRING        
+      0000 - 00 68 26 59 88 8d 36 45-a7 20 29 a1 68 59 64 fc   .h&Y..6E. ).hYd.
+      0010 - 3d 23 bb c7 1b 8f 0f f4-9b 98 1c 91 fc 42 e0 06   =#...........B..
+      0020 - 75 cc 92 07 eb 5a 59 d7-63 99 93 67 95 60 2b 92   u....ZY.c..g.`+.
+      0030 - 07 b8 75 a4 2a d4 d5 1b-ab 04 c1 3d 7e 13 2b ea   ..u.*......=~.+.
+      0040 - 2b                                                +
+15877:d=9  hl=4 l=1373 cons:          SEQUENCE          
+15881:d=10 hl=4 l=1290 cons:           SEQUENCE          
+15885:d=11 hl=2 l=   3 cons:            cont [ 0 ]        
+15887:d=12 hl=2 l=   1 prim:             INTEGER           :02
+15890:d=11 hl=2 l=  19 prim:            INTEGER           :7C0033C5769A7B72276C50681A00140033C576
+15911:d=11 hl=2 l=  10 cons:            SEQUENCE          
+15913:d=12 hl=2 l=   8 prim:             OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+15923:d=11 hl=4 l= 266 cons:            SEQUENCE          
+15927:d=12 hl=2 l=  24 cons:             SET               
+15929:d=13 hl=2 l=  22 cons:              SEQUENCE          
+15931:d=14 hl=2 l=   5 prim:               OBJECT            :OGRN
+15938:d=14 hl=2 l=  13 prim:               NUMERICSTRING     :1234567890123
+15953:d=12 hl=2 l=  26 cons:             SET               
+15955:d=13 hl=2 l=  24 cons:              SEQUENCE          
+15957:d=14 hl=2 l=   8 prim:               OBJECT            :INN
+15967:d=14 hl=2 l=  12 prim:               NUMERICSTRING     :001234567890
+15981:d=12 hl=2 l=  47 cons:             SET               
+15983:d=13 hl=2 l=  45 cons:              SEQUENCE          
+15985:d=14 hl=2 l=   3 prim:               OBJECT            :streetAddress
+15990:d=14 hl=2 l=  38 prim:               UTF8STRING        :ул. Сущёвский вал д. 18
+16030:d=12 hl=2 l=  11 cons:             SET               
+16032:d=13 hl=2 l=   9 cons:              SEQUENCE          
+16034:d=14 hl=2 l=   3 prim:               OBJECT            :countryName
+16039:d=14 hl=2 l=   2 prim:               PRINTABLESTRING   :RU
+16043:d=12 hl=2 l=  25 cons:             SET               
+16045:d=13 hl=2 l=  23 cons:              SEQUENCE          
+16047:d=14 hl=2 l=   3 prim:               OBJECT            :stateOrProvinceName
+16052:d=14 hl=2 l=  16 prim:               UTF8STRING        :г. Москва
+16070:d=12 hl=2 l=  21 cons:             SET               
+16072:d=13 hl=2 l=  19 cons:              SEQUENCE          
+16074:d=14 hl=2 l=   3 prim:               OBJECT            :localityName
+16079:d=14 hl=2 l=  12 prim:               UTF8STRING        :Москва
+16093:d=12 hl=2 l=  37 cons:             SET               
+16095:d=13 hl=2 l=  35 cons:              SEQUENCE          
+16097:d=14 hl=2 l=   3 prim:               OBJECT            :organizationName
+16102:d=14 hl=2 l=  28 prim:               UTF8STRING        :ООО "КРИПТО-ПРО"
+16132:d=12 hl=2 l=  59 cons:             SET               
+16134:d=13 hl=2 l=  57 cons:              SEQUENCE          
+16136:d=14 hl=2 l=   3 prim:               OBJECT            :commonName
+16141:d=14 hl=2 l=  50 prim:               UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+16193:d=11 hl=2 l=  30 cons:            SEQUENCE          
+16195:d=12 hl=2 l=  13 prim:             UTCTIME           :260529122226Z
+16210:d=12 hl=2 l=  13 prim:             UTCTIME           :260729123226Z
+16225:d=11 hl=2 l=  42 cons:            SEQUENCE          
+16227:d=12 hl=2 l=  27 cons:             SET               
+16229:d=13 hl=2 l=  25 cons:              SEQUENCE          
+16231:d=14 hl=2 l=   3 prim:               OBJECT            :commonName
+16236:d=14 hl=2 l=  18 prim:               UTF8STRING        :Operator ocsp2012g
+16256:d=12 hl=2 l=  11 cons:             SET               
+16258:d=13 hl=2 l=   9 cons:              SEQUENCE          
+16260:d=14 hl=2 l=   3 prim:               OBJECT            :countryName
+16265:d=14 hl=2 l=   2 prim:               PRINTABLESTRING   :RU
+16269:d=11 hl=2 l= 102 cons:            SEQUENCE          
+16271:d=12 hl=2 l=  31 cons:             SEQUENCE          
+16273:d=13 hl=2 l=   8 prim:              OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+16283:d=13 hl=2 l=  19 cons:              SEQUENCE          
+16285:d=14 hl=2 l=   7 prim:               OBJECT            :id-GostR3410-2001-CryptoPro-A-ParamSet
+16294:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.11-2012 with 256 bit hash
+16304:d=12 hl=2 l=  67 prim:             BIT STRING        
+      0000 - 00 04 40 b2 e6 4e 74 df-02 8b 03 46 a0 81 39 63   ..@..Nt....F..9c
+      0010 - 61 5b 62 20 b9 eb a4 aa-ce 37 3a dd e1 ce d9 bf   a[b .....7:.....
+      0020 - ad f4 ff 55 78 5a 0e 07-a5 e2 17 24 6e 97 e8 d5   ...UxZ.....$n...
+      0030 - 07 2e c7 19 3a 6b 62 b2-ec 30 12 03 61 8e c0 77   ....:kb..0..a..w
+      0040 - 80 55 11                                          .U.
+16373:d=11 hl=4 l= 798 cons:            cont [ 3 ]        
+16377:d=12 hl=4 l= 794 cons:             SEQUENCE          
+16381:d=13 hl=2 l=  19 cons:              SEQUENCE          
+16383:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 Extended Key Usage
+16388:d=14 hl=2 l=  12 prim:               OCTET STRING      
+      0000 - 30 0a 06 08 2b 06 01 05-05 07 03 09               0...+.......
+16402:d=13 hl=2 l=  29 cons:              SEQUENCE          
+16404:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 Certificate Policies
+16409:d=14 hl=2 l=  22 prim:               OCTET STRING      
+      0000 - 30 14 30 08 06 06 2a 85-03 64 71 01 30 08 06 06   0.0...*..dq.0...
+      0010 - 2a 85 03 64 71 02                                 *..dq.
+16433:d=13 hl=2 l=  63 cons:              SEQUENCE          
+16435:d=14 hl=2 l=   5 prim:               OBJECT            :Signing Tool of Subject
+16442:d=14 hl=2 l=  54 prim:               OCTET STRING      
+      0000 - 0c 34 d0 a1 d0 9a d0 97-d0 98 20 22 d0 9a d1 80   .4........ "....
+      0010 - d0 b8 d0 bf d1 82 d0 be-d0 9f d1 80 d0 be 20 43   .............. C
+      0020 - 53 50 22 20 28 d0 b2 d0-b5 d1 80 d1 81 d0 b8 d1   SP" (...........
+      0030 - 8f 20 34 2e 30 29                                 . 4.0)
+16498:d=13 hl=2 l=  15 cons:              SEQUENCE          
+16500:d=14 hl=2 l=   9 prim:               OBJECT            :OCSP No Check
+16511:d=14 hl=2 l=   2 prim:               OCTET STRING      
+      0000 - 05 00                                             ..
+16515:d=13 hl=2 l=  14 cons:              SEQUENCE          
+16517:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 Key Usage
+16522:d=14 hl=2 l=   1 prim:               BOOLEAN           :255
+16525:d=14 hl=2 l=   4 prim:               OCTET STRING      
+      0000 - 03 02 06 c0                                       ....
+16531:d=13 hl=2 l=  29 cons:              SEQUENCE          
+16533:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 Subject Key Identifier
+16538:d=14 hl=2 l=  22 prim:               OCTET STRING      
+      0000 - 04 14 50 83 cb e8 d2 6d-82 82 c5 ee 76 66 41 5d   ..P....m....vfA]
+      0010 - a5 29 f9 05 ea c1                                 .)....
+16562:d=13 hl=2 l=  31 cons:              SEQUENCE          
+16564:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 Authority Key Identifier
+16569:d=14 hl=2 l=  24 prim:               OCTET STRING      
+      0000 - 30 16 80 14 60 aa b5 28-73 5b e3 6e 6a 0b e6 bf   0...`..(s[.nj...
+      0010 - 4d a2 33 eb d0 52 49 7b-                          M.3..RI{
+16595:d=13 hl=4 l= 274 cons:              SEQUENCE          
+16599:d=14 hl=2 l=   3 prim:               OBJECT            :X509v3 CRL Distribution Points
+16604:d=14 hl=4 l= 265 prim:               OCTET STRING      
+      0000 - 30 82 01 05 30 82 01 01-a0 81 fe a0 81 fb 86 81   0...0...........
+      0010 - b6 68 74 74 70 3a 2f 2f-74 65 73 74 67 6f 73 74   .http://testgost
+      0020 - 32 30 31 32 2e 63 72 79-70 74 6f 70 72 6f 2e 72   2012.cryptopro.r
+      0030 - 75 2f 43 65 72 74 45 6e-72 6f 6c 6c 2f 21 30 34   u/CertEnroll/!04
+      0040 - 32 32 21 30 34 33 35 21-30 34 34 31 21 30 34 34   22!0435!0441!044
+      0050 - 32 21 30 34 33 65 21 30-34 33 32 21 30 34 34 62   2!043e!0432!044b
+      0060 - 21 30 34 33 39 25 32 30-21 30 34 32 33 21 30 34   !0439%20!0423!04
+      0070 - 32 36 25 32 30 21 30 34-31 65 21 30 34 31 65 21   26%20!041e!041e!
+      0080 - 30 34 31 65 25 32 30 21-30 30 32 32 21 30 34 31   041e%20!0022!041
+      0090 - 61 21 30 34 32 30 21 30-34 31 38 21 30 34 31 66   a!0420!0418!041f
+      00a0 - 21 30 34 32 32 21 30 34-31 65 2d 21 30 34 31 66   !0422!041e-!041f
+      00b0 - 21 30 34 32 30 21 30 34-31 65 21 30 30 32 32 28   !0420!041e!0022(
+      00c0 - 32 30 29 2e 63 72 6c 86-40 68 74 74 70 3a 2f 2f   20).crl.@http://
+      00d0 - 74 65 73 74 67 6f 73 74-32 30 31 32 2e 63 72 79   testgost2012.cry
+      00e0 - 70 74 6f 70 72 6f 2e 72-75 2f 43 65 72 74 45 6e   ptopro.ru/CertEn
+      00f0 - 72 6f 6c 6c 2f 74 65 73-74 67 6f 73 74 32 30 31   roll/testgost201
+      0100 - 32 28 32 30 29 2e 63 72-6c                        2(20).crl
+16873:d=13 hl=4 l= 298 cons:              SEQUENCE          
+16877:d=14 hl=2 l=   8 prim:               OBJECT            :Authority Information Access
+16887:d=14 hl=4 l= 284 prim:               OCTET STRING      
+      0000 - 30 82 01 18 30 3f 06 08-2b 06 01 05 05 07 30 01   0...0?..+.....0.
+      0010 - 86 33 68 74 74 70 3a 2f-2f 74 65 73 74 67 6f 73   .3http://testgos
+      0020 - 74 32 30 31 32 2e 63 72-79 70 74 6f 70 72 6f 2e   t2012.cryptopro.
+      0030 - 72 75 2f 6f 63 73 70 32-30 31 32 67 2f 6f 63 73   ru/ocsp2012g/ocs
+      0040 - 70 2e 73 72 66 30 41 06-08 2b 06 01 05 05 07 30   p.srf0A..+.....0
+      0050 - 01 86 35 68 74 74 70 3a-2f 2f 74 65 73 74 67 6f   ..5http://testgo
+      0060 - 73 74 32 30 31 32 2e 63-72 79 70 74 6f 70 72 6f   st2012.cryptopro
+      0070 - 2e 72 75 2f 6f 63 73 70-32 30 31 32 67 73 74 2f   .ru/ocsp2012gst/
+      0080 - 6f 63 73 70 2e 73 72 66-30 4c 06 08 2b 06 01 05   ocsp.srf0L..+...
+      0090 - 05 07 30 02 86 40 68 74-74 70 3a 2f 2f 74 65 73   ..0..@http://tes
+      00a0 - 74 67 6f 73 74 32 30 31-32 2e 63 72 79 70 74 6f   tgost2012.crypto
+      00b0 - 70 72 6f 2e 72 75 2f 43-65 72 74 45 6e 72 6f 6c   pro.ru/CertEnrol
+      00c0 - 6c 2f 74 65 73 74 67 6f-73 74 32 30 31 32 28 32   l/testgost2012(2
+      00d0 - 30 29 2e 63 72 74 30 44-06 08 2b 06 01 05 05 07   0).crt0D..+.....
+      00e0 - 30 02 86 38 68 74 74 70-3a 2f 2f 74 65 73 74 67   0..8http://testg
+      00f0 - 6f 73 74 32 30 31 32 2e-63 72 79 70 74 6f 70 72   ost2012.cryptopr
+      0100 - 6f 2e 72 75 2f 43 65 72-74 45 6e 72 6f 6c 6c 2f   o.ru/CertEnroll/
+      0110 - 74 65 73 74 72 6f 6f 74-2e 70 37 62               testroot.p7b
+17175:d=10 hl=2 l=  10 cons:           SEQUENCE          
+17177:d=11 hl=2 l=   8 prim:            OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+17187:d=10 hl=2 l=  65 prim:           BIT STRING        
+      0000 - 00 02 83 25 40 16 70 bf-01 31 3d 0c 52 1c db 66   ...%@.p..1=.R..f
+      0010 - 28 7c ba d8 2d f4 53 57-02 93 e5 47 6b 99 93 b8   (|..-.SW...Gk...
+      0020 - 4f 6f 4f 24 38 b1 8b de-8c 01 ed 7b a7 20 98 ff   OoO$8......{. ..
+      0030 - c0 c0 f4 50 13 16 f9 18-11 75 15 ac 92 69 b1 76   ...P.....u...i.v
+      0040 - 5c                                                \
+17254:d=6  hl=4 l=6005 cons:       SEQUENCE          
+17258:d=7  hl=2 l=   6 prim:        OBJECT            :id-aa-ets-archiveTimestampV3
+17266:d=7  hl=4 l=5993 cons:        SET               
+17270:d=8  hl=4 l=5989 cons:         SEQUENCE          
+17274:d=9  hl=2 l=   9 prim:          OBJECT            :pkcs7-signedData
+17285:d=9  hl=4 l=5974 cons:          cont [ 0 ]        
+17289:d=10 hl=4 l=5970 cons:           SEQUENCE          
+17293:d=11 hl=2 l=   1 prim:            INTEGER           :03
+17296:d=11 hl=2 l=  12 cons:            SET               
+17298:d=12 hl=2 l=  10 cons:             SEQUENCE          
+17300:d=13 hl=2 l=   8 prim:              OBJECT            :GOST R 34.11-2012 with 256 bit hash
+17310:d=11 hl=3 l= 130 cons:            SEQUENCE          
+17313:d=12 hl=2 l=  11 prim:             OBJECT            :id-smime-ct-TSTInfo
+17326:d=12 hl=2 l= 115 cons:             cont [ 0 ]        
+17328:d=13 hl=2 l= 113 prim:              OCTET STRING      
+      0000 - 30 6f 02 01 01 06 04 2a-03 04 04 30 2e 30 0a 06   0o.....*...0.0..
+      0010 - 08 2a 85 03 07 01 01 02-02 04 20 92 8f ad 8f 6a   .*........ ....j
+      0020 - f2 f1 1a 0a 48 2c 04 4d-fd e2 af 73 bf dc a6 97   ....H,.M...s....
+      0030 - cc 8d bd 73 1f f2 75 02-be 38 9a 02 14 13 df f3   ...s..u..8......
+      0040 - 7f ca a0 0e 1e 74 64 c4-8b 16 0a 93 90 be fa 6c   .....td........l
+      0050 - 7d 18 0f 32 30 32 36 30-35 33 31 31 37 32 39 32   }..2026053117292
+      0060 - 38 5a 30 03 02 01 01 02-08 73 0d 0d 43 72 30 b2   8Z0......s..Cr0.
+      0070 - 63                                                c
+17443:d=11 hl=4 l=1285 cons:            cont [ 0 ]        
+17447:d=12 hl=4 l=1281 cons:             SEQUENCE          
+17451:d=13 hl=4 l=1198 cons:              SEQUENCE          
+17455:d=14 hl=2 l=   3 cons:               cont [ 0 ]        
+17457:d=15 hl=2 l=   1 prim:                INTEGER           :02
+17460:d=14 hl=2 l=  19 prim:               INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+17481:d=14 hl=2 l=  10 cons:               SEQUENCE          
+17483:d=15 hl=2 l=   8 prim:                OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+17493:d=14 hl=4 l= 266 cons:               SEQUENCE          
+17497:d=15 hl=2 l=  24 cons:                SET               
+17499:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+17501:d=17 hl=2 l=   5 prim:                  OBJECT            :OGRN
+17508:d=17 hl=2 l=  13 prim:                  NUMERICSTRING     :1234567890123
+17523:d=15 hl=2 l=  26 cons:                SET               
+17525:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+17527:d=17 hl=2 l=   8 prim:                  OBJECT            :INN
+17537:d=17 hl=2 l=  12 prim:                  NUMERICSTRING     :001234567890
+17551:d=15 hl=2 l=  47 cons:                SET               
+17553:d=16 hl=2 l=  45 cons:                 SEQUENCE          
+17555:d=17 hl=2 l=   3 prim:                  OBJECT            :streetAddress
+17560:d=17 hl=2 l=  38 prim:                  UTF8STRING        :ул. Сущёвский вал д. 18
+17600:d=15 hl=2 l=  11 cons:                SET               
+17602:d=16 hl=2 l=   9 cons:                 SEQUENCE          
+17604:d=17 hl=2 l=   3 prim:                  OBJECT            :countryName
+17609:d=17 hl=2 l=   2 prim:                  PRINTABLESTRING   :RU
+17613:d=15 hl=2 l=  25 cons:                SET               
+17615:d=16 hl=2 l=  23 cons:                 SEQUENCE          
+17617:d=17 hl=2 l=   3 prim:                  OBJECT            :stateOrProvinceName
+17622:d=17 hl=2 l=  16 prim:                  UTF8STRING        :г. Москва
+17640:d=15 hl=2 l=  21 cons:                SET               
+17642:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+17644:d=17 hl=2 l=   3 prim:                  OBJECT            :localityName
+17649:d=17 hl=2 l=  12 prim:                  UTF8STRING        :Москва
+17663:d=15 hl=2 l=  37 cons:                SET               
+17665:d=16 hl=2 l=  35 cons:                 SEQUENCE          
+17667:d=17 hl=2 l=   3 prim:                  OBJECT            :organizationName
+17672:d=17 hl=2 l=  28 prim:                  UTF8STRING        :ООО "КРИПТО-ПРО"
+17702:d=15 hl=2 l=  59 cons:                SET               
+17704:d=16 hl=2 l=  57 cons:                 SEQUENCE          
+17706:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+17711:d=17 hl=2 l=  50 prim:                  UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+17763:d=14 hl=2 l=  30 cons:               SEQUENCE          
+17765:d=15 hl=2 l=  13 prim:                UTCTIME           :260529122338Z
+17780:d=15 hl=2 l=  13 prim:                UTCTIME           :260729123338Z
+17795:d=14 hl=2 l=  28 cons:               SEQUENCE          
+17797:d=15 hl=2 l=  26 cons:                SET               
+17799:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+17801:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+17806:d=17 hl=2 l=  17 prim:                  UTF8STRING        :Operator tsp2012g
+17825:d=14 hl=2 l= 102 cons:               SEQUENCE          
+17827:d=15 hl=2 l=  31 cons:                SEQUENCE          
+17829:d=16 hl=2 l=   8 prim:                 OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+17839:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+17841:d=17 hl=2 l=   7 prim:                  OBJECT            :id-GostR3410-2001-CryptoPro-A-ParamSet
+17850:d=17 hl=2 l=   8 prim:                  OBJECT            :GOST R 34.11-2012 with 256 bit hash
+17860:d=15 hl=2 l=  67 prim:                BIT STRING        
+      0000 - 00 04 40 e0 31 7e 01 09-13 3e 74 de 67 53 46 55   ..@.1~...>t.gSFU
+      0010 - 88 83 7f 46 a8 3b 65 38-ef 73 da 5d 9b 7a f8 aa   ...F.;e8.s.].z..
+      0020 - 23 23 fc e1 e5 3a f3 20-72 83 53 4b 0f 30 6e e2   ##...:. r.SK.0n.
+      0030 - 46 3f 81 9e 25 49 18 6c-81 cd 4a e8 fb e2 ca 20   F?..%I.l..J.... 
+      0040 - f5 c2 1b                                          ...
+17929:d=14 hl=4 l= 720 cons:               cont [ 3 ]        
+17933:d=15 hl=4 l= 716 cons:                SEQUENCE          
+17937:d=16 hl=2 l=  14 cons:                 SEQUENCE          
+17939:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Key Usage
+17944:d=17 hl=2 l=   1 prim:                  BOOLEAN           :255
+17947:d=17 hl=2 l=   4 prim:                  OCTET STRING      
+      0000 - 03 02 06 c0                                       ....
+17953:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+17955:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Extended Key Usage
+17960:d=17 hl=2 l=   1 prim:                  BOOLEAN           :255
+17963:d=17 hl=2 l=  12 prim:                  OCTET STRING      
+      0000 - 30 0a 06 08 2b 06 01 05-05 07 03 08               0...+.......
+17977:d=16 hl=2 l=  30 cons:                 SEQUENCE          
+17979:d=17 hl=2 l=   9 prim:                  OBJECT            :Microsoft Application Policies Extension
+17990:d=17 hl=2 l=   1 prim:                  BOOLEAN           :255
+17993:d=17 hl=2 l=  14 prim:                  OCTET STRING      
+      0000 - 30 0c 30 0a 06 08 2b 06-01 05 05 07 03 08         0.0...+.......
+18009:d=16 hl=2 l=  29 cons:                 SEQUENCE          
+18011:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Subject Key Identifier
+18016:d=17 hl=2 l=  22 prim:                  OCTET STRING      
+      0000 - 04 14 76 2a e5 3f ba 92-be cb bf 62 5e c9 35 3d   ..v*.?.....b^.5=
+      0010 - 60 06 b8 6c 52 98                                 `..lR.
+18040:d=16 hl=2 l=  31 cons:                 SEQUENCE          
+18042:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 Authority Key Identifier
+18047:d=17 hl=2 l=  24 prim:                  OCTET STRING      
+      0000 - 30 16 80 14 60 aa b5 28-73 5b e3 6e 6a 0b e6 bf   0...`..(s[.nj...
+      0010 - 4d a2 33 eb d0 52 49 7b-                          M.3..RI{
+18073:d=16 hl=4 l= 274 cons:                 SEQUENCE          
+18077:d=17 hl=2 l=   3 prim:                  OBJECT            :X509v3 CRL Distribution Points
+18082:d=17 hl=4 l= 265 prim:                  OCTET STRING      
+      0000 - 30 82 01 05 30 82 01 01-a0 81 fe a0 81 fb 86 81   0...0...........
+      0010 - b6 68 74 74 70 3a 2f 2f-74 65 73 74 67 6f 73 74   .http://testgost
+      0020 - 32 30 31 32 2e 63 72 79-70 74 6f 70 72 6f 2e 72   2012.cryptopro.r
+      0030 - 75 2f 43 65 72 74 45 6e-72 6f 6c 6c 2f 21 30 34   u/CertEnroll/!04
+      0040 - 32 32 21 30 34 33 35 21-30 34 34 31 21 30 34 34   22!0435!0441!044
+      0050 - 32 21 30 34 33 65 21 30-34 33 32 21 30 34 34 62   2!043e!0432!044b
+      0060 - 21 30 34 33 39 25 32 30-21 30 34 32 33 21 30 34   !0439%20!0423!04
+      0070 - 32 36 25 32 30 21 30 34-31 65 21 30 34 31 65 21   26%20!041e!041e!
+      0080 - 30 34 31 65 25 32 30 21-30 30 32 32 21 30 34 31   041e%20!0022!041
+      0090 - 61 21 30 34 32 30 21 30-34 31 38 21 30 34 31 66   a!0420!0418!041f
+      00a0 - 21 30 34 32 32 21 30 34-31 65 2d 21 30 34 31 66   !0422!041e-!041f
+      00b0 - 21 30 34 32 30 21 30 34-31 65 21 30 30 32 32 28   !0420!041e!0022(
+      00c0 - 32 30 29 2e 63 72 6c 86-40 68 74 74 70 3a 2f 2f   20).crl.@http://
+      00d0 - 74 65 73 74 67 6f 73 74-32 30 31 32 2e 63 72 79   testgost2012.cry
+      00e0 - 70 74 6f 70 72 6f 2e 72-75 2f 43 65 72 74 45 6e   ptopro.ru/CertEn
+      00f0 - 72 6f 6c 6c 2f 74 65 73-74 67 6f 73 74 32 30 31   roll/testgost201
+      0100 - 32 28 32 30 29 2e 63 72-6c                        2(20).crl
+18351:d=16 hl=4 l= 298 cons:                 SEQUENCE          
+18355:d=17 hl=2 l=   8 prim:                  OBJECT            :Authority Information Access
+18365:d=17 hl=4 l= 284 prim:                  OCTET STRING      
+      0000 - 30 82 01 18 30 3f 06 08-2b 06 01 05 05 07 30 01   0...0?..+.....0.
+      0010 - 86 33 68 74 74 70 3a 2f-2f 74 65 73 74 67 6f 73   .3http://testgos
+      0020 - 74 32 30 31 32 2e 63 72-79 70 74 6f 70 72 6f 2e   t2012.cryptopro.
+      0030 - 72 75 2f 6f 63 73 70 32-30 31 32 67 2f 6f 63 73   ru/ocsp2012g/ocs
+      0040 - 70 2e 73 72 66 30 41 06-08 2b 06 01 05 05 07 30   p.srf0A..+.....0
+      0050 - 01 86 35 68 74 74 70 3a-2f 2f 74 65 73 74 67 6f   ..5http://testgo
+      0060 - 73 74 32 30 31 32 2e 63-72 79 70 74 6f 70 72 6f   st2012.cryptopro
+      0070 - 2e 72 75 2f 6f 63 73 70-32 30 31 32 67 73 74 2f   .ru/ocsp2012gst/
+      0080 - 6f 63 73 70 2e 73 72 66-30 4c 06 08 2b 06 01 05   ocsp.srf0L..+...
+      0090 - 05 07 30 02 86 40 68 74-74 70 3a 2f 2f 74 65 73   ..0..@http://tes
+      00a0 - 74 67 6f 73 74 32 30 31-32 2e 63 72 79 70 74 6f   tgost2012.crypto
+      00b0 - 70 72 6f 2e 72 75 2f 43-65 72 74 45 6e 72 6f 6c   pro.ru/CertEnrol
+      00c0 - 6c 2f 74 65 73 74 67 6f-73 74 32 30 31 32 28 32   l/testgost2012(2
+      00d0 - 30 29 2e 63 72 74 30 44-06 08 2b 06 01 05 05 07   0).crt0D..+.....
+      00e0 - 30 02 86 38 68 74 74 70-3a 2f 2f 74 65 73 74 67   0..8http://testg
+      00f0 - 6f 73 74 32 30 31 32 2e-63 72 79 70 74 6f 70 72   ost2012.cryptopr
+      0100 - 6f 2e 72 75 2f 43 65 72-74 45 6e 72 6f 6c 6c 2f   o.ru/CertEnroll/
+      0110 - 74 65 73 74 72 6f 6f 74-2e 70 37 62               testroot.p7b
+18653:d=13 hl=2 l=  10 cons:              SEQUENCE          
+18655:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+18665:d=13 hl=2 l=  65 prim:              BIT STRING        
+      0000 - 00 df a0 6a 59 85 61 c7-6c 5f 01 62 c1 f7 2f 34   ...jY.a.l_.b../4
+      0010 - ac d4 b4 4c 89 58 66 96-e3 bd 43 a6 81 49 a3 c3   ...L.Xf...C..I..
+      0020 - 37 a3 9d 6f 17 e1 71 5e-5d e5 5e 2b 70 65 ec 29   7..o..q^].^+pe.)
+      0030 - ed 86 1e 05 96 a5 b8 4d-fd f1 b9 3a de cc ae a9   .......M...:....
+      0040 - c3                                                .
+18732:d=11 hl=4 l=4527 cons:            SET               
+18736:d=12 hl=4 l=4523 cons:             SEQUENCE          
+18740:d=13 hl=2 l=   1 prim:              INTEGER           :01
+18743:d=13 hl=4 l= 291 cons:              SEQUENCE          
+18747:d=14 hl=4 l= 266 cons:               SEQUENCE          
+18751:d=15 hl=2 l=  24 cons:                SET               
+18753:d=16 hl=2 l=  22 cons:                 SEQUENCE          
+18755:d=17 hl=2 l=   5 prim:                  OBJECT            :OGRN
+18762:d=17 hl=2 l=  13 prim:                  NUMERICSTRING     :1234567890123
+18777:d=15 hl=2 l=  26 cons:                SET               
+18779:d=16 hl=2 l=  24 cons:                 SEQUENCE          
+18781:d=17 hl=2 l=   8 prim:                  OBJECT            :INN
+18791:d=17 hl=2 l=  12 prim:                  NUMERICSTRING     :001234567890
+18805:d=15 hl=2 l=  47 cons:                SET               
+18807:d=16 hl=2 l=  45 cons:                 SEQUENCE          
+18809:d=17 hl=2 l=   3 prim:                  OBJECT            :streetAddress
+18814:d=17 hl=2 l=  38 prim:                  UTF8STRING        :ул. Сущёвский вал д. 18
+18854:d=15 hl=2 l=  11 cons:                SET               
+18856:d=16 hl=2 l=   9 cons:                 SEQUENCE          
+18858:d=17 hl=2 l=   3 prim:                  OBJECT            :countryName
+18863:d=17 hl=2 l=   2 prim:                  PRINTABLESTRING   :RU
+18867:d=15 hl=2 l=  25 cons:                SET               
+18869:d=16 hl=2 l=  23 cons:                 SEQUENCE          
+18871:d=17 hl=2 l=   3 prim:                  OBJECT            :stateOrProvinceName
+18876:d=17 hl=2 l=  16 prim:                  UTF8STRING        :г. Москва
+18894:d=15 hl=2 l=  21 cons:                SET               
+18896:d=16 hl=2 l=  19 cons:                 SEQUENCE          
+18898:d=17 hl=2 l=   3 prim:                  OBJECT            :localityName
+18903:d=17 hl=2 l=  12 prim:                  UTF8STRING        :Москва
+18917:d=15 hl=2 l=  37 cons:                SET               
+18919:d=16 hl=2 l=  35 cons:                 SEQUENCE          
+18921:d=17 hl=2 l=   3 prim:                  OBJECT            :organizationName
+18926:d=17 hl=2 l=  28 prim:                  UTF8STRING        :ООО "КРИПТО-ПРО"
+18956:d=15 hl=2 l=  59 cons:                SET               
+18958:d=16 hl=2 l=  57 cons:                 SEQUENCE          
+18960:d=17 hl=2 l=   3 prim:                  OBJECT            :commonName
+18965:d=17 hl=2 l=  50 prim:                  UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+19017:d=14 hl=2 l=  19 prim:               INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+19038:d=13 hl=2 l=  10 cons:              SEQUENCE          
+19040:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.11-2012 with 256 bit hash
+19050:d=13 hl=4 l= 817 cons:              cont [ 0 ]        
+19054:d=14 hl=2 l=  26 cons:               SEQUENCE          
+19056:d=15 hl=2 l=   9 prim:                OBJECT            :contentType
+19067:d=15 hl=2 l=  13 cons:                SET               
+19069:d=16 hl=2 l=  11 prim:                 OBJECT            :id-smime-ct-TSTInfo
+19082:d=14 hl=2 l=  47 cons:               SEQUENCE          
+19084:d=15 hl=2 l=   9 prim:                OBJECT            :messageDigest
+19095:d=15 hl=2 l=  34 cons:                SET               
+19097:d=16 hl=2 l=  32 prim:                 OCTET STRING      
+      0000 - c8 d6 9f 6a 3c 8e 78 a1-5f 8c c1 12 c7 f6 77 73   ...j<.x._.....ws
+      0010 - bf aa 92 5a 19 9d d7 a0-2c d1 8b f6 a4 b8 8e 1d   ...Z....,.......
+19131:d=14 hl=4 l= 354 cons:               SEQUENCE          
+19135:d=15 hl=2 l=  11 prim:                OBJECT            :id-smime-aa-signingCertificate
+19148:d=15 hl=4 l= 337 cons:                SET               
+19152:d=16 hl=4 l= 333 cons:                 SEQUENCE          
+19156:d=17 hl=4 l= 329 cons:                  SEQUENCE          
+19160:d=18 hl=4 l= 325 cons:                   SEQUENCE          
+19164:d=19 hl=2 l=  20 prim:                    OCTET STRING      
+      0000 - a6 80 20 ac ab 46 bf d5-82 af d7 b6 38 f0 a4 bb   .. ..F......8...
+      0010 - df e7 19 45                                       ...E
+19186:d=19 hl=4 l= 299 cons:                    SEQUENCE          
+19190:d=20 hl=4 l= 274 cons:                     SEQUENCE          
+19194:d=21 hl=4 l= 270 cons:                      cont [ 4 ]        
+19198:d=22 hl=4 l= 266 cons:                       SEQUENCE          
+19202:d=23 hl=2 l=  24 cons:                        SET               
+19204:d=24 hl=2 l=  22 cons:                         SEQUENCE          
+19206:d=25 hl=2 l=   5 prim:                          OBJECT            :OGRN
+19213:d=25 hl=2 l=  13 prim:                          NUMERICSTRING     :1234567890123
+19228:d=23 hl=2 l=  26 cons:                        SET               
+19230:d=24 hl=2 l=  24 cons:                         SEQUENCE          
+19232:d=25 hl=2 l=   8 prim:                          OBJECT            :INN
+19242:d=25 hl=2 l=  12 prim:                          NUMERICSTRING     :001234567890
+19256:d=23 hl=2 l=  47 cons:                        SET               
+19258:d=24 hl=2 l=  45 cons:                         SEQUENCE          
+19260:d=25 hl=2 l=   3 prim:                          OBJECT            :streetAddress
+19265:d=25 hl=2 l=  38 prim:                          UTF8STRING        :ул. Сущёвский вал д. 18
+19305:d=23 hl=2 l=  11 cons:                        SET               
+19307:d=24 hl=2 l=   9 cons:                         SEQUENCE          
+19309:d=25 hl=2 l=   3 prim:                          OBJECT            :countryName
+19314:d=25 hl=2 l=   2 prim:                          PRINTABLESTRING   :RU
+19318:d=23 hl=2 l=  25 cons:                        SET               
+19320:d=24 hl=2 l=  23 cons:                         SEQUENCE          
+19322:d=25 hl=2 l=   3 prim:                          OBJECT            :stateOrProvinceName
+19327:d=25 hl=2 l=  16 prim:                          UTF8STRING        :г. Москва
+19345:d=23 hl=2 l=  21 cons:                        SET               
+19347:d=24 hl=2 l=  19 cons:                         SEQUENCE          
+19349:d=25 hl=2 l=   3 prim:                          OBJECT            :localityName
+19354:d=25 hl=2 l=  12 prim:                          UTF8STRING        :Москва
+19368:d=23 hl=2 l=  37 cons:                        SET               
+19370:d=24 hl=2 l=  35 cons:                         SEQUENCE          
+19372:d=25 hl=2 l=   3 prim:                          OBJECT            :organizationName
+19377:d=25 hl=2 l=  28 prim:                          UTF8STRING        :ООО "КРИПТО-ПРО"
+19407:d=23 hl=2 l=  59 cons:                        SET               
+19409:d=24 hl=2 l=  57 cons:                         SEQUENCE          
+19411:d=25 hl=2 l=   3 prim:                          OBJECT            :commonName
+19416:d=25 hl=2 l=  50 prim:                          UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+19468:d=20 hl=2 l=  19 prim:                     INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+19489:d=14 hl=4 l= 378 cons:               SEQUENCE          
+19493:d=15 hl=2 l=  11 prim:                OBJECT            :id-smime-aa-signingCertificateV2
+19506:d=15 hl=4 l= 361 cons:                SET               
+19510:d=16 hl=4 l= 357 cons:                 SEQUENCE          
+19514:d=17 hl=4 l= 353 cons:                  SEQUENCE          
+19518:d=18 hl=4 l= 349 cons:                   SEQUENCE          
+19522:d=19 hl=2 l=  10 cons:                    SEQUENCE          
+19524:d=20 hl=2 l=   8 prim:                     OBJECT            :GOST R 34.11-2012 with 256 bit hash
+19534:d=19 hl=2 l=  32 prim:                    OCTET STRING      
+      0000 - a3 b7 c0 b8 f9 7f 0d ce-70 57 be 52 c5 b0 65 3b   ........pW.R..e;
+      0010 - 43 96 c9 e8 be e3 9a 63-30 3f 25 36 d7 1d 27 04   C......c0?%6..'.
+19568:d=19 hl=4 l= 299 cons:                    SEQUENCE          
+19572:d=20 hl=4 l= 274 cons:                     SEQUENCE          
+19576:d=21 hl=4 l= 270 cons:                      cont [ 4 ]        
+19580:d=22 hl=4 l= 266 cons:                       SEQUENCE          
+19584:d=23 hl=2 l=  24 cons:                        SET               
+19586:d=24 hl=2 l=  22 cons:                         SEQUENCE          
+19588:d=25 hl=2 l=   5 prim:                          OBJECT            :OGRN
+19595:d=25 hl=2 l=  13 prim:                          NUMERICSTRING     :1234567890123
+19610:d=23 hl=2 l=  26 cons:                        SET               
+19612:d=24 hl=2 l=  24 cons:                         SEQUENCE          
+19614:d=25 hl=2 l=   8 prim:                          OBJECT            :INN
+19624:d=25 hl=2 l=  12 prim:                          NUMERICSTRING     :001234567890
+19638:d=23 hl=2 l=  47 cons:                        SET               
+19640:d=24 hl=2 l=  45 cons:                         SEQUENCE          
+19642:d=25 hl=2 l=   3 prim:                          OBJECT            :streetAddress
+19647:d=25 hl=2 l=  38 prim:                          UTF8STRING        :ул. Сущёвский вал д. 18
+19687:d=23 hl=2 l=  11 cons:                        SET               
+19689:d=24 hl=2 l=   9 cons:                         SEQUENCE          
+19691:d=25 hl=2 l=   3 prim:                          OBJECT            :countryName
+19696:d=25 hl=2 l=   2 prim:                          PRINTABLESTRING   :RU
+19700:d=23 hl=2 l=  25 cons:                        SET               
+19702:d=24 hl=2 l=  23 cons:                         SEQUENCE          
+19704:d=25 hl=2 l=   3 prim:                          OBJECT            :stateOrProvinceName
+19709:d=25 hl=2 l=  16 prim:                          UTF8STRING        :г. Москва
+19727:d=23 hl=2 l=  21 cons:                        SET               
+19729:d=24 hl=2 l=  19 cons:                         SEQUENCE          
+19731:d=25 hl=2 l=   3 prim:                          OBJECT            :localityName
+19736:d=25 hl=2 l=  12 prim:                          UTF8STRING        :Москва
+19750:d=23 hl=2 l=  37 cons:                        SET               
+19752:d=24 hl=2 l=  35 cons:                         SEQUENCE          
+19754:d=25 hl=2 l=   3 prim:                          OBJECT            :organizationName
+19759:d=25 hl=2 l=  28 prim:                          UTF8STRING        :ООО "КРИПТО-ПРО"
+19789:d=23 hl=2 l=  59 cons:                        SET               
+19791:d=24 hl=2 l=  57 cons:                         SEQUENCE          
+19793:d=25 hl=2 l=   3 prim:                          OBJECT            :commonName
+19798:d=25 hl=2 l=  50 prim:                          UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+19850:d=20 hl=2 l=  19 prim:                     INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+19871:d=13 hl=2 l=  10 cons:              SEQUENCE          
+19873:d=14 hl=2 l=   8 prim:               OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+19883:d=13 hl=2 l=  64 prim:              OCTET STRING      
+      0000 - de 70 52 cb fc 04 ff 76-f9 98 cc 52 94 ce f1 1e   .pR....v...R....
+      0010 - 15 65 00 5c a7 26 b1 b7-82 97 11 66 8a 3b 09 50   .e.\.&.....f.;.P
+      0020 - a0 86 36 fc 60 d4 90 45-ce 7c a4 ec bc f1 c4 ce   ..6.`..E.|......
+      0030 - 55 41 5a bf f0 cb b7 e6-28 8c 73 8a 12 b1 cd 16   UAZ.....(.s.....
+19949:d=13 hl=4 l=3310 cons:              cont [ 1 ]        
+19953:d=14 hl=4 l= 308 cons:               SEQUENCE          
+19957:d=15 hl=2 l=   7 prim:                OBJECT            :id-aa-ATSHashIndex-v3
+19966:d=15 hl=4 l= 295 cons:                SET               
+19970:d=16 hl=4 l= 291 cons:                 SEQUENCE          
+19974:d=17 hl=2 l=  10 cons:                  SEQUENCE          
+19976:d=18 hl=2 l=   8 prim:                   OBJECT            :GOST R 34.11-2012 with 256 bit hash
+19986:d=17 hl=2 l=  68 cons:                  SEQUENCE          
+19988:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - e0 d9 c8 64 09 88 68 c5-0d 0a 64 10 ea 5f 73 de   ...d..h...d.._s.
+      0010 - 4c 5c d6 9e 08 e6 2e a1-ea 9b 63 26 7c a6 ac de   L\........c&|...
+20022:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - 12 4a 33 42 ca 16 63 00-a0 a4 06 b5 a1 3e 35 5c   .J3B..c......>5\
+      0010 - 41 b6 b6 c5 5e c8 c1 98-65 81 bb c8 a3 18 5c b8   A...^...e.....\.
+20056:d=17 hl=2 l=   0 cons:                  SEQUENCE          
+20058:d=17 hl=3 l= 204 cons:                  SEQUENCE          
+20061:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - ba c1 a4 13 ff 06 ff 52-a4 c4 0d 1b 02 b1 7d dd   .......R......}.
+      0010 - ad 7c 02 ff 4a 16 4a de-fb a1 6f e1 39 3a 27 a4   .|..J.J...o.9:'.
+20095:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - 9c 15 78 c0 33 9b 1c c9-6d 55 e9 0f fa 3b b5 9c   ..x.3...mU...;..
+      0010 - ca 63 09 0d e5 e7 a9 81-37 a6 e8 55 77 57 69 e2   .c......7..UwWi.
+20129:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - 4b 44 d5 55 a9 22 85 df-c6 78 38 d2 2c 6d 64 a9   KD.U."...x8.,md.
+      0010 - 81 b5 17 e3 86 87 ec 28-4a f8 f5 fb 0a 01 8a 05   .......(J.......
+20163:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - 00 15 ef 1f ae b1 d9 33-35 b1 39 c3 85 0e 1a 12   .......35.9.....
+      0010 - cd c6 3d 0b 31 24 af 58-96 03 d6 ce a3 ad dd 9a   ..=.1$.X........
+20197:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - 3a e9 df ee 94 d4 4f 91-03 03 20 8a b6 0e de 2b   :.....O... ....+
+      0010 - 8d a1 7b d4 6e d8 eb bb-df 8f 7d a5 b3 75 e7 48   ..{.n.....}..u.H
+20231:d=18 hl=2 l=  32 prim:                   OCTET STRING      
+      0000 - 8a 39 bf 61 2b c6 3a 49-14 d1 d8 30 c1 09 bc 59   .9.a+.:I...0...Y
+      0010 - 95 42 0a a1 73 d5 1b 96-e4 9e 5e 97 17 2f 56 c8   .B..s.....^../V.
+20265:d=14 hl=4 l= 369 cons:               SEQUENCE          
+20269:d=15 hl=2 l=  11 prim:                OBJECT            :id-smime-aa-ets-revocationValues
+20282:d=15 hl=4 l= 352 cons:                SET               
+20286:d=16 hl=4 l= 348 cons:                 SEQUENCE          
+20290:d=17 hl=4 l= 344 cons:                  cont [ 1 ]        
+20294:d=18 hl=4 l= 340 cons:                   SEQUENCE          
+20298:d=19 hl=4 l= 336 cons:                    SEQUENCE          
+20302:d=20 hl=3 l= 254 cons:                     SEQUENCE          
+20305:d=21 hl=2 l=  22 cons:                      cont [ 2 ]        
+20307:d=22 hl=2 l=  20 prim:                       OCTET STRING      
+      0000 - 50 83 cb e8 d2 6d 82 82-c5 ee 76 66 41 5d a5 29   P....m....vfA].)
+      0010 - f9 05 ea c1                                       ....
+20329:d=21 hl=2 l=  15 prim:                      GENERALIZEDTIME   :20260601183428Z
+20346:d=21 hl=3 l= 173 cons:                      SEQUENCE          
+20349:d=22 hl=3 l= 170 cons:                       SEQUENCE          
+20352:d=23 hl=2 l= 103 cons:                        SEQUENCE          
+20354:d=24 hl=2 l=  12 cons:                         SEQUENCE          
+20356:d=25 hl=2 l=   8 prim:                          OBJECT            :GOST R 34.11-2012 with 256 bit hash
+20366:d=25 hl=2 l=   0 prim:                          NULL              
+20368:d=24 hl=2 l=  32 prim:                         OCTET STRING      
+      0000 - 15 5f 1b 96 a6 e8 2c 81-87 67 51 cd c0 cb 99 ca   ._....,..gQ.....
+      0010 - d1 00 13 11 17 6d 30 7a-6e c8 f5 4f c5 52 f4 6f   .....m0zn..O.R.o
+20402:d=24 hl=2 l=  32 prim:                         OCTET STRING      
+      0000 - 8e 81 2f fc b2 f2 73 9a-a3 11 9f 1c f7 1d c1 a1   ../...s.........
+      0010 - a9 dc cf bc c4 8c 6f 05-30 bf 5e 76 6a 55 34 69   ......o.0.^vjU4i
+20436:d=24 hl=2 l=  19 prim:                         INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+20457:d=23 hl=2 l=   0 prim:                        cont [ 0 ]        
+20459:d=23 hl=2 l=  15 prim:                        GENERALIZEDTIME   :20260601183428Z
+20476:d=23 hl=2 l=  44 cons:                        cont [ 1 ]        
+20478:d=24 hl=2 l=  42 cons:                         SEQUENCE          
+20480:d=25 hl=2 l=  40 cons:                          SEQUENCE          
+20482:d=26 hl=2 l=   9 prim:                           OBJECT            :OCSP CRL ID
+20493:d=26 hl=2 l=  27 prim:                           OCTET STRING      
+      0000 - 30 19 a1 04 02 02 0c 62-a2 11 18 0f 32 30 32 36   0......b....2026
+      0010 - 30 36 30 31 31 31 34 35-31 37 5a                  0601114517Z
+20522:d=21 hl=2 l=  35 cons:                      cont [ 1 ]        
+20524:d=22 hl=2 l=  33 cons:                       SEQUENCE          
+20526:d=23 hl=2 l=  31 cons:                        SEQUENCE          
+20528:d=24 hl=2 l=   9 prim:                         OBJECT            :OCSP Nonce
+20539:d=24 hl=2 l=  18 prim:                         OCTET STRING      
+      0000 - 04 10 94 19 06 a2 69 15-fe b1 7d 7f 66 54 74 c1   ......i...}.fTt.
+      0010 - c4 74                                             .t
+20559:d=20 hl=2 l=  10 cons:                     SEQUENCE          
+20561:d=21 hl=2 l=   8 prim:                      OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+20571:d=20 hl=2 l=  65 prim:                     BIT STRING        
+      0000 - 00 e5 fb 21 eb 52 9a 2b-b2 16 d8 14 d7 57 79 8b   ...!.R.+.....Wy.
+      0010 - 4b cf fc 91 c4 f0 10 a1-cd fc fd dc 56 28 11 89   K...........V(..
+      0020 - a3 ee 32 1c e6 65 3c 94-d7 76 e3 7b be 7e 11 a5   ..2..e<..v.{.~..
+      0030 - 80 91 d4 1c dd 34 da 6e-45 b9 a1 4e e1 45 9b 01   .....4.nE..N.E..
+      0040 - 8a                                                .
+20638:d=14 hl=4 l=2621 cons:               SEQUENCE          
+20642:d=15 hl=2 l=  11 prim:                OBJECT            :id-smime-aa-ets-certValues
+20655:d=15 hl=4 l=2604 cons:                SET               
+20659:d=16 hl=4 l=2600 cons:                 SEQUENCE          
+20663:d=17 hl=4 l=1281 cons:                  SEQUENCE          
+20667:d=18 hl=4 l=1198 cons:                   SEQUENCE          
+20671:d=19 hl=2 l=   3 cons:                    cont [ 0 ]        
+20673:d=20 hl=2 l=   1 prim:                     INTEGER           :02
+20676:d=19 hl=2 l=  19 prim:                    INTEGER           :7C0033C5795EEDE36F4108068500140033C579
+20697:d=19 hl=2 l=  10 cons:                    SEQUENCE          
+20699:d=20 hl=2 l=   8 prim:                     OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+20709:d=19 hl=4 l= 266 cons:                    SEQUENCE          
+20713:d=20 hl=2 l=  24 cons:                     SET               
+20715:d=21 hl=2 l=  22 cons:                      SEQUENCE          
+20717:d=22 hl=2 l=   5 prim:                       OBJECT            :OGRN
+20724:d=22 hl=2 l=  13 prim:                       NUMERICSTRING     :1234567890123
+20739:d=20 hl=2 l=  26 cons:                     SET               
+20741:d=21 hl=2 l=  24 cons:                      SEQUENCE          
+20743:d=22 hl=2 l=   8 prim:                       OBJECT            :INN
+20753:d=22 hl=2 l=  12 prim:                       NUMERICSTRING     :001234567890
+20767:d=20 hl=2 l=  47 cons:                     SET               
+20769:d=21 hl=2 l=  45 cons:                      SEQUENCE          
+20771:d=22 hl=2 l=   3 prim:                       OBJECT            :streetAddress
+20776:d=22 hl=2 l=  38 prim:                       UTF8STRING        :ул. Сущёвский вал д. 18
+20816:d=20 hl=2 l=  11 cons:                     SET               
+20818:d=21 hl=2 l=   9 cons:                      SEQUENCE          
+20820:d=22 hl=2 l=   3 prim:                       OBJECT            :countryName
+20825:d=22 hl=2 l=   2 prim:                       PRINTABLESTRING   :RU
+20829:d=20 hl=2 l=  25 cons:                     SET               
+20831:d=21 hl=2 l=  23 cons:                      SEQUENCE          
+20833:d=22 hl=2 l=   3 prim:                       OBJECT            :stateOrProvinceName
+20838:d=22 hl=2 l=  16 prim:                       UTF8STRING        :г. Москва
+20856:d=20 hl=2 l=  21 cons:                     SET               
+20858:d=21 hl=2 l=  19 cons:                      SEQUENCE          
+20860:d=22 hl=2 l=   3 prim:                       OBJECT            :localityName
+20865:d=22 hl=2 l=  12 prim:                       UTF8STRING        :Москва
+20879:d=20 hl=2 l=  37 cons:                     SET               
+20881:d=21 hl=2 l=  35 cons:                      SEQUENCE          
+20883:d=22 hl=2 l=   3 prim:                       OBJECT            :organizationName
+20888:d=22 hl=2 l=  28 prim:                       UTF8STRING        :ООО "КРИПТО-ПРО"
+20918:d=20 hl=2 l=  59 cons:                     SET               
+20920:d=21 hl=2 l=  57 cons:                      SEQUENCE          
+20922:d=22 hl=2 l=   3 prim:                       OBJECT            :commonName
+20927:d=22 hl=2 l=  50 prim:                       UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+20979:d=19 hl=2 l=  30 cons:                    SEQUENCE          
+20981:d=20 hl=2 l=  13 prim:                     UTCTIME           :260529122338Z
+20996:d=20 hl=2 l=  13 prim:                     UTCTIME           :260729123338Z
+21011:d=19 hl=2 l=  28 cons:                    SEQUENCE          
+21013:d=20 hl=2 l=  26 cons:                     SET               
+21015:d=21 hl=2 l=  24 cons:                      SEQUENCE          
+21017:d=22 hl=2 l=   3 prim:                       OBJECT            :commonName
+21022:d=22 hl=2 l=  17 prim:                       UTF8STRING        :Operator tsp2012g
+21041:d=19 hl=2 l= 102 cons:                    SEQUENCE          
+21043:d=20 hl=2 l=  31 cons:                     SEQUENCE          
+21045:d=21 hl=2 l=   8 prim:                      OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+21055:d=21 hl=2 l=  19 cons:                      SEQUENCE          
+21057:d=22 hl=2 l=   7 prim:                       OBJECT            :id-GostR3410-2001-CryptoPro-A-ParamSet
+21066:d=22 hl=2 l=   8 prim:                       OBJECT            :GOST R 34.11-2012 with 256 bit hash
+21076:d=20 hl=2 l=  67 prim:                     BIT STRING        
+      0000 - 00 04 40 e0 31 7e 01 09-13 3e 74 de 67 53 46 55   ..@.1~...>t.gSFU
+      0010 - 88 83 7f 46 a8 3b 65 38-ef 73 da 5d 9b 7a f8 aa   ...F.;e8.s.].z..
+      0020 - 23 23 fc e1 e5 3a f3 20-72 83 53 4b 0f 30 6e e2   ##...:. r.SK.0n.
+      0030 - 46 3f 81 9e 25 49 18 6c-81 cd 4a e8 fb e2 ca 20   F?..%I.l..J.... 
+      0040 - f5 c2 1b                                          ...
+21145:d=19 hl=4 l= 720 cons:                    cont [ 3 ]        
+21149:d=20 hl=4 l= 716 cons:                     SEQUENCE          
+21153:d=21 hl=2 l=  14 cons:                      SEQUENCE          
+21155:d=22 hl=2 l=   3 prim:                       OBJECT            :X509v3 Key Usage
+21160:d=22 hl=2 l=   1 prim:                       BOOLEAN           :255
+21163:d=22 hl=2 l=   4 prim:                       OCTET STRING      
+      0000 - 03 02 06 c0                                       ....
+21169:d=21 hl=2 l=  22 cons:                      SEQUENCE          
+21171:d=22 hl=2 l=   3 prim:                       OBJECT            :X509v3 Extended Key Usage
+21176:d=22 hl=2 l=   1 prim:                       BOOLEAN           :255
+21179:d=22 hl=2 l=  12 prim:                       OCTET STRING      
+      0000 - 30 0a 06 08 2b 06 01 05-05 07 03 08               0...+.......
+21193:d=21 hl=2 l=  30 cons:                      SEQUENCE          
+21195:d=22 hl=2 l=   9 prim:                       OBJECT            :Microsoft Application Policies Extension
+21206:d=22 hl=2 l=   1 prim:                       BOOLEAN           :255
+21209:d=22 hl=2 l=  14 prim:                       OCTET STRING      
+      0000 - 30 0c 30 0a 06 08 2b 06-01 05 05 07 03 08         0.0...+.......
+21225:d=21 hl=2 l=  29 cons:                      SEQUENCE          
+21227:d=22 hl=2 l=   3 prim:                       OBJECT            :X509v3 Subject Key Identifier
+21232:d=22 hl=2 l=  22 prim:                       OCTET STRING      
+      0000 - 04 14 76 2a e5 3f ba 92-be cb bf 62 5e c9 35 3d   ..v*.?.....b^.5=
+      0010 - 60 06 b8 6c 52 98                                 `..lR.
+21256:d=21 hl=2 l=  31 cons:                      SEQUENCE          
+21258:d=22 hl=2 l=   3 prim:                       OBJECT            :X509v3 Authority Key Identifier
+21263:d=22 hl=2 l=  24 prim:                       OCTET STRING      
+      0000 - 30 16 80 14 60 aa b5 28-73 5b e3 6e 6a 0b e6 bf   0...`..(s[.nj...
+      0010 - 4d a2 33 eb d0 52 49 7b-                          M.3..RI{
+21289:d=21 hl=4 l= 274 cons:                      SEQUENCE          
+21293:d=22 hl=2 l=   3 prim:                       OBJECT            :X509v3 CRL Distribution Points
+21298:d=22 hl=4 l= 265 prim:                       OCTET STRING      
+      0000 - 30 82 01 05 30 82 01 01-a0 81 fe a0 81 fb 86 81   0...0...........
+      0010 - b6 68 74 74 70 3a 2f 2f-74 65 73 74 67 6f 73 74   .http://testgost
+      0020 - 32 30 31 32 2e 63 72 79-70 74 6f 70 72 6f 2e 72   2012.cryptopro.r
+      0030 - 75 2f 43 65 72 74 45 6e-72 6f 6c 6c 2f 21 30 34   u/CertEnroll/!04
+      0040 - 32 32 21 30 34 33 35 21-30 34 34 31 21 30 34 34   22!0435!0441!044
+      0050 - 32 21 30 34 33 65 21 30-34 33 32 21 30 34 34 62   2!043e!0432!044b
+      0060 - 21 30 34 33 39 25 32 30-21 30 34 32 33 21 30 34   !0439%20!0423!04
+      0070 - 32 36 25 32 30 21 30 34-31 65 21 30 34 31 65 21   26%20!041e!041e!
+      0080 - 30 34 31 65 25 32 30 21-30 30 32 32 21 30 34 31   041e%20!0022!041
+      0090 - 61 21 30 34 32 30 21 30-34 31 38 21 30 34 31 66   a!0420!0418!041f
+      00a0 - 21 30 34 32 32 21 30 34-31 65 2d 21 30 34 31 66   !0422!041e-!041f
+      00b0 - 21 30 34 32 30 21 30 34-31 65 21 30 30 32 32 28   !0420!041e!0022(
+      00c0 - 32 30 29 2e 63 72 6c 86-40 68 74 74 70 3a 2f 2f   20).crl.@http://
+      00d0 - 74 65 73 74 67 6f 73 74-32 30 31 32 2e 63 72 79   testgost2012.cry
+      00e0 - 70 74 6f 70 72 6f 2e 72-75 2f 43 65 72 74 45 6e   ptopro.ru/CertEn
+      00f0 - 72 6f 6c 6c 2f 74 65 73-74 67 6f 73 74 32 30 31   roll/testgost201
+      0100 - 32 28 32 30 29 2e 63 72-6c                        2(20).crl
+21567:d=21 hl=4 l= 298 cons:                      SEQUENCE          
+21571:d=22 hl=2 l=   8 prim:                       OBJECT            :Authority Information Access
+21581:d=22 hl=4 l= 284 prim:                       OCTET STRING      
+      0000 - 30 82 01 18 30 3f 06 08-2b 06 01 05 05 07 30 01   0...0?..+.....0.
+      0010 - 86 33 68 74 74 70 3a 2f-2f 74 65 73 74 67 6f 73   .3http://testgos
+      0020 - 74 32 30 31 32 2e 63 72-79 70 74 6f 70 72 6f 2e   t2012.cryptopro.
+      0030 - 72 75 2f 6f 63 73 70 32-30 31 32 67 2f 6f 63 73   ru/ocsp2012g/ocs
+      0040 - 70 2e 73 72 66 30 41 06-08 2b 06 01 05 05 07 30   p.srf0A..+.....0
+      0050 - 01 86 35 68 74 74 70 3a-2f 2f 74 65 73 74 67 6f   ..5http://testgo
+      0060 - 73 74 32 30 31 32 2e 63-72 79 70 74 6f 70 72 6f   st2012.cryptopro
+      0070 - 2e 72 75 2f 6f 63 73 70-32 30 31 32 67 73 74 2f   .ru/ocsp2012gst/
+      0080 - 6f 63 73 70 2e 73 72 66-30 4c 06 08 2b 06 01 05   ocsp.srf0L..+...
+      0090 - 05 07 30 02 86 40 68 74-74 70 3a 2f 2f 74 65 73   ..0..@http://tes
+      00a0 - 74 67 6f 73 74 32 30 31-32 2e 63 72 79 70 74 6f   tgost2012.crypto
+      00b0 - 70 72 6f 2e 72 75 2f 43-65 72 74 45 6e 72 6f 6c   pro.ru/CertEnrol
+      00c0 - 6c 2f 74 65 73 74 67 6f-73 74 32 30 31 32 28 32   l/testgost2012(2
+      00d0 - 30 29 2e 63 72 74 30 44-06 08 2b 06 01 05 05 07   0).crt0D..+.....
+      00e0 - 30 02 86 38 68 74 74 70-3a 2f 2f 74 65 73 74 67   0..8http://testg
+      00f0 - 6f 73 74 32 30 31 32 2e-63 72 79 70 74 6f 70 72   ost2012.cryptopr
+      0100 - 6f 2e 72 75 2f 43 65 72-74 45 6e 72 6f 6c 6c 2f   o.ru/CertEnroll/
+      0110 - 74 65 73 74 72 6f 6f 74-2e 70 37 62               testroot.p7b
+21869:d=18 hl=2 l=  10 cons:                   SEQUENCE          
+21871:d=19 hl=2 l=   8 prim:                    OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+21881:d=18 hl=2 l=  65 prim:                   BIT STRING        
+      0000 - 00 df a0 6a 59 85 61 c7-6c 5f 01 62 c1 f7 2f 34   ...jY.a.l_.b../4
+      0010 - ac d4 b4 4c 89 58 66 96-e3 bd 43 a6 81 49 a3 c3   ...L.Xf...C..I..
+      0020 - 37 a3 9d 6f 17 e1 71 5e-5d e5 5e 2b 70 65 ec 29   7..o..q^].^+pe.)
+      0030 - ed 86 1e 05 96 a5 b8 4d-fd f1 b9 3a de cc ae a9   .......M...:....
+      0040 - c3                                                .
+21948:d=17 hl=4 l=1311 cons:                  SEQUENCE          
+21952:d=18 hl=4 l=1228 cons:                   SEQUENCE          
+21956:d=19 hl=2 l=   3 cons:                    cont [ 0 ]        
+21958:d=20 hl=2 l=   1 prim:                     INTEGER           :02
+21961:d=19 hl=2 l=  16 prim:                    INTEGER           :177F1EF8C798CC9B4F699ABE83E644CC
+21979:d=19 hl=2 l=  10 cons:                    SEQUENCE          
+21981:d=20 hl=2 l=   8 prim:                     OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+21991:d=19 hl=4 l= 266 cons:                    SEQUENCE          
+21995:d=20 hl=2 l=  24 cons:                     SET               
+21997:d=21 hl=2 l=  22 cons:                      SEQUENCE          
+21999:d=22 hl=2 l=   5 prim:                       OBJECT            :OGRN
+22006:d=22 hl=2 l=  13 prim:                       NUMERICSTRING     :1234567890123
+22021:d=20 hl=2 l=  26 cons:                     SET               
+22023:d=21 hl=2 l=  24 cons:                      SEQUENCE          
+22025:d=22 hl=2 l=   8 prim:                       OBJECT            :INN
+22035:d=22 hl=2 l=  12 prim:                       NUMERICSTRING     :001234567890
+22049:d=20 hl=2 l=  47 cons:                     SET               
+22051:d=21 hl=2 l=  45 cons:                      SEQUENCE          
+22053:d=22 hl=2 l=   3 prim:                       OBJECT            :streetAddress
+22058:d=22 hl=2 l=  38 prim:                       UTF8STRING        :ул. Сущёвский вал д. 18
+22098:d=20 hl=2 l=  11 cons:                     SET               
+22100:d=21 hl=2 l=   9 cons:                      SEQUENCE          
+22102:d=22 hl=2 l=   3 prim:                       OBJECT            :countryName
+22107:d=22 hl=2 l=   2 prim:                       PRINTABLESTRING   :RU
+22111:d=20 hl=2 l=  25 cons:                     SET               
+22113:d=21 hl=2 l=  23 cons:                      SEQUENCE          
+22115:d=22 hl=2 l=   3 prim:                       OBJECT            :stateOrProvinceName
+22120:d=22 hl=2 l=  16 prim:                       UTF8STRING        :г. Москва
+22138:d=20 hl=2 l=  21 cons:                     SET               
+22140:d=21 hl=2 l=  19 cons:                      SEQUENCE          
+22142:d=22 hl=2 l=   3 prim:                       OBJECT            :localityName
+22147:d=22 hl=2 l=  12 prim:                       UTF8STRING        :Москва
+22161:d=20 hl=2 l=  37 cons:                     SET               
+22163:d=21 hl=2 l=  35 cons:                      SEQUENCE          
+22165:d=22 hl=2 l=   3 prim:                       OBJECT            :organizationName
+22170:d=22 hl=2 l=  28 prim:                       UTF8STRING        :ООО "КРИПТО-ПРО"
+22200:d=20 hl=2 l=  59 cons:                     SET               
+22202:d=21 hl=2 l=  57 cons:                      SEQUENCE          
+22204:d=22 hl=2 l=   3 prim:                       OBJECT            :commonName
+22209:d=22 hl=2 l=  50 prim:                       UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+22261:d=19 hl=2 l=  30 cons:                    SEQUENCE          
+22263:d=20 hl=2 l=  13 prim:                     UTCTIME           :260529114515Z
+22278:d=20 hl=2 l=  13 prim:                     UTCTIME           :260829115515Z
+22293:d=19 hl=4 l= 266 cons:                    SEQUENCE          
+22297:d=20 hl=2 l=  24 cons:                     SET               
+22299:d=21 hl=2 l=  22 cons:                      SEQUENCE          
+22301:d=22 hl=2 l=   5 prim:                       OBJECT            :OGRN
+22308:d=22 hl=2 l=  13 prim:                       NUMERICSTRING     :1234567890123
+22323:d=20 hl=2 l=  26 cons:                     SET               
+22325:d=21 hl=2 l=  24 cons:                      SEQUENCE          
+22327:d=22 hl=2 l=   8 prim:                       OBJECT            :INN
+22337:d=22 hl=2 l=  12 prim:                       NUMERICSTRING     :001234567890
+22351:d=20 hl=2 l=  47 cons:                     SET               
+22353:d=21 hl=2 l=  45 cons:                      SEQUENCE          
+22355:d=22 hl=2 l=   3 prim:                       OBJECT            :streetAddress
+22360:d=22 hl=2 l=  38 prim:                       UTF8STRING        :ул. Сущёвский вал д. 18
+22400:d=20 hl=2 l=  11 cons:                     SET               
+22402:d=21 hl=2 l=   9 cons:                      SEQUENCE          
+22404:d=22 hl=2 l=   3 prim:                       OBJECT            :countryName
+22409:d=22 hl=2 l=   2 prim:                       PRINTABLESTRING   :RU
+22413:d=20 hl=2 l=  25 cons:                     SET               
+22415:d=21 hl=2 l=  23 cons:                      SEQUENCE          
+22417:d=22 hl=2 l=   3 prim:                       OBJECT            :stateOrProvinceName
+22422:d=22 hl=2 l=  16 prim:                       UTF8STRING        :г. Москва
+22440:d=20 hl=2 l=  21 cons:                     SET               
+22442:d=21 hl=2 l=  19 cons:                      SEQUENCE          
+22444:d=22 hl=2 l=   3 prim:                       OBJECT            :localityName
+22449:d=22 hl=2 l=  12 prim:                       UTF8STRING        :Москва
+22463:d=20 hl=2 l=  37 cons:                     SET               
+22465:d=21 hl=2 l=  35 cons:                      SEQUENCE          
+22467:d=22 hl=2 l=   3 prim:                       OBJECT            :organizationName
+22472:d=22 hl=2 l=  28 prim:                       UTF8STRING        :ООО "КРИПТО-ПРО"
+22502:d=20 hl=2 l=  59 cons:                     SET               
+22504:d=21 hl=2 l=  57 cons:                      SEQUENCE          
+22506:d=22 hl=2 l=   3 prim:                       OBJECT            :commonName
+22511:d=22 hl=2 l=  50 prim:                       UTF8STRING        :Тестовый УЦ ООО "КРИПТО-ПРО"
+22563:d=19 hl=2 l= 102 cons:                    SEQUENCE          
+22565:d=20 hl=2 l=  31 cons:                     SEQUENCE          
+22567:d=21 hl=2 l=   8 prim:                      OBJECT            :GOST R 34.10-2012 with 256 bit modulus
+22577:d=21 hl=2 l=  19 cons:                      SEQUENCE          
+22579:d=22 hl=2 l=   7 prim:                       OBJECT            :id-GostR3410-2001-CryptoPro-A-ParamSet
+22588:d=22 hl=2 l=   8 prim:                       OBJECT            :GOST R 34.11-2012 with 256 bit hash
+22598:d=20 hl=2 l=  67 prim:                     BIT STRING        
+      0000 - 00 04 40 35 3c f2 7e c6-24 7a c1 6e d7 13 a1 53   ..@5<.~.$z.n...S
+      0010 - f2 3e 01 71 26 69 b7 76-21 ed c6 18 35 d1 7b 08   .>.q&i.v!...5.{.
+      0020 - 93 68 e1 6d aa d7 56 4d-81 5b e0 72 c4 d2 d7 4b   .h.m..VM.[.r...K
+      0030 - 52 33 0c 63 89 18 57 9e-c8 6b 84 e8 98 6c be 8b   R3.c..W..k...l..
+      0040 - a8 db 70                                          ..p
+22667:d=19 hl=4 l= 513 cons:                    cont [ 3 ]        
+22671:d=20 hl=4 l= 509 cons:                     SEQUENCE          
+22675:d=21 hl=2 l=  54 cons:                      SEQUENCE          
+22677:d=22 hl=2 l=   5 prim:                       OBJECT            :Signing Tool of Subject
+22684:d=22 hl=2 l=  45 prim:                       OCTET STRING      
+      0000 - 0c 2b 22 d0 9a d1 80 d0-b8 d0 bf d1 82 d0 be d0   .+".............
+      0010 - 9f d1 80 d0 be 20 43 53-50 22 20 28 d0 b2 d0 b5   ..... CSP" (....
+      0020 - d1 80 d1 81 d0 b8 d1 8f-20 34 2e 30 29            ........ 4.0)
+22731:d=21 hl=4 l= 289 cons:                      SEQUENCE          
+22735:d=22 hl=2 l=   5 prim:                       OBJECT            :Signing Tool of Issuer
+22742:d=22 hl=4 l= 278 prim:                       OCTET STRING      
+      0000 - 30 82 01 12 0c 2b 22 d0-9a d1 80 d0 b8 d0 bf d1   0....+".........
+      0010 - 82 d0 be d0 9f d1 80 d0-be 20 43 53 50 22 20 28   ......... CSP" (
+      0020 - d0 b2 d0 b5 d1 80 d1 81-d0 b8 d1 8f 20 34 2e 30   ............ 4.0
+      0030 - 29 0c 41 d0 a3 d0 b4 d0-be d1 81 d1 82 d0 be d0   ).A.............
+      0040 - b2 d0 b5 d1 80 d1 8f d1-8e d1 89 d0 b8 d0 b9 20   ............... 
+      0050 - d1 86 d0 b5 d0 bd d1 82-d1 80 20 22 d0 9a d1 80   .......... "....
+      0060 - d0 b8 d0 bf d1 82 d0 be-d0 9f d1 80 d0 be 20 d0   .............. .
+      0070 - a3 d0 a6 22 0c 4f d0 a1-d0 b5 d1 80 d1 82 d0 b8   ...".O..........
+      0080 - d1 84 d0 b8 d0 ba d0 b0-d1 82 20 d1 81 d0 be d0   .......... .....
+      0090 - be d1 82 d0 b2 d0 b5 d1-82 d1 81 d1 82 d0 b2 d0   ................
+      00a0 - b8 d1 8f 20 e2 84 96 20-d0 a1 d0 a4 2f 30 30 30   ... ... ..../000
+      00b0 - 2d 30 30 30 30 20 d0 be-d1 82 20 30 30 2e 30 30   -0000 .... 00.00
+      00c0 - 2e 30 30 30 30 0c 4f d0-a1 d0 b5 d1 80 d1 82 d0   .0000.O.........
+      00d0 - b8 d1 84 d0 b8 d0 ba d0-b0 d1 82 20 d1 81 d0 be   ........... ....
+      00e0 - d0 be d1 82 d0 b2 d0 b5-d1 82 d1 81 d1 82 d0 b2   ................
+      00f0 - d0 b8 d1 8f 20 e2 84 96-20 d0 a1 d0 a4 2f 30 30   .... ... ..../00
+      0100 - 30 2d 30 30 30 30 20 d0-be d1 82 20 30 30 2e 30   0-0000 .... 00.0
+      0110 - 30 2e 30 30 30 30                                 0.0000
+23024:d=21 hl=2 l=  11 cons:                      SEQUENCE          
+23026:d=22 hl=2 l=   3 prim:                       OBJECT            :X509v3 Key Usage
+23031:d=22 hl=2 l=   4 prim:                       OCTET STRING      
+      0000 - 03 02 01 86                                       ....
+23037:d=21 hl=2 l=  18 cons:                      SEQUENCE          
+23039:d=22 hl=2 l=   3 prim:                       OBJECT            :X509v3 Basic Constraints
+23044:d=22 hl=2 l=   1 prim:                       BOOLEAN           :255
+23047:d=22 hl=2 l=   8 prim:                       OCTET STRING      
+      0000 - 30 06 01 01 ff 02 01 00-                          0.......
+23057:d=21 hl=2 l=  29 cons:                      SEQUENCE          
+23059:d=22 hl=2 l=   3 prim:                       OBJECT            :X509v3 Subject Key Identifier
+23064:d=22 hl=2 l=  22 prim:                       OCTET STRING      
+      0000 - 04 14 60 aa b5 28 73 5b-e3 6e 6a 0b e6 bf 4d a2   ..`..(s[.nj...M.
+      0010 - 33 eb d0 52 49 7b                                 3..RI{
+23088:d=21 hl=2 l=  18 cons:                      SEQUENCE          
+23090:d=22 hl=2 l=   9 prim:                       OBJECT            :1.3.6.1.4.1.311.21.1
+23101:d=22 hl=2 l=   5 prim:                       OCTET STRING      
+      0000 - 02 03 14 00 14                                    .....
+23108:d=21 hl=2 l=  37 cons:                      SEQUENCE          
+23110:d=22 hl=2 l=   3 prim:                       OBJECT            :X509v3 Certificate Policies
+23115:d=22 hl=2 l=  30 prim:                       OCTET STRING      
+      0000 - 30 1c 30 08 06 06 2a 85-03 64 71 01 30 08 06 06   0.0...*..dq.0...
+      0010 - 2a 85 03 64 71 02 30 06-06 04 55 1d 20 00         *..dq.0...U. .
+23147:d=21 hl=2 l=  35 cons:                      SEQUENCE          
+23149:d=22 hl=2 l=   9 prim:                       OBJECT            :1.3.6.1.4.1.311.21.2
+23160:d=22 hl=2 l=  22 prim:                       OCTET STRING      
+      0000 - 04 14 d6 e3 53 fe d7 bd-7f e6 50 ed b2 30 18 51   ....S.....P..0.Q
+      0010 - 29 9b 4b 2a c5 00                                 ).K*..
+23184:d=18 hl=2 l=  10 cons:                   SEQUENCE          
+23186:d=19 hl=2 l=   8 prim:                    OBJECT            :GOST R 34.10-2012 with GOST R 34.11-2012 (256 bit)
+23196:d=18 hl=2 l=  65 prim:                   BIT STRING        
+      0000 - 00 68 26 59 88 8d 36 45-a7 20 29 a1 68 59 64 fc   .h&Y..6E. ).hYd.
+      0010 - 3d 23 bb c7 1b 8f 0f f4-9b 98 1c 91 fc 42 e0 06   =#...........B..
+      0020 - 75 cc 92 07 eb 5a 59 d7-63 99 93 67 95 60 2b 92   u....ZY.c..g.`+.
+      0030 - 07 b8 75 a4 2a d4 d5 1b-ab 04 c1 3d 7e 13 2b ea   ..u.*......=~.+.
+      0040 - 2b                                                +
