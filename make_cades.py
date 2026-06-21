@@ -947,16 +947,16 @@ def extend_all_archive_timestamps_validation_material(
     return content_info, signer_info
 
 # Получение неподписанных атрибутов для расчета ATSHashIndexV3
-def der_sorted_unsigned_attrs_for_ats_hash_index(signer_info: cms.SignerInfo) -> List[cms.CMSAttribute]:
+def unsigned_attrs_for_ats_hash_index(signer_info: cms.SignerInfo) -> List[cms.CMSAttribute]:
     # Возврат неподписанных атрибутов в текущем порядке SignerInfo
     return read_unsigned_attrs(signer_info)
 
 # Вычисление хэшей неподписанных атрибутов для ATSHashIndexV3
 def ats_v3_unsigned_attr_value_hashes(signer_info: cms.SignerInfo, env: dict[str, str]) -> List[bytes]:
-    # Создание списка хэшей значений неподписанных атрибутов
+    # Создание списка хэшей типов и значений неподписанных атрибутов
     unsigned_attr_value_hashes: List[bytes] = []
     # Последовательный обход неподписанных атрибутов
-    for unsigned_attr in der_sorted_unsigned_attrs_for_ats_hash_index(signer_info):
+    for unsigned_attr in unsigned_attrs_for_ats_hash_index(signer_info):
         # Получение DER-представления OID атрибута
         attr_type_der = unsigned_attr["type"].dump()
         # Последовательный обход значений текущего атрибута
@@ -1162,7 +1162,7 @@ def extract_tst_info_and_cert(timestamp_attr: Optional[cms.CMSAttribute]) -> Tup
     # Чтение сертификатов из TimeStampToken
     for certificate_item in certificate_set:
         tsa_certificates.append(x509.Certificate.load(certificate_item.dump()))
-    # Получение первого сертификата TSA
+    # Использование первого сертификата из TimeStampToken как сертификата TSA
     tsa_signer_cert = tsa_certificates[0]
     # Возврат времени штампа и сведений о сертификате TSA
     return format_datetime_node(tst_info["gen_time"]), cert_details(tsa_signer_cert)
