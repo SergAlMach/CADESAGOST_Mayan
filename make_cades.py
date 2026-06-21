@@ -146,6 +146,66 @@ class ATSHashIndexV3(core.Sequence):
         ("unsigned_attrs_hash_index", OctetStringSequence),
     ]
 
+# Набор путей, используемых при создании CAdES-подписи
+@dataclass(slots=True)
+class SigningPaths:
+    # Путь к исходному подписываемому файлу
+    input_path: Path
+    # Путь к сертификату подписанта
+    signer_cert_path: Optional[Path]
+    # Путь к закрытому ключу подписанта
+    signer_key_path: Path
+    # Путь к цепочке сертификатов
+    chain_path: Path
+    # Путь к конфигурационному файлу OpenSSL
+    openssl_conf_path: Path
+    # Путь для сохранения итоговой подписи
+    output_path: Optional[Path] = None
+
+# Конфигурация формирования новой CAdES-подписи
+@dataclass(slots=True)
+class SigningConfig:
+    # Выбранный уровень подписи
+    mode: str
+    # Адрес TSA-сервиса
+    tsa_url: str
+    # Набор файловых путей
+    paths: SigningPaths
+    # Признак подробного режима вывода
+    verbose: bool = True
+
+# Конфигурация обновления архивной CAdES-A подписи
+@dataclass(slots=True)
+class RenewCadesAConfig:
+    # Путь к исходному файлу
+    input_path: Path
+    # Путь к текущей CAdES-A подписи
+    current_signature_path: Path
+    # Путь для сохранения обновленной подписи
+    output_path: Path
+    # Путь к конфигурационному файлу OpenSSL
+    openssl_conf_path: Path
+    # Адрес TSA-сервиса
+    tsa_url: str
+    # Путь к сертификату подписанта для формирования метаданных
+    signer_cert_path: Optional[Path] = None
+
+# Результат формирования или обновления CAdES-подписи
+@dataclass(slots=True)
+class SigningResult:
+    # Режим, в котором была сформирована подпись
+    mode: str
+    # Путь к сохраненной подписи
+    signature_path: Path
+    # Адрес использованного TSA-сервиса
+    tsa_url: str
+    # Размер итоговой подписи в байтах
+    output_size: int
+    # Выбранный OCSP-адрес при формировании XLT-данных
+    selected_ocsp_url: Optional[str] = None
+    # Сведения о подписи и сертификатах для последующей записи в метаданные
+    details: dict = field(default_factory=dict)
+
 # Выполнение внешней команды и получение ее вывода
 def run_cmd(cmd: Sequence[str], env: dict[str, str], stdin: Optional[bytes] = None) -> bytes:
     result = subprocess.run(
@@ -172,14 +232,12 @@ def send_post(url: str, body: bytes, content_type: str, accept: str, timeout: in
         # Возврат тела HTTP-ответа
         return response.read()
 
-
 # Вычисление хэша ГОСТ Р 34.11-2012 с длиной 256 бит
 def calc_gost256(data: bytes, env: dict[str, str]) -> bytes:
     # Вызов OpenSSL для вычисления хэша переданных данных
     digest = run_cmd(["openssl", "dgst", "-md_gost12_256", "-binary"], env, stdin=data)
     # Возврат хэша в бинарном виде
     return digest
-
 
 # Создание ASN.1-описания алгоритма хэширования ГОСТ Р 34.11-2012 256 бит
 def make_gost_digest_alg() -> algos.DigestAlgorithm:
@@ -188,14 +246,12 @@ def make_gost_digest_alg() -> algos.DigestAlgorithm:
     # Возврат структуры алгоритма хэширования
     return alg
 
-
 # Получение PEM-блоков из переданного набора байтов
 def iter_pem_blocks(data: bytes) -> Iterator[bytes]:
     # Поиск всех участков вида BEGIN/END в PEM-представлении
     for match in re.finditer(rb"-----BEGIN [^-]+-----.*?-----END [^-]+-----", data, re.S):
         # Возврат найденного PEM-блока
         yield match.group(0)
-
 
 # Безопасная загрузка сертификата из DER-представления
 def load_cert_safely(blob: bytes) -> Optional[x509.Certificate]:
@@ -209,7 +265,6 @@ def load_cert_safely(blob: bytes) -> Optional[x509.Certificate]:
     except (TypeError, ValueError):
         # Возврат пустого значения при невозможности разобрать сертификат
         return None
-
 
 # Получение сертификатов из набора данных в PEM-формате
 def read_certs_from_blob(blob: bytes) -> List[x509.Certificate]:
@@ -234,13 +289,10 @@ def read_certs(path: Path) -> List[x509.Certificate]:
     # Получение сертификатов из прочитанного набора данных
     return read_certs_from_blob(raw_blob)
 
-
 # Получение DER-представления сертификата
 def cert_to_der(cert: x509.Certificate) -> bytes:
     # Сериализация ASN.1-структуры сертификата в DER
     return cert.dump()
-
-
 
 # Объединение списков сертификатов с удалением дубликатов
 def merge_certs_unique(cert_lists: Sequence[Sequence[x509.Certificate]]) -> List[x509.Certificate]:
@@ -260,14 +312,12 @@ def merge_certs_unique(cert_lists: Sequence[Sequence[x509.Certificate]]) -> List
     # Возврат списка уникальных сертификатов
     return merged_certs
 
-
 # Получение неподписанных атрибутов из структуры SignerInfo
 def read_unsigned_attrs(signer_info: cms.SignerInfo) -> List[cms.CMSAttribute]:
     # Получение поля unsignedAttrs из SignerInfo
     unsigned_attrs_field = signer_info["unsigned_attrs"]
     # Преобразование набора unsignedAttrs в список CMSAttribute
     return list(unsigned_attrs_field)
-
 
 # Добавление неподписанного атрибута в структуру SignerInfo
 def append_unsigned_attr(signer_info: cms.SignerInfo, attr_oid: str, attr_value: core.Asn1Value) -> cms.SignerInfo:
@@ -280,7 +330,6 @@ def append_unsigned_attr(signer_info: cms.SignerInfo, attr_oid: str, attr_value:
     # Возврат обновленной структуры SignerInfo
     return signer_info
 
-
 # Поиск первого неподписанного атрибута по OID
 def find_unsigned_attr(signer_info: cms.SignerInfo, attr_oid: str) -> Optional[cms.CMSAttribute]:
     # Последовательный обход неподписанных атрибутов SignerInfo
@@ -290,7 +339,6 @@ def find_unsigned_attr(signer_info: cms.SignerInfo, attr_oid: str) -> Optional[c
             return unsigned_attr
     # Возврат пустого значения при отсутствии атрибута
     return None
-
 
 # Поиск последнего неподписанного атрибута по OID
 def find_last_unsigned_attr(signer_info: cms.SignerInfo, attr_oid: str) -> Optional[cms.CMSAttribute]:
@@ -304,7 +352,6 @@ def find_last_unsigned_attr(signer_info: cms.SignerInfo, attr_oid: str) -> Optio
     # Возврат последнего найденного атрибута
     return found_attr
 
-
 # Получение расширения сертификата по имени
 def get_extension(cert: x509.Certificate, extension_name: str):
     # Последовательный обход расширений сертификата
@@ -315,7 +362,6 @@ def get_extension(cert: x509.Certificate, extension_name: str):
             return extension["extn_value"].parsed
     # Возврат пустого значения при отсутствии расширения
     return None
-
 
 # Поиск сертификата издателя по связке AKI/SKI
 def find_issuer_cert(signer_cert: x509.Certificate, chain_certs: Sequence[x509.Certificate]) -> x509.Certificate:
@@ -336,7 +382,6 @@ def find_issuer_cert(signer_cert: x509.Certificate, chain_certs: Sequence[x509.C
     # Ошибка при невозможности найти сертификат издателя
     raise ValueError("Не найден сертификат издателя по AKI/SKI.")
 
-
 # Получение OCSP-адресов из сертификата средствами OpenSSL
 def get_ocsp_urls_from_file(cert_path: Path, env: dict[str, str]) -> List[str]:
     # Вызов OpenSSL для чтения OCSP URI из сертификата
@@ -345,7 +390,6 @@ def get_ocsp_urls_from_file(cert_path: Path, env: dict[str, str]) -> List[str]:
     urls = [line.strip() for line in out.decode("utf-8", "replace").splitlines() if line.strip()]
     # Возврат списка OCSP-адресов без повторов
     return list(dict.fromkeys(urls))
-
 
 # Получение OCSP-ответа для сертификата по заданному адресу
 def load_ocsp_response_for_url(cert_path: Path, issuer_pem_path: Path, ocsp_url: str, env) -> Tuple[bytes, bytes]:
@@ -385,7 +429,6 @@ def load_ocsp_response_for_url(cert_path: Path, issuer_pem_path: Path, ocsp_url:
         # Удаление временного файла OCSP-ответа
         response_path.unlink(missing_ok=True)
 
-
 # Выбор подходящего OCSP-ответа из набора доступных OCSP-адресов
 def pick_best_ocsp_response(cert_path: Path, issuer_pem_path: Path, ocsp_urls: Sequence[str], env: dict[str, str]) -> Tuple[bytes, bytes, str]:
     # Список успешно полученных вариантов OCSP-ответов
@@ -412,7 +455,6 @@ def pick_best_ocsp_response(cert_path: Path, issuer_pem_path: Path, ocsp_urls: S
     # Возврат выбранного OCSP-ответа и адреса, с которого он был получен
     return ocsp_response_der, basic_ocsp_response_der, chosen_ocsp_url
 
-
 # Извлечение сертификатов из BasicOCSPResponse
 def extract_certs_from_basic_ocsp(basic_ocsp_response_der: bytes) -> List[x509.Certificate]:
     # Разбор BasicOCSPResponse
@@ -421,7 +463,6 @@ def extract_certs_from_basic_ocsp(basic_ocsp_response_der: bytes) -> List[x509.C
     embedded_certificates = basic_ocsp_response["certs"]
     # Возврат списка сертификатов из OCSP-ответа
     return list(embedded_certificates)
-
 
 # Удаление вложенных сертификатов из BasicOCSPResponse
 def drop_basic_ocsp_certs(basic_ocsp_response_der: bytes) -> bytes:
@@ -438,7 +479,6 @@ def drop_basic_ocsp_certs(basic_ocsp_response_der: bytes) -> bytes:
     )
     # Возврат очищенного BasicOCSPResponse в DER-представлении
     return rebuilt_basic_ocsp_response.dump()
-
 
 # Получение токена штампа времени от TSA-сервиса
 def request_timestamp_token(imprint: bytes, tsa_url: str) -> cms.ContentInfo:
@@ -474,7 +514,6 @@ def request_timestamp_token(imprint: bytes, tsa_url: str) -> cms.ContentInfo:
     # Возврат токена штампа времени
     return token
 
-
 # Создание атрибута complete-certificate-references
 def make_complete_certificate_refs(certs_for_refs: Sequence[x509.Certificate], env: dict[str, str]) -> CompleteCertificateRefs:
     # Создание списка ссылок на сертификаты
@@ -501,7 +540,6 @@ def make_complete_certificate_refs(certs_for_refs: Sequence[x509.Certificate], e
         )
     # Возврат набора ссылок на сертификаты
     return CompleteCertificateRefs(items)
-
 
 # Создание атрибута complete-revocation-references
 def make_complete_revocation_refs(basic_ocsp_response_der_without_certs: bytes, env: dict[str, str]) -> CompleteRevocationRefs:
@@ -536,7 +574,6 @@ def make_complete_revocation_refs(basic_ocsp_response_der_without_certs: bytes, 
     # Возврат набора ссылок на данные проверки статуса сертификатов
     return CompleteRevocationRefs(crl_ocsp_ref_list)
 
-
 # Создание атрибута revocation-values
 def make_revocation_values(cleaned_basic_der: bytes) -> RawRevocationValues:
     # Включение BasicOCSPResponse в значения данных проверки статуса сертификатов
@@ -545,7 +582,6 @@ def make_revocation_values(cleaned_basic_der: bytes) -> RawRevocationValues:
             "ocsp_vals": RawBasicOcspResponses([core.Any.load(cleaned_basic_der)]),
         }
     )
-
 
 # Формирование хэша для esc-time-stamp
 def build_esc_imprint_v1(signature_value: bytes, attrs_for_esc: Sequence[cms.CMSAttribute], env: dict[str, str]) -> bytes:
@@ -557,71 +593,6 @@ def build_esc_imprint_v1(signature_value: bytes, attrs_for_esc: Sequence[cms.CMS
         esc_imprint_input += cms_attribute["values"].dump()
     # Возврат хэша сформированного набора данных
     return calc_gost256(bytes(esc_imprint_input), env)
-
-
-# Набор путей, используемых при создании CAdES-подписи
-@dataclass(slots=True)
-class SigningPaths:
-    # Путь к исходному подписываемому файлу
-    input_path: Path
-    # Путь к сертификату подписанта
-    signer_cert_path: Optional[Path]
-    # Путь к закрытому ключу подписанта
-    signer_key_path: Path
-    # Путь к цепочке сертификатов
-    chain_path: Path
-    # Путь к конфигурационному файлу OpenSSL
-    openssl_conf_path: Path
-    # Путь для сохранения итоговой подписи
-    output_path: Optional[Path] = None
-
-
-# Конфигурация формирования новой CAdES-подписи
-@dataclass(slots=True)
-class SigningConfig:
-    # Выбранный уровень подписи
-    mode: str
-    # Адрес TSA-сервиса
-    tsa_url: str
-    # Набор файловых путей
-    paths: SigningPaths
-    # Признак подробного режима вывода
-    verbose: bool = True
-
-
-# Конфигурация обновления архивной CAdES-A подписи
-@dataclass(slots=True)
-class RenewCadesAConfig:
-    # Путь к исходному файлу
-    input_path: Path
-    # Путь к текущей CAdES-A подписи
-    current_signature_path: Path
-    # Путь для сохранения обновленной подписи
-    output_path: Path
-    # Путь к конфигурационному файлу OpenSSL
-    openssl_conf_path: Path
-    # Адрес TSA-сервиса
-    tsa_url: str
-    # Путь к сертификату подписанта для формирования метаданных
-    signer_cert_path: Optional[Path] = None
-
-
-# Результат формирования или обновления CAdES-подписи
-@dataclass(slots=True)
-class SigningResult:
-    # Режим, в котором была сформирована подпись
-    mode: str
-    # Путь к сохраненной подписи
-    signature_path: Path
-    # Адрес использованного TSA-сервиса
-    tsa_url: str
-    # Размер итоговой подписи в байтах
-    output_size: int
-    # Выбранный OCSP-адрес при формировании XLT-данных
-    selected_ocsp_url: Optional[str] = None
-    # Сведения о подписи и сертификатах для последующей записи в метаданные
-    details: dict = field(default_factory=dict)
-
 
 # Получение пароля к закрытому ключу через диалоговое окно
 def ask_key_password() -> str:
@@ -643,7 +614,6 @@ def ask_key_password() -> str:
         root.destroy()
     # Возврат введенного пароля или пустой строки
     return password or ""
-
 
 # Формирование базового CMS/CAdES-BES контейнера средствами OpenSSL
 def build_bes_container(paths: SigningPaths, env: dict[str, str]) -> bytes:
@@ -677,7 +647,6 @@ def build_bes_container(paths: SigningPaths, env: dict[str, str]) -> bytes:
     # Выполнение команды OpenSSL и возврат DER-представления подписи
     return run_cmd(cmd, local_env)
 
-
 # Разбор DER-представления CMS/CAdES-подписи и получение основных структур
 def load_context(signature_der: bytes) -> tuple[cms.ContentInfo, cms.SignedData, cms.SignerInfos, cms.SignerInfo, bytes]:
     # Загрузка верхнего CMS-контейнера ContentInfo
@@ -692,7 +661,6 @@ def load_context(signature_der: bytes) -> tuple[cms.ContentInfo, cms.SignedData,
     signature_value = signer_info["signature"].native
     # Возврат основных структур, необходимых для дальнейшего расширения подписи
     return content_info, signed_data, signer_infos, signer_info, signature_value
-
 
 # Добавление штампа времени подписи для формирования уровня CAdES-T
 def attach_signature_timestamp(
@@ -713,7 +681,6 @@ def attach_signature_timestamp(
     content_info["content"]["signer_infos"] = signer_infos
     # Возврат обновленного CMS-контейнера и измененной структуры SignerInfo
     return content_info, signer_info
-
 
 # Формирование неподписанных атрибутов для уровня CAdES-XLT1
 def build_xlt_unsigned_attrs(
@@ -807,7 +774,6 @@ def build_xlt_unsigned_attrs(
     # Возврат обновленного SignerInfo и выбранного OCSP-адреса
     return signer_info, chosen_ocsp_url
 
-
 # Чтение сертификатов из SignedData.certificates
 def read_signed_data_certificates(content_info: cms.ContentInfo) -> List[x509.Certificate]:
     # Получение структуры SignedData
@@ -828,7 +794,6 @@ def read_signed_data_certificates(content_info: cms.ContentInfo) -> List[x509.Ce
     # Возврат списка сертификатов из SignedData
     return signed_data_certificates
 
-
 # Чтение сертификатов из TimeStampToken
 def read_timestamp_certs(timestamp_token: cms.ContentInfo) -> List[x509.Certificate]:
     # Создание списка сертификатов TimeStampToken
@@ -840,6 +805,7 @@ def read_timestamp_certs(timestamp_token: cms.ContentInfo) -> List[x509.Certific
     # Возврат сертификатов из TimeStampToken
     return certificates
 
+# Поиск сертификата TSA, которым подписан TimeStampToken
 def find_timestamp_signer_cert(timestamp_token: cms.ContentInfo) -> x509.Certificate:
     # Получение SignerInfo из TimeStampToken
     tsa_signer_info = timestamp_token["content"]["signer_infos"][0]
@@ -856,6 +822,7 @@ def find_timestamp_signer_cert(timestamp_token: cms.ContentInfo) -> x509.Certifi
     # Ошибка при отсутствии сертификата подписанта TSA
     raise ValueError("В TimeStampToken не найден сертификат TSA.")
 
+# Чтение сертификатов из атрибутов certificate-values структуры SignerInfo
 def read_cert_values_from_signer_info(signer_info: cms.SignerInfo) -> List[x509.Certificate]:
     # Создание списка сертификатов
     certificates = []
@@ -869,7 +836,6 @@ def read_cert_values_from_signer_info(signer_info: cms.SignerInfo) -> List[x509.
             certificates.extend(CertificateValues.load(attr_value.dump()))
     # Возврат найденных сертификатов
     return certificates
-
 
 # Получение OCSP-ответа для заданного сертификата
 def get_ocsp_for_cert(cert: x509.Certificate, issuer_cert: x509.Certificate, env: dict[str, str]) -> bytes:
@@ -900,7 +866,6 @@ def get_ocsp_for_cert(cert: x509.Certificate, issuer_cert: x509.Certificate, env
         cert_path.unlink(missing_ok=True)
         # Удаление временного файла сертификата издателя
         issuer_path.unlink(missing_ok=True)
-
 
 # Дополнение архивных штампов времени проверочными данными TSA
 def extend_all_archive_timestamps_validation_material(
@@ -981,12 +946,10 @@ def extend_all_archive_timestamps_validation_material(
     # Возврат обновленного CMS-контейнера и SignerInfo
     return content_info, signer_info
 
-
 # Получение неподписанных атрибутов для расчета ATSHashIndexV3
 def der_sorted_unsigned_attrs_for_ats_hash_index(signer_info: cms.SignerInfo) -> List[cms.CMSAttribute]:
     # Возврат неподписанных атрибутов в текущем порядке SignerInfo
     return read_unsigned_attrs(signer_info)
-
 
 # Вычисление хэшей неподписанных атрибутов для ATSHashIndexV3
 def ats_v3_unsigned_attr_value_hashes(signer_info: cms.SignerInfo, env: dict[str, str]) -> List[bytes]:
@@ -1002,7 +965,6 @@ def ats_v3_unsigned_attr_value_hashes(signer_info: cms.SignerInfo, env: dict[str
             unsigned_attr_value_hashes.append(calc_gost256(attr_type_der + attr_value.dump(), env))
     # Возврат списка хэшей неподписанных атрибутов
     return unsigned_attr_value_hashes
-
 
 # Формирование структуры ATSHashIndexV3
 def make_ats_hash_index_v3(content_info: cms.ContentInfo, signer_info: cms.SignerInfo, env: dict[str, str]) -> ATSHashIndexV3:
@@ -1032,7 +994,6 @@ def signer_info_archive_fields_der(signer_info: cms.SignerInfo) -> bytes:
     # Объединение DER-представлений полей SignerInfo
     return b"".join(signer_info_field_der_parts)
 
-
 # Извлечение messageDigest из подписанных атрибутов SignerInfo
 def extract_message_digest_from_signed_attrs(signer_info: cms.SignerInfo) -> bytes:
     # Получение подписанных атрибутов
@@ -1044,7 +1005,6 @@ def extract_message_digest_from_signed_attrs(signer_info: cms.SignerInfo) -> byt
     # Ошибка при отсутствии messageDigest
     raise ValueError("В signedAttrs не найден messageDigest.")
 
-
 # Проверка наличия archive-time-stamp-v3 в подписи
 def ensure_has_archive_timestamp_v3(signer_info: cms.SignerInfo) -> None:
     # Поиск архивного штампа времени версии 3
@@ -1052,7 +1012,6 @@ def ensure_has_archive_timestamp_v3(signer_info: cms.SignerInfo) -> None:
     # Ошибка при отсутствии archive-time-stamp-v3
     if archive_timestamp_attr is None:
         raise ValueError("В подписи не найден archiveTimestampV3. Это не CAdES-A подпись.")
-
 
 # Проверка соответствия исходного файла атрибуту messageDigest
 def ensure_input_matches_signed_attrs(
@@ -1067,7 +1026,6 @@ def ensure_input_matches_signed_attrs(
     # Сравнение фактического хэша с messageDigest из подписи
     if actual_digest != expected_digest:
         raise ValueError("Исходный файл не соответствует messageDigest из CAdES-подписи.")
-
 
 # Формирование хэша для archive-time-stamp-v3
 def build_archive_timestamp_v3_imprint(
@@ -1089,7 +1047,6 @@ def build_archive_timestamp_v3_imprint(
     ]
     # Возврат хэша набора данных archive-time-stamp-v3
     return calc_gost256(b"".join(archive_imprint_parts), env)
-
 
 # Добавление ATSHashIndexV3 внутрь TimeStampToken
 def add_ats_hash_index_v3_to_timestamp_token(timestamp_token: cms.ContentInfo, ats_hash_index: ATSHashIndexV3) -> cms.ContentInfo:
@@ -1113,7 +1070,6 @@ def add_ats_hash_index_v3_to_timestamp_token(timestamp_token: cms.ContentInfo, a
     timestamp_token["content"] = signed_data
     # Возврат TimeStampToken с добавленным ATSHashIndexV3
     return timestamp_token
-
 
 # Добавление archive-time-stamp-v3 для формирования или обновления CAdES-A
 def append_archive_timestamp(
@@ -1147,7 +1103,6 @@ def append_archive_timestamp(
     # Возврат CMS-контейнера с архивным штампом времени
     return content_info
 
-
 # Преобразование ASN.1-времени в формат для метаданных
 def format_datetime_node(value: object) -> dict[str, str]:
     # Получение Python-представления значения времени
@@ -1162,7 +1117,6 @@ def format_datetime_node(value: object) -> dict[str, str]:
     # Возврат строкового представления для нестандартных значений
     return {"iso": str(dt), "display": str(dt)}
 
-
 # Преобразование ASN.1-имени сертификата в строку
 def name_to_string(name: object) -> str:
     # Преобразование имени сертификата в строковое представление key=value
@@ -1171,6 +1125,7 @@ def name_to_string(name: object) -> str:
         for key, value in name.native.items()
     )
 
+# Формирование сведений о сертификате для метаданных
 def cert_details(cert: x509.Certificate) -> dict[str, object]:
     # Получение структуры tbsCertificate
     tbs = cert["tbs_certificate"]
@@ -1190,7 +1145,6 @@ def cert_details(cert: x509.Certificate) -> dict[str, object]:
         "validity_period_display": f"{valid_from.get('display','')} - {valid_to.get('display','')}",
         "fingerprint_sha1": hashlib.sha1(cert.dump()).hexdigest().upper(),
     }
-
 
 # Извлечение времени штампа и сертификата TSA из атрибута timestamp
 def extract_tst_info_and_cert(timestamp_attr: Optional[cms.CMSAttribute]) -> Tuple[dict[str, str], dict[str, object]]:
@@ -1212,7 +1166,6 @@ def extract_tst_info_and_cert(timestamp_attr: Optional[cms.CMSAttribute]) -> Tup
     tsa_signer_cert = tsa_certificates[0]
     # Возврат времени штампа и сведений о сертификате TSA
     return format_datetime_node(tst_info["gen_time"]), cert_details(tsa_signer_cert)
-
 
 # Извлечение сведений о подписи для метаданных
 def extract_signing_details(signer_info: cms.SignerInfo, paths: SigningPaths, env: dict[str, str]) -> dict[str, object]:
@@ -1267,7 +1220,6 @@ def extract_signing_details(signer_info: cms.SignerInfo, paths: SigningPaths, en
     # Возврат сведений о подписи
     return details
 
-
 # Сохранение итоговой подписи и формирование результата выполнения
 def save_signature(
     content_info: cms.ContentInfo,
@@ -1292,7 +1244,6 @@ def save_signature(
         selected_ocsp_url=selected_ocsp_url,
         details=extract_signing_details(signer_info, paths, env),
     )
-
 
 # Обновление архивной CAdES-A подписи
 def renew_cades_a_signature(config: RenewCadesAConfig) -> SigningResult:
@@ -1346,7 +1297,6 @@ def renew_cades_a_signature(config: RenewCadesAConfig) -> SigningResult:
         selected_ocsp_url=None,
     )
 
-# Формирование новой CAdES-подписи выбранного уровня
 # Формирование новой CAdES-подписи выбранного уровня
 def sign_document(config: SigningConfig) -> SigningResult:
     # Определение пути для сохранения итоговой подписи
@@ -1477,7 +1427,6 @@ def create_default_sign_config(
         verbose=verbose,
     )
 
-
 # Создание конфигурации для обновления CAdES-A подписи
 def create_default_renew_a_config(
     base_dir: Path,
@@ -1539,7 +1488,6 @@ def build_arg_parser() -> argparse.ArgumentParser:
     )
     return parser
 
-
 # Основная функция управления режимами выполнения программы
 def main(argv: Optional[Sequence[str]] = None) -> int:
     # Создание парсера аргументов командной строки
@@ -1579,7 +1527,6 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     except (RuntimeError, ValueError, URLError) as exc:
         parser.exit(status=1, message=f"Ошибка: {exc}\n")
     return 0
-
 
 # Точка входа при запуске файла как самостоятельной программы
 if __name__ == "__main__":
