@@ -45,7 +45,6 @@ DOCUMENT_TYPE_LABEL = os.getenv("CADES_DOCUMENT_TYPE_LABEL", "CADES")
 # Создание экземпляра FastAPI-приложения
 app = FastAPI(title=APP_TITLE, version=APP_VERSION)
 
-
 # Получение API-токена Mayan EDMS через диалоговое окно
 def ask_mayan_token() -> str:
     # Создание скрытого окна tkinter
@@ -74,7 +73,6 @@ def ask_mayan_token() -> str:
     # Возврат API-токена Mayan EDMS
     return token
 
-
 # Преобразование значения метаданных в строковое представление
 def format_display(value):
     # Получение отображаемого значения из словаря даты и времени
@@ -82,7 +80,6 @@ def format_display(value):
         return str(value.get("display") or value.get("iso") or "")
     # Возврат строкового представления простого значения
     return str(value or "")
-
 
 # Формирование набора метаданных для записи в Mayan EDMS
 def build_mayan_metadata(filename, mode, result):
@@ -117,7 +114,6 @@ def build_mayan_metadata(filename, mode, result):
     }
     # Исключение пустых значений перед записью метаданных
     return {key: value for key, value in values.items() if value}
-
 
 # Обработка GET-запроса к главной странице приложения
 @app.get("/", response_class=HTMLResponse)
@@ -210,7 +206,6 @@ def index():
 </body>
 </html>
 """
-
 
 # Обработка отправки формы, формирование подписи и загрузка результата в Mayan EDMS
 @app.post("/sign-and-upload", response_class=HTMLResponse)
